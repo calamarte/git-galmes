@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $tan;
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+a {
+  color: $blue;
+  &:hover { color: $purple; }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: $page-width;
+}
+
+.subcontent {
+  background: $white;
+  padding: 2em 0 3em;
+}
+
+.search { float: right; }
+
+.list-inline {
+  list-style-type: none;
+
+  li { display: inline-block; }
+  a  { display: block; }
+}

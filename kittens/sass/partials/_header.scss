@@ -1,0 +1,35 @@
+.header {
+  background: $purple;
+  border-bottom: $border-width solid $white;
+  padding: 1em;
+
+  h1 {
+    color: $blue;
+    font-family: $logo-font-family;
+    font-size: 3em;
+    margin: .25em 0;
+    text-shadow: 1px 1px 0px $beige;
+  }
+
+  nav {
+    float: right;
+
+    a {
+      background: $blue;
+      border-radius: $border-radius;
+      color: $tan;
+      margin-right: 1em;
+      padding: .5em 1em;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $blue-dark;
+      }
+    }
+  }
+
+  ul {
+    @extend .list-inline;
+    padding: 0;
+  }
+}

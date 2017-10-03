@@ -1,0 +1,7 @@
+1.Inicio npm
+2.Compilar SASS y watchers
+3.Minimizar CSS i JS en carpeta dist
+4.Concatenar todos los CSS que se utulizan en uno solo
+5.Lo mismo con JS
+6.Hacer una carpeta img con una imagen
+7.Canviar el SASS y poner la imagen de fondo.Problemas y soluciones...
