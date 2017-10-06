@@ -42,15 +42,19 @@ gulp.task('concatClean',()=>{
    return gulp.src(['css/all.css',"js/all.js"]).pipe(clean());
 });
 
-gulp.task('injección',['minimizarCSS','minimizarJS','copy'],()=> {
+gulp.task('injection',['minimizarCSS','minimizarJS','copy'],()=> {
         let target = gulp.src('dist/index.html');
         let sources = gulp.src(['dist/js/*.js', 'dist/css/*.css'], {read: false});
         let filterJs = deleteLines({'filters': [/<script/i]});
         let filterCss = deleteLines({'filters': [/<link/i]});
 
-        return target.pipe(filterJs).pipe(filterCss).pipe(inject(sources, {relative: true})).pipe(gulp.dest('dist'));
+        return target.pipe(filterJs).pipe(filterCss).pipe(inject(sources,{relative: true})).pipe(gulp.dest('dist'));
 });
 
 gulp.task('copy',()=>{
     return gulp.src('index.html').pipe(gulp.dest('dist'));
+});
+
+gulp.task('finalStep',['injection'],()=>{
+    return gulp.src('img/*').pipe(gulp.dest('dist/img'));
 });
