@@ -25,7 +25,7 @@ gulp.task('compiladorSass', () =>{
 });
 
 gulp.task('unirJS',()=>{
-    return gulp.src(['js/modernizr-2.5.2.min.js','js/jquery-2.1.0.min.js','js/application.js']).pipe(concatJS('all.js'))
+    return gulp.src(['js/modernizer-2.5.2.min.js','js/jquery-2.1.0.min.js','js/application.js']).pipe(concatJS('all.js'))
         .pipe(gulp.dest('js'));
 });
 
