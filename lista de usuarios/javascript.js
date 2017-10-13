@@ -1,6 +1,6 @@
 let select = document.createElement('select');
 select.id = "select";
-let opciones = ["Todos","Menores de edad","Activos"];
+const opciones = ["Todos","Menores de edad","Activos"];
 
 let datos = [];
 let information = false;
@@ -25,7 +25,7 @@ xmlHttp.onreadystatechange = function(){
         createTable(document.getElementById('select').selectedIndex);
     }
 };
-xmlHttp.open('GET','http://35.196.61.71/usuari.php',true);
+xmlHttp.open('GET','http://35.194.72.13/usuari.php',true);
 xmlHttp.send();
 
 function createHeader(tabla) {
@@ -43,17 +43,16 @@ function createHeader(tabla) {
 }
 
 function createTable(filtro) {
-    if(!information)return;
     let tabla = document.createElement('table');
     tabla.id = 'tabla';
     createHeader(tabla);
     let filtrado = [];
     switch (filtro){
         case 1:
-            filtrado = tMenorEdad();
+            filtrado = datos.filter((datos)=>{return datos.edat < 18});
             break;
         case 2:
-            filtrado = tActivo();
+            filtrado = datos.filter((datos)=>{return datos.actiu === "1"});
             break;
         default:
             filtrado = datos;
@@ -74,32 +73,19 @@ function createTable(filtro) {
             tupla.appendChild(activo);
             tabla.appendChild(tupla);
         }
+        tabla.style.width = "500px";
         tabla.style.backgroundColor = "#8C9EFF";
         tabla.style.borderCollapse = "collapse";
         tabla.style.border = "2px solid black";
         document.body.appendChild(tabla);
 }
 
-function tMenorEdad() {
-    let menor = [];
-    for(let i = 0;i < datos.length;i++){
-        if(parseInt(datos[i].edat) < 18)menor.push(datos[i]);
+select.addEventListener("change",() =>{
+    if(information) {
+        let indice = select.selectedIndex;
+        localStorage.setItem("seleccion", JSON.stringify(indice));
+        document.body.removeChild(document.getElementById("tabla"));
+        createTable(indice);
     }
-    return menor;
-}
-
-function tActivo() {
-    let activo = [];
-    for(let i = 0;i < datos.length;i++){
-        if(datos[i].actiu === "1")activo.push(datos[i]);
-    }
-    return activo;
-}
-
-document.getElementById("select").addEventListener("change",() =>{
-    let indice = document.getElementById("select").selectedIndex;
-    localStorage.setItem("seleccion",JSON.stringify(indice));
-    document.body.removeChild(document.getElementById("tabla"));
-    createTable(indice);
 });
 
