@@ -21,7 +21,6 @@ xmlHttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
         datos = JSON.parse(this.responseText);
         information = true;
-        console.log(datos);
         createTable(document.getElementById('select').selectedIndex);
     }
 };
