@@ -1,6 +1,6 @@
 let datos = [];
 function createHeader() {
-  const cabeceras = ['Nom', 'Numero de registre', 'espècie'];
+  const cabeceras = ['Nom', 'Sexe', 'Numero de registre', 'Espècie'];
   const fila = document.createElement('tr');
   for (let i = 0; i < cabeceras.length; i += 1) {
     const celda = document.createElement('th');
@@ -31,6 +31,7 @@ function createTable() {
     const nombre = document.createElement('td');
     const num = document.createElement('td');
     const especie = document.createElement('td');
+    const sexo = document.createElement('td');
     const botones = document.createElement('td');
 
     const editar = document.createElement('input');
@@ -44,6 +45,7 @@ function createTable() {
     borrar.onclick = deleteB;
 
     nombre.textContent = datos[i].nomAnimal;
+    sexo.textContent = datos[i].sexe;
     if (datos[i].numregistre)num.textContent = datos[i].numregistre;
     else num.textContent = 'Sense número';
     especie.textContent = datos[i].nomTipus;
@@ -51,6 +53,7 @@ function createTable() {
     botones.appendChild(borrar);
 
     fila.appendChild(nombre);
+    fila.appendChild(sexo);
     fila.appendChild(num);
     fila.appendChild(especie);
     fila.appendChild(botones);
