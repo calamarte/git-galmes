@@ -17,8 +17,8 @@ if(localStorage.getItem("seleccion")){
 document.body.appendChild(select);
 
 async function response () {
-  let datosL = await fetch('http://35.194.72.13/usuari.php');
-  datos = await datosL.json();
+  let fetchDatos = await fetch('http://35.194.72.13/usuari.php');
+  datos = await fetchDatos.json();
   information = true;
   createTable(document.getElementById('select').selectedIndex);
 }

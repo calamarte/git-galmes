@@ -10,15 +10,9 @@ function createHeader() {
   return fila;
 }
 
-function editB() {
-  console.log('editando');
-}
-
-// Necesito encontrar el objeto y no puedo sino paso un parametro
-// Yo digo que aqui hay que hacer cosas con callback
-
-function deleteB() {
-  console.log('borrando');
+function idTargetAnimal(input) {
+  return datos[input.target.parentNode
+    .parentNode.rowIndex - 1].idanimal;
 }
 
 function createTable() {
@@ -39,10 +33,14 @@ function createTable() {
 
     editar.type = 'button';
     editar.value = 'editar';
-    editar.onclick = editB;
+    editar.onclick = (e) => {
+      window.location = 'animalsForm.html?id='+idTargetAnimal(e);
+    };
     borrar.type = 'button';
     borrar.value = 'borrar';
-    borrar.onclick = deleteB;
+    borrar.onclick = (e) => {
+      console.log(idTargetAnimal(e));
+    };
 
     nombre.textContent = datos[i].nomAnimal;
     sexo.textContent = datos[i].sexe;
@@ -63,18 +61,33 @@ function createTable() {
   document.body.appendChild(tabla);
 }
 
-const xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    datos = JSON.parse(this.responseText);
-    console.log(datos);
-    createTable();
-  }
-};
+// const xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function () {
+//   if (this.readyState === 4 && this.status === 200) {
+//     datos = JSON.parse(this.responseText);
+//     console.log(datos);
+//     createTable();
+//   }
+// };
+//
+// xhttp.open('POST', 'http://35.194.72.13/vetplus/serveis.php', true);
+// xhttp.send(JSON.stringify({
+//   MethodName: 'getAnimals',
+//   params: ''
+// }));
 
-xhttp.open('POST', 'http://35.194.72.13/vetplus/serveis.php', true);
-xhttp.send(JSON.stringify({
-  MethodName: 'getAnimals',
-  params: ''
-}));
+async function init() {
+  const fetchDatos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify({
+      MethodName: 'getAnimals',
+      params: ''
+    })
+  });
+  datos = await fetchDatos.json();
+  createTable();
+}
+
+init();
 
