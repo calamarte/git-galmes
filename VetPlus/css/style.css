@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /*border:1px solid black;*/
+}
+
+body{
+    padding: 0 20%;
+    background-color: #00ACC1;
+}
+
+
+
+#new{
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+
+#new:hover, #tabla input:hover{
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+
+/*#tablaDiv{*/
+    /*height: auto;*/
+/*}*/
+
+#tabla{
+    /*border-radius: 20px;*/
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    /*border: 2px solid black;*/
+    /*margin-left: 20%;*/
+}
+
+#tabla tr td{
+    padding-top: 5px;
+}
+
+#tabla input{
+    float: left;
+    width: 50%;
+}
+
+#tabla tr:first-child{
+    height: 50px;
+    border: 1px solid black;
+    background-color: #01579B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+

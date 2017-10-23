@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <form action="">
     <input type="text" id="nombre" placeholder="Nombre">
-    <div>Sexo</div>
-    <label for="m">Macho</label>
-    <input type="radio" name="gender" value="m" id="m">
-    <label for="f">Hembra</label>
-    <input type="radio" name="gender" value="f" id="f" checked>
+    <div>
+        <header><h2>Sexo</h2></header>
+        <label for="m">Macho</label>
+        <input type="radio" name="gender" value="m" id="m">
+        <label for="f">Hembra</label>
+        <input type="radio" name="gender" value="f" id="f" checked>
+    </div>
     <input type="text" placeholder="Numero de registro" id="numRegistro">
     <select name="especie" id="especie"></select>
     <input type="submit" id="enviar">
     <!--no submit-->
+
 </form>
 <script type="text/javascript" src="js/animalsForm.js"></script>
 </body>

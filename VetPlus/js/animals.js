@@ -1,6 +1,6 @@
 let datos = [];
 function createHeader() {
-  const cabeceras = ['Nom', 'Sexe', 'Numero de registre', 'Espècie'];
+  const cabeceras = ['Nom', 'Sexe', 'Numero de registre', 'Espècie', 'Opcions'];
   const fila = document.createElement('tr');
   for (let i = 0; i < cabeceras.length; i += 1) {
     const celda = document.createElement('th');
@@ -10,10 +10,18 @@ function createHeader() {
   return fila;
 }
 
-function idTargetAnimal(input) {
+function targetAnimal(input) {
   return datos[input.target.parentNode
-    .parentNode.rowIndex - 1].idanimal;
+    .parentNode.rowIndex - 1];
 }
+//
+// function deleteAnimal() {
+//
+// }
+//
+// function getTractaments () {
+//
+// }
 
 function createTable() {
   const tabla = document.createElement('table');
@@ -34,12 +42,15 @@ function createTable() {
     editar.type = 'button';
     editar.value = 'editar';
     editar.onclick = (e) => {
-      window.location = 'animalsForm.html?id='+idTargetAnimal(e);
+      window.location = 'animalsForm.html?idAnimal=' + targetAnimal(e).idanimal;
     };
     borrar.type = 'button';
     borrar.value = 'borrar';
     borrar.onclick = (e) => {
-      console.log(idTargetAnimal(e));
+      let aceptar = window.confirm('Esta seguro de que desea borrar a ' +
+        targetAnimal(e).nomAnimal);
+
+      if (aceptar)deleteAnimal();
     };
 
     nombre.textContent = datos[i].nomAnimal;
@@ -58,7 +69,7 @@ function createTable() {
 
     tabla.appendChild(fila);
   }
-  document.body.appendChild(tabla);
+  document.getElementById('tablaDiv').appendChild(tabla);
 }
 
 // const xhttp = new XMLHttpRequest();
@@ -88,6 +99,10 @@ async function init() {
   datos = await fetchDatos.json();
   createTable();
 }
+
+document.getElementById('new').addEventListener('click', () => {
+  window.location = 'animalsForm.html';
+});
 
 init();
 
