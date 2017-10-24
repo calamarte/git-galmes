@@ -16,14 +16,7 @@ function targetAnimal(input) {
   return animals[input.target.parentNode
     .parentNode.rowIndex - 1];
 }
-//
-// function deleteAnimal() {
-//
-// }
-//
-// function getTractaments () {
-//
-// }
+
 
 async function deleteAnimal(idAnimal) {
   let trataminetosBorrados = [];
@@ -35,10 +28,11 @@ async function deleteAnimal(idAnimal) {
 
   console.log(estosTratamientos);
   for (let i = 0; i < estosTratamientos.length; i += 1) {
-    trataminetosBorrados.push(await deleteTratamiento(estosTratamientos[i].idtractament));
+    trataminetosBorrados.
+      push(deleteTratamiento(estosTratamientos[i].idtractament));
   }
 
-   Promise.all(trataminetosBorrados).then(async() => {
+   await Promise.all(trataminetosBorrados).then(async() => {
     let deleteAnimalFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
       method: 'post',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -49,12 +43,15 @@ async function deleteAnimal(idAnimal) {
         }
       })
     });
-    // console.log(await deleteAnimalFetch.json());
   }
   );
 }
 
 function createTable() {
+  if(document.getElementById('tabla')){
+    document.getElementById('tablaDiv')
+    .removeChild(document.getElementById("tabla"));
+  }
   const tabla = document.createElement('table');
   tabla.id = 'tabla';
   tabla.appendChild(createHeader());
@@ -83,8 +80,6 @@ function createTable() {
 
       if (aceptar){
         await deleteAnimal(targetAnimal(e).idanimal);
-        document.getElementById('tablaDiv')
-        .removeChild(document.getElementById("tabla"));
 
         init();
       }
@@ -109,20 +104,6 @@ function createTable() {
   document.getElementById('tablaDiv').appendChild(tabla);
 }
 
-// const xhttp = new XMLHttpRequest();
-// xhttp.onreadystatechange = function () {
-//   if (this.readyState === 4 && this.status === 200) {
-//     animals = JSON.parse(this.responseText);
-//     console.log(animals);
-//     createTable();
-//   }
-// };
-//
-// xhttp.open('POST', 'http://35.194.72.13/vetplus/serveis.php', true);
-// xhttp.send(JSON.stringify({
-//   MethodName: 'getAnimals',
-//   params: ''
-// }));
 
 async function init() {
   const fetchDatos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
@@ -166,6 +147,10 @@ async function getTratamientos() {
 
 document.getElementById('new').addEventListener('click', () => {
   window.location = 'animalsForm.html';
+});
+
+document.getElementById('refresh').addEventListener('click', () => {
+  init();
 });
 
 init();
