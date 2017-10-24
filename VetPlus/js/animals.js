@@ -1,4 +1,6 @@
-let datos = [];
+let animals = [];
+let tratamientos = [];
+
 function createHeader() {
   const cabeceras = ['Nom', 'Sexe', 'Numero de registre', 'Espècie', 'Opcions'];
   const fila = document.createElement('tr');
@@ -11,7 +13,7 @@ function createHeader() {
 }
 
 function targetAnimal(input) {
-  return datos[input.target.parentNode
+  return animals[input.target.parentNode
     .parentNode.rowIndex - 1];
 }
 //
@@ -23,11 +25,40 @@ function targetAnimal(input) {
 //
 // }
 
+async function deleteAnimal(idAnimal) {
+  let trataminetosBorrados = [];
+  await getTratamientos();
+
+  let estosTratamientos = tratamientos.filter((tratamiento) => {
+    return tratamiento.animal_idanimal === idAnimal;
+  });
+
+  console.log(estosTratamientos);
+  for (let i = 0; i < estosTratamientos.length; i += 1) {
+    trataminetosBorrados.push(await deleteTratamiento(estosTratamientos[i].idtractament));
+  }
+
+   Promise.all(trataminetosBorrados).then(async() => {
+    let deleteAnimalFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: JSON.stringify({
+        MethodName: 'deleteAnimal',
+        params: {
+          id: idAnimal
+        }
+      })
+    });
+    // console.log(await deleteAnimalFetch.json());
+  }
+  );
+}
+
 function createTable() {
   const tabla = document.createElement('table');
   tabla.id = 'tabla';
   tabla.appendChild(createHeader());
-  for (let i = 0; i < datos.length; i += 1) {
+  for (let i = 0; i < animals.length; i += 1) {
     const fila = document.createElement('tr');
 
     const nombre = document.createElement('td');
@@ -46,18 +77,24 @@ function createTable() {
     };
     borrar.type = 'button';
     borrar.value = 'borrar';
-    borrar.onclick = (e) => {
+    borrar.onclick = async (e) => {
       let aceptar = window.confirm('Esta seguro de que desea borrar a ' +
         targetAnimal(e).nomAnimal);
 
-      if (aceptar)deleteAnimal();
+      if (aceptar){
+        await deleteAnimal(targetAnimal(e).idanimal);
+        document.getElementById('tablaDiv')
+        .removeChild(document.getElementById("tabla"));
+
+        init();
+      }
     };
 
-    nombre.textContent = datos[i].nomAnimal;
-    sexo.textContent = datos[i].sexe;
-    if (datos[i].numregistre)num.textContent = datos[i].numregistre;
+    nombre.textContent = animals[i].nomAnimal;
+    sexo.textContent = animals[i].sexe;
+    if (animals[i].numregistre)num.textContent = animals[i].numregistre;
     else num.textContent = 'Sense número';
-    especie.textContent = datos[i].nomTipus;
+    especie.textContent = animals[i].nomTipus;
     botones.appendChild(editar);
     botones.appendChild(borrar);
 
@@ -75,8 +112,8 @@ function createTable() {
 // const xhttp = new XMLHttpRequest();
 // xhttp.onreadystatechange = function () {
 //   if (this.readyState === 4 && this.status === 200) {
-//     datos = JSON.parse(this.responseText);
-//     console.log(datos);
+//     animals = JSON.parse(this.responseText);
+//     console.log(animals);
 //     createTable();
 //   }
 // };
@@ -96,9 +133,36 @@ async function init() {
       params: ''
     })
   });
-  datos = await fetchDatos.json();
+  animals = await fetchDatos.json();
   createTable();
 }
+
+async function deleteTratamiento(idTratamiento) {
+  let deleteTratamientoFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify({
+      MethodName: 'deleteTractament',
+      params: {
+        id: idTratamiento
+      }
+    })
+  });
+  // console.log(await deleteTratamientoFetch.json());
+}
+
+async function getTratamientos() {
+  const fetchTratamientos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify({
+      MethodName: 'getTractaments',
+      params: ''
+    })
+  });
+  tratamientos = await fetchTratamientos.json();
+}
+
 
 document.getElementById('new').addEventListener('click', () => {
   window.location = 'animalsForm.html';

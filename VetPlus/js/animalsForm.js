@@ -102,10 +102,10 @@ async function insertAnimal() {
   if (await fetchInsert.json()) alert('Insertado con exito');
 }
 
+
 document.getElementById('enviar').addEventListener('click', (e) => {
   e.preventDefault();
-  let resultado;
-  if (document.getElementById('nombre').value !== null) {
+  if (document.getElementById('nombre').value) {
     if (idAnimal)updateAnimal(); // No hace falta esperar
     else insertAnimal();
   }
