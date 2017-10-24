@@ -1,5 +1,4 @@
-let animals = [];
-let tratamientos = [];
+
 
 function createHeader() {
   const cabeceras = ['Nom', 'Sexe', 'Numero de registre', 'Espècie', 'Opcions'];
@@ -15,36 +14,6 @@ function createHeader() {
 function targetAnimal(input) {
   return animals[input.target.parentNode
     .parentNode.rowIndex - 1];
-}
-
-
-async function deleteAnimal(idAnimal) {
-  let trataminetosBorrados = [];
-  await getTratamientos();
-
-  let estosTratamientos = tratamientos.filter((tratamiento) => {
-    return tratamiento.animal_idanimal === idAnimal;
-  });
-
-  console.log(estosTratamientos);
-  for (let i = 0; i < estosTratamientos.length; i += 1) {
-    trataminetosBorrados.
-      push(deleteTratamiento(estosTratamientos[i].idtractament));
-  }
-
-   await Promise.all(trataminetosBorrados).then(async() => {
-    let deleteAnimalFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
-      method: 'post',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: JSON.stringify({
-        MethodName: 'deleteAnimal',
-        params: {
-          id: idAnimal
-        }
-      })
-    });
-  }
-  );
 }
 
 function createTable() {
@@ -104,46 +73,10 @@ function createTable() {
   document.getElementById('tablaDiv').appendChild(tabla);
 }
 
-
 async function init() {
-  const fetchDatos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
-    method: 'post',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: JSON.stringify({
-      MethodName: 'getAnimals',
-      params: ''
-    })
-  });
-  animals = await fetchDatos.json();
+  await getAnimals()
   createTable();
 }
-
-async function deleteTratamiento(idTratamiento) {
-  let deleteTratamientoFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
-    method: 'post',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: JSON.stringify({
-      MethodName: 'deleteTractament',
-      params: {
-        id: idTratamiento
-      }
-    })
-  });
-  // console.log(await deleteTratamientoFetch.json());
-}
-
-async function getTratamientos() {
-  const fetchTratamientos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
-    method: 'post',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: JSON.stringify({
-      MethodName: 'getTractaments',
-      params: ''
-    })
-  });
-  tratamientos = await fetchTratamientos.json();
-}
-
 
 document.getElementById('new').addEventListener('click', () => {
   window.location = 'animalsForm.html';
