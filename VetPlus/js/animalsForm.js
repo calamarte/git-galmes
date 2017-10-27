@@ -10,8 +10,10 @@ function searchEspecieIndex(especie) {
 async function animalOnForm() {
   const animal = await getAnimalById();
   document.getElementById('nombre').value = animal.nomAnimal;
+
   if (animal.sexe === 'MASC')document.getElementById('m').checked = true;
   else document.getElementById('m').checked = false;
+
   document.getElementById('numRegistro').value = animal.numregistre;
   document.getElementById('especie')
     .selectedIndex = searchEspecieIndex(animal.nomTipus);
@@ -39,6 +41,7 @@ async function init() {
 document.getElementById('enviar').addEventListener('click', (e) => {
   e.preventDefault();
   if (document.getElementById('nombre').value) {
+    console.log('Error 400');
     if (idAnimal)updateAnimal(); // No hace falta esperar
     else insertAnimal();
   }

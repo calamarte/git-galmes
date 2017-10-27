@@ -2,8 +2,9 @@ let animals = [];
 let tratamientos = [];
 let especies = [];
 let idAnimal = false;
+let idTractament = false;
 
-async function getTratamientos() {
+async function getTractaments() {
   const fetchTratamientos = await fetch('http://35.194.72.13/vetplus/serveis.php', {
     method: 'post',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -43,7 +44,7 @@ async function getAnimals() {
 
 async function deleteAnimal(idAnimal) {
   let trataminetosBorrados = [];
-  await getTratamientos();
+  await getTractaments();
 
   let estosTratamientos = tratamientos.filter((tratamiento) => {
     return tratamiento.animal_idanimal === idAnimal;
@@ -56,7 +57,7 @@ async function deleteAnimal(idAnimal) {
   }
 
   await Promise.all(trataminetosBorrados).then(async() => {
-      let deleteAnimalFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+      await fetch('http://35.194.72.13/vetplus/serveis.php', {
         method: 'post',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: JSON.stringify({
@@ -132,4 +133,18 @@ async function getTipus() {
     })
   });
   especies = await fetchOptions.json();
+}
+
+async function getTrcatamentById() {
+  const fetchTractament = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body:JSON.stringify({
+      MethodName: 'getTractamentById',
+      params: {
+        id: '' + idTractament
+      }
+    })
+  });
+  return fetchTractament.json();
 }

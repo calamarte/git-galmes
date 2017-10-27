@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<form action="" id="form">
+    <input type="button" id="ahora" value="Ahora">
+    <input type="datetime-local" id="fecha" step="1">
+    <select name="animales" id="animales"></select>
+    <textarea name="text" id="descripcion" cols="30" rows="10" placeholder="Descripció"></textarea>
+    <input type="submit" id="enviar">
+</form>
+<script type="text/javascript" src="js/database.js"></script>
+<script type="text/javascript" src="js/tractamentForm.js"></script>
 </body>
 </html>

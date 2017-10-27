@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #tt{
+            width: 900px;
+            height: 900px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<img src="img/andalucia.png" draggable="true" ondrop="drop(e)" ondragover="allowDrop()" >
+<img src="img/catalunya.png" draggable="true">
+<img src="img/castellalamanxa.png" draggable="true">
+<img src="img/galicia.png" draggable="true">
+<div id="tt"></div>
+</body>
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+</script>
+</html>

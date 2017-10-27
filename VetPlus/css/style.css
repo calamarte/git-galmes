@@ -47,9 +47,7 @@ body{
     color: aliceblue;
 }
 
-/*#tablaDiv{*/
-    /*height: auto;*/
-/*}*/
+
 
 #tabla{
     /*border-radius: 20px;*/
@@ -75,6 +73,24 @@ body{
     background-color: #01579B;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.border, .border td, .border th{
+    padding-left: 10px;
+    padding-right: 10px;
+    border:1px solid black;
+}
+
+.border input{
+    float: left;
+    padding: 0;
+    margin-left: 0;
+    width: 100px;
+    height: 40px;
+}
+
+.border tr:nth-child(2){
+    background-color: #006064;
 }
 
 
