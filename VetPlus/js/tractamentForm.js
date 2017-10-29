@@ -42,8 +42,6 @@ document.getElementById('ahora').addEventListener('click', (e) =>{
     ahora = setInterval(() => {
     let now = new Date();
     let arrayData = now.toString().split(' ');
-    console.log(arrayData[3] + '-' + (now.getMonth() + 1) +
-      '-'+  arrayData[2] +'T'+ arrayData[4]);
 
     document.getElementById('fecha').value = arrayData[3] + '-' + (now.getMonth() + 1) +
       '-'+  arrayData[2] +'T'+ arrayData[4];
@@ -53,5 +51,13 @@ document.getElementById('ahora').addEventListener('click', (e) =>{
     e.target.value = 'Ahora';
     document.getElementById('fecha').value = null;
     ahora = null;
+  }
+});
+
+document.getElementById('enviar').addEventListener('click', (e) => {
+  e.preventDefault();
+  if (document.getElementById('descripcion').value || document.getElementById('fecha').value) {
+    if (idTractament)updateTractament(); // No hace falta esperar
+    else insertTractament();
   }
 });

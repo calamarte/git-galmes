@@ -16,8 +16,8 @@ async function getTractaments() {
   tratamientos = await fetchTratamientos.json();
 }
 
-async function deleteTratamiento(idTratamiento) {
-  let deleteTratamientoFetch = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+async function deleteTractament(idTratamiento) {
+  await fetch('http://35.194.72.13/vetplus/serveis.php', {
     method: 'post',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: JSON.stringify({
@@ -27,7 +27,6 @@ async function deleteTratamiento(idTratamiento) {
       }
     })
   });
-  // console.log(await deleteTratamientoFetch.json());
 }
 
 async function getAnimals() {
@@ -43,20 +42,19 @@ async function getAnimals() {
 }
 
 async function deleteAnimal(idAnimal) {
-  let trataminetosBorrados = [];
+  let tratamientosBorrados = [];
   await getTractaments();
 
   let estosTratamientos = tratamientos.filter((tratamiento) => {
     return tratamiento.animal_idanimal === idAnimal;
   });
 
-  console.log(estosTratamientos);
   for (let i = 0; i < estosTratamientos.length; i += 1) {
-    trataminetosBorrados.
-      push(deleteTratamiento(estosTratamientos[i].idtractament));
+    tratamientosBorrados.
+      push(deleteTractament(estosTratamientos[i].idtractament));
   }
 
-  await Promise.all(trataminetosBorrados).then(async() => {
+  await Promise.all(tratamientosBorrados).then(async() => {
       await fetch('http://35.194.72.13/vetplus/serveis.php', {
         method: 'post',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -72,7 +70,7 @@ async function deleteAnimal(idAnimal) {
 }
 
 async function updateAnimal() {
-  let fetchUpdate = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+  await fetch('http://35.194.72.13/vetplus/serveis.php', {
     method: 'post',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: JSON.stringify({
@@ -88,7 +86,6 @@ async function updateAnimal() {
     })
   });
   alert('Actualizado con exito');
-  // console.log(await fetchUpdate.json());
 }
 
 async function insertAnimal() {
@@ -107,6 +104,39 @@ async function insertAnimal() {
     })
   });
   if (await fetchInsert.json()) alert('Insertado con exito');
+}
+
+async function insertTractament(){
+  let fetchInsert = await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify({
+      MethodName: 'insertTractament',
+      params: {
+        descripcio: document.getElementById('descripcion').value,
+        idanimal: animals[document.getElementById('animales').selectedIndex].idanimal,
+        data: document.getElementById('fecha').value,
+      }
+    })
+  });
+  if (await fetchInsert.json())alert('Insertado con exito');
+}
+
+async function updateTractament() {
+  await fetch('http://35.194.72.13/vetplus/serveis.php', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: JSON.stringify({
+      MethodName: 'updateTractament',
+      params: {
+        id: idTractament,
+        descripcio: document.getElementById('descripcion').value,
+        idanimal: animals[document.getElementById('animales').selectedIndex].idanimal,
+        data: document.getElementById('fecha').value,
+      }
+    })
+  });
+  alert('Actualizado con exito');
 }
 
 async function getAnimalById() {

@@ -50,55 +50,37 @@ function createTable() {
   tabla.appendChild(createHeader2());
 
   for (let i = 0; i < animals.length; i += 1){
-    let  fila = document.createElement('tr');
     let animal = animals[i];
     let estosTratamientos = tratamientos.filter((tratamiento)=>{
         return tratamiento.animal_idanimal === animal.idanimal
     });
-    console.log(animal.idanimal);
-    console.log(estosTratamientos);
 
-    let nombreAnimal = document.createElement('td');
-    nombreAnimal.rowSpan = '' + (estosTratamientos.length + 1);
-    nombreAnimal.textContent = animal.nomAnimal;
 
-    fila.appendChild(nombreAnimal);
+    if (estosTratamientos.length >= 1) {
+      let  fila = document.createElement('tr');
+      let nombreAnimal = document.createElement('td');
+      nombreAnimal.rowSpan = '' + (estosTratamientos.length + 1);
+      nombreAnimal.textContent = animal.nomAnimal;
 
-    let numeroRegistro = document.createElement('td');
-    numeroRegistro.rowSpan = '' + (estosTratamientos.length + 1);
-    if (animal.numregistre) {
-      numeroRegistro.textContent = animal.numregistre;
-    }else numeroRegistro.textContent = 'Sense numero';
+      fila.appendChild(nombreAnimal);
 
-    fila.appendChild(numeroRegistro);
+      let numeroRegistro = document.createElement('td');
+      numeroRegistro.rowSpan = '' + (estosTratamientos.length + 1);
+      if (animal.numregistre) {
+        numeroRegistro.textContent = animal.numregistre;
+      } else numeroRegistro.textContent = 'Sense numero';
 
-    let especie = document.createElement('td');
-    especie.rowSpan = '' + (estosTratamientos.length + 1);
-    especie.textContent = animal.nomTipus;
+      fila.appendChild(numeroRegistro);
 
-    fila.appendChild(especie);
+      let especie = document.createElement('td');
+      especie.rowSpan = '' + (estosTratamientos.length + 1);
+      especie.textContent = animal.nomTipus;
 
-    tabla.appendChild(fila);
+      fila.appendChild(especie);
 
-    if (estosTratamientos.length === 0){
-
-      let no = document.createElement('td');
-      no.textContent = 'No';
-
-      fila.appendChild(no);
-
-      let hiHa = document.createElement('td');
-      hiHa.textContent = 'hi ha';
-
-      fila.appendChild(hiHa);
-
-      let tractamentss = document.createElement('td');
-      tractamentss.textContent = 'tractaments';
-
-      fila.appendChild(tractamentss);
+      tabla.appendChild(fila);
     }
 
-    tabla.appendChild(fila);
 
     for (let k = 0; k < estosTratamientos.length; k += 1) {
         let filaTratamientos = document.createElement('tr');
@@ -129,7 +111,7 @@ function createTable() {
             ' este tratamiento');
 
           if (aceptar){
-            await deleteTratamiento(e.target.parentNode.id);
+            await deleteTractament(e.target.parentNode.id);
 
             init();
           }
@@ -150,4 +132,7 @@ document.getElementById('refresh').addEventListener('click', () => {
   init();
 });
 
+document.getElementById('new').addEventListener('click', () => {
+  window.location = 'tractamentForm.html';
+});
 init();
