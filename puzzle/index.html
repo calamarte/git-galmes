@@ -9,14 +9,25 @@
             height: 900px;
             background-color: red;
         }
+        #anda:hover{
+            cursor: cell;
+        }
     </style>
 </head>
 <body>
-<img src="img/andalucia.png" draggable="true" ondrop="drop(e)" ondragover="allowDrop()" >
-<img src="img/catalunya.png" draggable="true">
-<img src="img/castellalamanxa.png" draggable="true">
-<img src="img/galicia.png" draggable="true">
-<div id="tt"></div>
+<img id="an-dalucia" src="img/andalucia.png" draggable="true" ondragstart="drag(event)" >
+<img id="cat-alunya" src="img/catalunya.png" draggable="true" ondragstart="drag(event)">
+<img id="cast-ellalamanxa" src="img/castellalamanxa.png" draggable="true" ondragstart="drag(event)">
+<img id="gal-icia" src="img/galicia.png" draggable="true" ondragstart="drag(event)">
+<!--<div id="tt" ondrop="drop(event)" ondragover="allowDrop(event)"></div>-->
+
+<img id="esp" src="img/espana.gif" alt="" usemap="#espana"/>
+<map name="espana" id="Map" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <area id="an" alt="andalucia" title="" href="#" shape="poly" coords="425,640,539,615,583,581,794,601,877,739,801,813,644,821,550,872,473,843,378,751,377,662" />
+    <area id="cat" alt="catalunya" title="" href="#" shape="poly" coords="1054,386,1169,316,1250,259,1295,222,1275,162,1162,156,1118,123,1055,108,1046,228,1023,296,1019,335,1034,379" />
+    <area id="gal" alt="galicia" title="" href="#" shape="poly" coords="429,225,440,153,416,45,373,10,289,25,292,58,243,61,215,93,234,156,250,214,254,257,386,251" />
+    <area id="cast" alt="castellalamanxa" title="" href="#" shape="poly" coords="642,628,581,531,554,465,556,422,624,411,665,412,710,433,734,402,706,342,712,316,712,297,774,291,793,300,811,315,859,307,874,342,892,379,875,399,896,423,911,450,911,474,905,497,919,538,936,576,918,600,900,620,865,630,839,644,810,660,753,629" />
+</map>
 </body>
 <script>
   function allowDrop(ev) {
@@ -28,9 +39,12 @@
   }
 
   function drop(ev) {
+    console.log(ev.target.id);
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    var area = data.split('-');
+    console.log(area[0]);
+    document.getElementById(area[0]).appendChild(document.getElementById(data));
   }
 </script>
 </html>

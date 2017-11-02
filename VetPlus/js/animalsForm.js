@@ -41,7 +41,6 @@ async function init() {
 document.getElementById('enviar').addEventListener('click', (e) => {
   e.preventDefault();
   if (document.getElementById('nombre').value) {
-    console.log('Error 400');
     if (idAnimal)updateAnimal(); // No hace falta esperar
     else insertAnimal();
   }

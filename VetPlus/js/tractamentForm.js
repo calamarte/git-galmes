@@ -9,7 +9,6 @@ function searchAnimalIndex(animal) {
 
 async function tractamentOnForm () {
   const tractament = await getTrcatamentById();
-  console.log(tractament);
   document.getElementById('fecha').value = tractament.data.replace(' ','T');
 
   document.getElementById('animales')
