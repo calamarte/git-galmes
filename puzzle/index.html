@@ -14,13 +14,7 @@
             z-index: 0;
             position: absolute;
         }
-        /*#gal-icia{*/
-            /*z-index: 10;*/
-        /*}*/
 
-        /*#anda:hover{*/
-            /*cursor: cell;*/
-        /*}*/
     </style>
 </head>
 <body>
@@ -39,7 +33,15 @@
 </map>
 </body>
 <script>
-    let index = 3;
+  let index = 1;
+
+//  function init() {
+//    if (localStorage.getItem('comunidades')){
+//        let comunidadesOnMap = localStorage.getItem('comunidades');
+//
+//    }
+//  }
+
   function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -50,77 +52,43 @@
 
   function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    var area = data.split('-');
-    console.log(area[0]);
-    let tal = document.getElementById('esp');
-    let otroTal = document.getElementById(data);
+    let data = ev.dataTransfer.getData("text");
+    let area = data.split('-');
+    if (ev.target.id === area[0])drawOnMap(data);
+  }
 
+  function drawOnMap(targetId) {
+    let target = document.getElementById(targetId);
+    document.getElementById('tt').appendChild(target);
 
-    document.getElementById('tt').appendChild(otroTal);
-
-    switch (data){
+    switch (targetId){
       case 'an-dalucia':
-        otroTal.style.left = 370 + 'px';
-        otroTal.style.top = 580 + 'px';
+        target.style.left = 370 + 'px';
+        target.style.top = 580 + 'px';
         break;
       case 'cat-alunya':
-        otroTal.style.left = 1020 + 'px';
-        otroTal.style.top = 120 + 'px';
+        target.style.left = 1020 + 'px';
+        target.style.top = 120 + 'px';
         break;
       case 'cast-ellalamanxa':
-        otroTal.style.left = 550 + 'px';
-        otroTal.style.top = 295 + 'px';
+        target.style.left = 550 + 'px';
+        target.style.top = 295 + 'px';
         break;
       case 'gal-icia':
-        otroTal.style.left = 220 + 'px';
-        otroTal.style.top = 13 + 'px';
+        target.style.left = 220 + 'px';
+        target.style.top = 13 + 'px';
         break;
     }
 
-
-    otroTal.style.position = 'absolute';
-    otroTal.style.zIndex = '' + index;
+    target.style.position = 'absolute';
+    target.style.zIndex = '' + index;
     index++;
+  }
 
-//    otroTal.style.margin.width = '330px';
-//    otroTal.style.margin.top = '330px';
+  function createStorage() {
 
   }
 
-  function drawOnMap(target) {
 
-  }
-
-  document.getElementById('esp').addEventListener('click', (e)=>{
-    console.log(e.clientX + " " + e.clientY);
-  });
-
-//  function getCenter(coords) {
-//    var coordsArray = coords.split(','),
-//      center = [];
-//
-//    var coord,
-//      minX = maxX = parseInt(coordsArray[0], 10),
-//      minY = maxY = parseInt(coordsArray[1], 10);
-//    for (var i = 0, l = coordsArray.length; i < l; i++) {
-//      coord = parseInt(coordsArray[i], 10);
-//      if (i % 2 == 0) { // Even values are X coordinates
-//        if (coord < minX) {
-//          minX = coord;
-//        } else if (coord > maxX) {
-//          maxX = coord;
-//        }
-//      } else { // Odd values are Y coordinates
-//        if (coord < minY) {
-//          minY = coord;
-//        } else if (coord > maxY) {
-//          maxY = coord;
-//        }
-//      }
-//    }
-//    center = [parseInt((minX + maxX) / 2, 10), parseInt((minY + maxY) / 2, 10)];
-//    return(center);
-//  }
 </script>
 </html>
