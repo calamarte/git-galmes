@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #tt{
-            width: 900px;
-            height: 900px;
-            background-color: red;
+        .relative{
+            position: relative;
+            width:1388px;
+            height: 972px;
         }
-        #anda:hover{
-            cursor: cell;
+
+        #esp{
+            z-index: 0;
+            position: absolute;
         }
+        /*#gal-icia{*/
+            /*z-index: 10;*/
+        /*}*/
+
+        /*#anda:hover{*/
+            /*cursor: cell;*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -19,9 +28,9 @@
 <img id="cat-alunya" src="img/catalunya.png" draggable="true" ondragstart="drag(event)">
 <img id="cast-ellalamanxa" src="img/castellalamanxa.png" draggable="true" ondragstart="drag(event)">
 <img id="gal-icia" src="img/galicia.png" draggable="true" ondragstart="drag(event)">
-<!--<div id="tt" ondrop="drop(event)" ondragover="allowDrop(event)"></div>-->
-
+<div id="tt" class="relative">
 <img id="esp" src="img/espana.gif" alt="" usemap="#espana"/>
+</div>
 <map name="espana" id="Map" ondrop="drop(event)" ondragover="allowDrop(event)">
     <area id="an" alt="andalucia" title="" href="#" shape="poly" coords="425,640,539,615,583,581,794,601,877,739,801,813,644,821,550,872,473,843,378,751,377,662" />
     <area id="cat" alt="catalunya" title="" href="#" shape="poly" coords="1054,386,1169,316,1250,259,1295,222,1275,162,1162,156,1118,123,1055,108,1046,228,1023,296,1019,335,1034,379" />
@@ -30,6 +39,7 @@
 </map>
 </body>
 <script>
+    let index = 3;
   function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -39,12 +49,78 @@
   }
 
   function drop(ev) {
-    console.log(ev.target.id);
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     var area = data.split('-');
     console.log(area[0]);
-    document.getElementById(area[0]).appendChild(document.getElementById(data));
+    let tal = document.getElementById('esp');
+    let otroTal = document.getElementById(data);
+
+
+    document.getElementById('tt').appendChild(otroTal);
+
+    switch (data){
+      case 'an-dalucia':
+        otroTal.style.left = 370 + 'px';
+        otroTal.style.top = 580 + 'px';
+        break;
+      case 'cat-alunya':
+        otroTal.style.left = 1020 + 'px';
+        otroTal.style.top = 120 + 'px';
+        break;
+      case 'cast-ellalamanxa':
+        otroTal.style.left = 550 + 'px';
+        otroTal.style.top = 295 + 'px';
+        break;
+      case 'gal-icia':
+        otroTal.style.left = 220 + 'px';
+        otroTal.style.top = 13 + 'px';
+        break;
+    }
+
+
+    otroTal.style.position = 'absolute';
+    otroTal.style.zIndex = '' + index;
+    index++;
+
+//    otroTal.style.margin.width = '330px';
+//    otroTal.style.margin.top = '330px';
+
   }
+
+  function drawOnMap(target) {
+
+  }
+
+  document.getElementById('esp').addEventListener('click', (e)=>{
+    console.log(e.clientX + " " + e.clientY);
+  });
+
+//  function getCenter(coords) {
+//    var coordsArray = coords.split(','),
+//      center = [];
+//
+//    var coord,
+//      minX = maxX = parseInt(coordsArray[0], 10),
+//      minY = maxY = parseInt(coordsArray[1], 10);
+//    for (var i = 0, l = coordsArray.length; i < l; i++) {
+//      coord = parseInt(coordsArray[i], 10);
+//      if (i % 2 == 0) { // Even values are X coordinates
+//        if (coord < minX) {
+//          minX = coord;
+//        } else if (coord > maxX) {
+//          maxX = coord;
+//        }
+//      } else { // Odd values are Y coordinates
+//        if (coord < minY) {
+//          minY = coord;
+//        } else if (coord > maxY) {
+//          maxY = coord;
+//        }
+//      }
+//    }
+//    center = [parseInt((minX + maxX) / 2, 10), parseInt((minY + maxY) / 2, 10)];
+//    return(center);
+//  }
 </script>
 </html>
