@@ -20,13 +20,17 @@
 <body>
 <input type="button" value="difícil" id="dificultad">
 <input type="button" value="reiniciar" id="restart">
+
+
+<div id="box" class="relative">
+<img id="esp" src="img/espana.gif" alt="" usemap="#espana"/>
+</div>
+
 <img id="an-dalucia" src="img/andalucia.png" draggable="true" ondragstart="drag(event)" >
 <img id="cat-alunya" src="img/catalunya.png" draggable="true" ondragstart="drag(event)">
 <img id="cast-ellalamanxa" src="img/castellalamanxa.png" draggable="true" ondragstart="drag(event)">
 <img id="gal-icia" src="img/galicia.png" draggable="true" ondragstart="drag(event)">
-<div id="tt" class="relative">
-<img id="esp" src="img/espana.gif" alt="" usemap="#espana"/>
-</div>
+
 <map name="espana" id="Map" ondrop="drop(event)" ondragover="allowDrop(event)">
     <area id="an" alt="andalucia" title="" href="#" shape="poly" coords="425,640,539,615,583,581,794,601,877,739,801,813,644,821,550,872,473,843,378,751,377,662" />
     <area id="cat" alt="catalunya" title="" href="#" shape="poly" coords="1054,386,1169,316,1250,259,1295,222,1275,162,1162,156,1118,123,1055,108,1046,228,1023,296,1019,335,1034,379" />
@@ -62,7 +66,7 @@
   function drawOnMap(targetId) {
     console.log(targetId);
     let target = document.getElementById(targetId);
-    document.getElementById('tt').appendChild(target);
+    document.getElementById('box').appendChild(target);
 
     switch (targetId){
       case 'an-dalucia':
@@ -103,8 +107,24 @@
   });
 
   document.getElementById('restart').addEventListener('click',()=>{
+    document.body.appendChild(document.getElementById('an-dalucia'));
+    restartStyle('an-dalucia');
+    document.body.appendChild(document.getElementById('cat-alunya'));
+    restartStyle('cat-alunya');
+    document.body.appendChild(document.getElementById('cast-ellalamanxa'));
+    restartStyle('cast-ellalamanxa');
+    document.body.appendChild(document.getElementById('gal-icia'));
+    restartStyle('gal-icia');
+
     localStorage.clear();
   });
+
+  function restartStyle(id){
+    let target = document.getElementById(id);
+    target.style.position = 'static';
+    target.style.left = 0;
+    target.style.top = 0;
+  }
 
 init();
 </script>
