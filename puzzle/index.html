@@ -35,12 +35,13 @@
 <script>
   let index = 1;
 
-//  function init() {
-//    if (localStorage.getItem('comunidades')){
-//        let comunidadesOnMap = localStorage.getItem('comunidades');
-//
-//    }
-//  }
+  function init() {
+    if (localStorage.getItem('catalunya'))drawOnMap(localStorage.getItem('catalunya'));
+    if (localStorage.getItem('andalucia'))drawOnMap(localStorage.getItem('andalucia'));
+    if (localStorage.getItem('castellalamanxa'))drawOnMap(localStorage.getItem('castellalamanxa'));
+    if (localStorage.getItem('galicia'))drawOnMap(localStorage.getItem('galicia'));
+
+  }
 
   function allowDrop(ev) {
     ev.preventDefault();
@@ -58,6 +59,7 @@
   }
 
   function drawOnMap(targetId) {
+    console.log(targetId);
     let target = document.getElementById(targetId);
     document.getElementById('tt').appendChild(target);
 
@@ -65,30 +67,29 @@
       case 'an-dalucia':
         target.style.left = 370 + 'px';
         target.style.top = 580 + 'px';
+        localStorage.setItem('andalucia',targetId);
         break;
       case 'cat-alunya':
         target.style.left = 1020 + 'px';
         target.style.top = 120 + 'px';
+        localStorage.setItem('catalunya',targetId);
         break;
       case 'cast-ellalamanxa':
         target.style.left = 550 + 'px';
         target.style.top = 295 + 'px';
+        localStorage.setItem('castellalamanxa',targetId);
         break;
       case 'gal-icia':
         target.style.left = 220 + 'px';
         target.style.top = 13 + 'px';
+        localStorage.setItem('galicia',targetId);
         break;
     }
-
     target.style.position = 'absolute';
     target.style.zIndex = '' + index;
     index++;
   }
 
-  function createStorage() {
-
-  }
-
-
+init();
 </script>
 </html>
