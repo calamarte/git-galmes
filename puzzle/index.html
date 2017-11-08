@@ -18,6 +18,8 @@
     </style>
 </head>
 <body>
+<input type="button" value="difícil" id="dificultad">
+<input type="button" value="reiniciar" id="restart">
 <img id="an-dalucia" src="img/andalucia.png" draggable="true" ondragstart="drag(event)" >
 <img id="cat-alunya" src="img/catalunya.png" draggable="true" ondragstart="drag(event)">
 <img id="cast-ellalamanxa" src="img/castellalamanxa.png" draggable="true" ondragstart="drag(event)">
@@ -40,7 +42,6 @@
     if (localStorage.getItem('andalucia'))drawOnMap(localStorage.getItem('andalucia'));
     if (localStorage.getItem('castellalamanxa'))drawOnMap(localStorage.getItem('castellalamanxa'));
     if (localStorage.getItem('galicia'))drawOnMap(localStorage.getItem('galicia'));
-
   }
 
   function allowDrop(ev) {
@@ -89,6 +90,21 @@
     target.style.zIndex = '' + index;
     index++;
   }
+
+  document.getElementById('dificultad').addEventListener('click',(e)=>{
+    let mapa = document.getElementById('esp');
+    if (e.target.value === 'difícil'){
+      mapa.src = 'img/espana2.gif';
+      e.target.value = 'fácil';
+    }else {
+      mapa.src = 'img/espana.gif';
+      e.target.value = 'difícil';
+    }
+  });
+
+  document.getElementById('restart').addEventListener('click',()=>{
+    localStorage.clear();
+  });
 
 init();
 </script>
