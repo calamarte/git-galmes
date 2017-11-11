@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#">
+    <input type="text" placeholder="nombre" id="nombre">
+    <select name="select" id="estados"></select>
+    <select name="select" id="marcas"></select>
+    <input type="submit" id="enviar" value="enviar">
+</form>
+<script>
+    let db;
+    const estados = ['bueno', 'no tan bueno', 'malo', 'basura'];
+    let nextIdMarca = 0;
+    let nextIdJuguete = 0;
+
+
+    function data() {
+     db = openDatabase('juguetes', '1.0', 'data', 2*1024*1024);
+     db.transaction(function (tx){
+
+       tx.executeSql('CREATE TABLE IF NOT EXISTS MARCA (id unique, nombre)');
+       tx.executeSql('CREATE TABLE IF NOT EXISTS JUGUETE (id unique, nombre, estado , marca_id)');
+
+       const marcas = ['PlayBoy' ,'Symba', 'Nerf', 'Lego'];
+       const juguetes = ['revista', 'PlayStation', 'Pepino Gun', 'Lego puerros', 'Tu madre'];
+
+
+       for (let i = 0; i < marcas.length; i++){
+         tx.executeSql('INSERT INTO MARCA VALUES ('+i+',"'+marcas[i]+'")');
+       }
+       nextIdMarca = marcas.length;
+
+       for (let i = 0; i < juguetes.length;i++){
+         tx.executeSql('INSERT INTO JUGUETE VALUES ('+i+', "'+juguetes[i]+'", "'+estados[Math.round(Math.random()*(estados.length -1))]+'", '+Math.round(Math.random()*(marcas.length -1))+')');
+       }
+       nextIdJuguete = juguetes.length;
+
+     });
+   }
+
+   function selectMarcas() {
+     db.transaction(function (tx) {
+       tx.executeSql('SELECT * FROM MARCA',[],function(tx, result){
+         let re = result.rows;
+         let select = document.querySelector('#marcas');
+
+         for (let i = 0; i < re.length;i++){
+           let option = document.createElement('option');
+           option.value = re.item(i).id;
+           option.text = re.item(i).nombre;
+           select.appendChild(option);
+         }
+       });
+//       tx.executeSql('SELECT MAX(id) FROM MARCA'),[],function (tx, result) {
+//         let re = result.rows;
+//         console.log(re.item(0).id);
+//       }
+     });
+   }
+
+   function selectEstados() {
+     let select = document.querySelector('#estados');
+
+     for (let i = 0; i < estados.length;i++){
+       let option = document.createElement('option');
+       option.text = estados[i];
+       select.appendChild(option);
+     }
+   }
+
+    function init () {
+      data();
+      selectMarcas();
+      selectEstados();
+    }
+
+    function insertJugete (nombre, estado, marcaId) {
+      db.transaction((tx)=>{
+        tx.executeSql('INSERT INTO JUGUETE VALUES ('+nextIdJuguete+',"'+nombre+'","'+estado+'",'+marcaId+')');
+        nextIdJuguete++;
+      });
+    }
+
+    document.querySelector('#enviar').addEventListener('click',(e)=>{
+      e.preventDefault();
+    //gizmodo, techCrunch, xataca, xatacaMovil, Clipset, css-tricks, digital-ocean
+      if(document.querySelector('#nombre').value){
+        let nombre = document.querySelector('#nombre').value;
+        let estado = document.getElementById('estados').options[document.getElementById('estados').selectedIndex].text;
+        let marcaId = document.querySelector('#marcas').options[document.querySelector('#marcas').selectedIndex].value;
+
+        insertJugete(nombre,estado,marcaId);
+      }
+    });
+
+    init();
+</script>
+</body>
+</html>
