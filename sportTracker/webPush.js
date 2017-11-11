@@ -8,12 +8,12 @@ w.onmessage = (e)=>{
     Notification.requestPermission(function(status) {  // status is "granted", if accepted by user
       let n = new Notification(e.data.user , {
         body: e.data.message,
-        sound: 'sounds/notification.wav'
-        // icon: '/path/to/icon.png' // optional
+        icon: 'img/muscle.png'
       });
-      n.sound;
-    });
 
+      setTimeout(n.close.bind(n),5000);
+    });
   }
+
 }
 
