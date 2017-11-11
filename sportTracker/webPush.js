@@ -5,7 +5,7 @@ w.onmessage = (e)=>{
   document.getElementById('chat').appendChild(men);
 
   if(window.Notification && Notification.permission !== "denied") {
-    Notification.requestPermission(function(status) {  // status is "granted", if accepted by user
+    Notification.requestPermission(function(status) {
       let n = new Notification(e.data.user , {
         body: e.data.message,
         icon: 'img/muscle.png'

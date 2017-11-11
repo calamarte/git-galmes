@@ -1,6 +1,7 @@
   let source = new EventSource("http://35.194.72.13/pra_SSE.php");
   let ruta;
   let marker;
+
   source.onmessage = function (event) {
     let center = JSON.parse(event.data);
     addOnMap(center);
