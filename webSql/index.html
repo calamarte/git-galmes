@@ -22,6 +22,8 @@
      db = openDatabase('juguetes', '1.0', 'data', 2*1024*1024);
      db.transaction(function (tx){
 
+       tx.executeSql('DROP TABLE IF EXISTS MARCA');
+       tx.executeSql('DROP TABLE IF EXISTS JUGUETE');
        tx.executeSql('CREATE TABLE IF NOT EXISTS MARCA (id unique, nombre)');
        tx.executeSql('CREATE TABLE IF NOT EXISTS JUGUETE (id unique, nombre, estado , marca_id)');
 
@@ -55,10 +57,6 @@
            select.appendChild(option);
          }
        });
-//       tx.executeSql('SELECT MAX(id) FROM MARCA'),[],function (tx, result) {
-//         let re = result.rows;
-//         console.log(re.item(0).id);
-//       }
      });
    }
 
@@ -76,6 +74,7 @@
       data();
       selectMarcas();
       selectEstados();
+      createTable();
     }
 
     function insertJugete (nombre, estado, marcaId) {
@@ -96,6 +95,46 @@
         insertJugete(nombre,estado,marcaId);
       }
     });
+
+    function createTable() {
+      let tabla = document.createElement('table');
+      tabla.id = 'tabla';
+      tabla.appendChild(createHeader());
+
+      document.body.appendChild(tabla);
+
+    }
+
+    function createHeader() {
+      let headers = ['Juguete', 'Estado', 'Marca'];
+      let header = document.createElement('th');
+
+      for(let i = 0; i < headers.length; i++){
+        let celda = document.createElement('td');
+        celda.textContent = headers[i];
+        header.appendChild(celda);
+      }
+
+    return header;
+    }
+
+    function selectForTable() {
+      let row = [];
+      db.transaction(function (tx) {
+        tx.executeSql('SELECT * FROM MARCA,JUGUETE WHERE MARCA.id = JUGUETE.id_marca', [], function (tx, result) {
+          let re = result.rows;
+
+          console.log(re.item(0).nombre);
+//          for (let i = 0; i < re.length; i++){
+//            row.push({
+//              juguete:
+//            });
+//          }
+
+        });
+      });
+      return row;
+    }
 
     init();
 </script>

@@ -1,0 +1,31 @@
+main{
+  @include borde(2px 1px 7px 2px,$color-principal,10px);
+  background-color: $color-principal;
+}
+
+a{
+  color: $color-principal;
+}
+
+a:hover{
+  color: darken($color-principal,25%);
+}
+
+.paragraf, .normal, .resaltat, .deshabilitat {
+  text-indent: 15px;
+  line-break: normal;
+  text-align: justify;
+}
+
+.normal {
+  color: black;
+}
+
+.resaltat {
+  color: $color-principal;
+}
+
+.deshabilitat {
+  color: darken($color-principal,25%);
+
+}

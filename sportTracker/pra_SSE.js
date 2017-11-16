@@ -1,5 +1,6 @@
   let source = new EventSource("http://35.194.72.13/pra_SSE.php");
   let ruta;
+  let map;
   let marker;
 
   source.onmessage = function (event) {
@@ -8,7 +9,6 @@
   }
 
 
-  let map;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.1534493, lng: -3.2222218},
@@ -18,8 +18,9 @@
     });
   }
 
- function addOnMap(poscion) {
-    let latLng = new google.maps.LatLng(poscion.lat, poscion.lon);
+
+ function addOnMap(posicion) {
+    let latLng = new google.maps.LatLng(posicion.lat, posicion.lon);
 
     if (!marker){
       marker = new google.maps.Marker({

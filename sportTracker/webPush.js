@@ -9,7 +9,7 @@ w.onmessage = (e)=>{
       let n = new Notification(e.data.user , {
         body: e.data.message,
         icon: 'img/muscle.png'
-      });
+    });
 
       setTimeout(n.close.bind(n),5000);
     });

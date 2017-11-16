@@ -1,0 +1,5 @@
+footer{
+  @include borde(3px 4px 6px 7px,$color-principal,8px);
+
+  background-color: $color-secundario;
+}

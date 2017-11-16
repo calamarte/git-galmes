@@ -1,0 +1,24 @@
+
+header{
+  height:30px;
+
+  @include borde(2px 5px 3px 8px,$color-principal,1px);
+
+  nav{
+    background-color: white;
+    ul{
+      width: 300px;
+
+      li {
+        color: $color-principal;
+        background-color: $color-secundario;
+      }
+
+      li.active{
+        color: $color-principal25;
+        background-color: $color-secundario;
+      }
+
+    }
+  }
+}

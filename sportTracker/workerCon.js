@@ -3,3 +3,4 @@ setInterval(async ()=>{
   let datos = await fetchDatos.json();
   postMessage(datos);
 },60000);
+

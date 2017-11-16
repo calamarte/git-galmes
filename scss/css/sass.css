@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* 0.5 punts.- Variables */
+/* Color principal */
+/* Color secundari */
+/* Color principal un 25% més obscur */
+/* 0.5 punts.- Mixin */
+/* 0.75 punt- Header- Anidació */
+header {
+  height: 30px;
+  /* Mixin */
+  border-width: 2px 5px 3px 8px;
+  border-color: #2ecc71;
+  border-radius: 1px;
+  /* Fi mixin */
+}
+header nav {
+  background-color: white;
+}
+header nav ul {
+  width: 300px;
+}
+header nav ul li.active {
+  color: #176437;
+  /* Color principal un 25% més obscur */
+  background-color: #27ae60;
+  /* Color secundari */
+}
+header nav ul li {
+  color: #2ecc71;
+  /* Color principal */
+  background-color: #27ae60;
+  /* Color secundari */
+}
+
+/* Final anidació */
+/* Main */
+main {
+  /* Mixin */
+  border-width: 2px 1px 7px 2px;
+  border-color: #2ecc71;
+  border-radius: 10px;
+  /* Fi mixin */
+  background-color: #2ecc71;
+  /* Color principal */
+}
+
+a {
+  color: #2ecc71;
+  /* Color principal */
+}
+
+a:hover {
+  color: #176437;
+  /* Color principal un 25% més obscur */
+}
+
+/* 0.75 punts. Herència */
+.paragraf, .normal, .resaltat, .deshabilitat {
+  text-indent: 15px;
+  line-break: normal;
+  text-align: justify;
+}
+
+.normal {
+  color: black;
+}
+
+.resaltat {
+  color: #2ecc71;
+  /* Color principal */
+}
+
+.deshabilitat {
+  color: #176437;
+  /* Color principal un 25% més obscur */
+}
+
+/* Final herència */
+/* 0.5 punts. Inici bucle per a crear columnes - Farem 20 columnes */
+.col-1 {
+  width: 5%;
+}
+
+.col-2 {
+  width: 10%;
+}
+
+.col-3 {
+  width: 15%;
+}
+
+.col-4 {
+  width: 20%;
+}
+
+.col-5 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 30%;
+}
+
+.col-7 {
+  width: 35%;
+}
+
+.col-8 {
+  width: 40%;
+}
+
+.col-9 {
+  width: 45%;
+}
+
+.col-10 {
+  width: 50%;
+}
+
+.col-11 {
+  width: 55%;
+}
+
+.col-12 {
+  width: 60%;
+}
+
+.col-13 {
+  width: 65%;
+}
+
+.col-14 {
+  width: 70%;
+}
+
+.col-15 {
+  width: 75%;
+}
+
+.col-16 {
+  width: 80%;
+}
+
+.col-17 {
+  width: 85%;
+}
+
+.col-18 {
+  width: 90%;
+}
+
+.col-19 {
+  width: 95%;
+}
+
+.col-20 {
+  width: 100%;
+}
+
+/* Final bucle per a crear columnes */
+footer {
+  /* Mixin */
+  border-width: 3px 4px 6px 7px;
+  border-color: #2ecc71;
+  border-radius: 8px;
+  /* Fi mixin */
+  background-color: #27ae60;
+  /* Color secundari */
+}
+
+/* 0.5 punts. Desglosseu el SASS en 4 arxius: 1 arxiu principal anomenat principal i 4 arxius parcials que continguin el header, el main i el footer */
+
+/*# sourceMappingURL=sass.css.map */
