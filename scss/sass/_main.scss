@@ -11,21 +11,24 @@ a:hover{
   color: darken($color-principal,25%);
 }
 
-.paragraf, .normal, .resaltat, .deshabilitat {
+.comun {
   text-indent: 15px;
   line-break: normal;
   text-align: justify;
 }
 
 .normal {
+  @extend .comun;
   color: black;
 }
 
 .resaltat {
+  @extend .comun;
   color: $color-principal;
 }
 
 .deshabilitat {
+  @extend .comun;
   color: darken($color-principal,25%);
 
 }

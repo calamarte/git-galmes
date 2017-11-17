@@ -101,6 +101,28 @@
       tabla.id = 'tabla';
       tabla.appendChild(createHeader());
 
+      let rows = selectForTable();
+      console.log(rows.length);
+
+//      console.log(rows[i].juguete,rows[i].estado,rows[i].marca);
+      for(let i = 0; i < rows.length;i++){
+        let row = document.createElement('tr');
+
+        let juguete = document.createElement('td');
+        juguete.textContent = rows[i].juguete;
+
+        let estado = document.createElement('td');
+        estado.textContent = rows[i].estado;
+
+        let marca = document.createElement('td');
+        marca.textContent = rows[i].marca;
+
+        row.appendChild(juguete);
+        row.appendChild(estado);
+        row.appendChild(marca);
+        tabla.appendChild(row);
+      }
+
       document.body.appendChild(tabla);
 
     }
@@ -119,21 +141,24 @@
     }
 
     function selectForTable() {
-      let row = [];
+      let rows = [];
+
       db.transaction(function (tx) {
-        tx.executeSql('SELECT * FROM MARCA,JUGUETE WHERE MARCA.id = JUGUETE.id_marca', [], function (tx, result) {
+        tx.executeSql('SELECT M.nombre AS marca_nombre, M.id AS marca_id, estado, J.nombre AS juguete_nombre FROM MARCA M INNER JOIN JUGUETE J ON marca_id=J.marca_id', [], function (tx, result) {
           let re = result.rows;
 
-          console.log(re.item(0).nombre);
-//          for (let i = 0; i < re.length; i++){
-//            row.push({
-//              juguete:
-//            });
-//          }
-
+          for (let i = 0; i < re.length; i++){
+            console.log(re.item(i).juguete_nombre);
+            rows.push({
+              juguete: re.item(i).juguete_nombre,
+              estado: re.item(i).estado,
+              marca: re.item(i).marca_nombre
+            });
+          }
         });
       });
-      return row;
+
+      return rows;
     }
 
     init();
