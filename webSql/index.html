@@ -13,7 +13,7 @@
 </form>
 <script>
     let db;
-    const estados = ['bueno', 'no tan bueno', 'malo', 'basura'];
+    const estados = ['bueno', 'usado', 'roto'];
     let nextIdMarca = 0;
     let nextIdJuguete = 0;
 
@@ -27,8 +27,8 @@
        tx.executeSql('CREATE TABLE IF NOT EXISTS MARCA (id unique, nombre)');
        tx.executeSql('CREATE TABLE IF NOT EXISTS JUGUETE (id unique, nombre, estado , marca_id)');
 
-       const marcas = ['PlayBoy' ,'Symba', 'Nerf', 'Lego'];
-       const juguetes = ['revista', 'PlayStation', 'Pepino Gun', 'Lego puerros', 'Tu madre'];
+       const marcas = ['Sony' ,'Symba', 'Nerf', 'Lego'];
+       const juguetes = ['revista', 'PlayStation', 'PepiGun', 'Lego puerros', 'StarWars'];
 
 
        for (let i = 0; i < marcas.length; i++){
@@ -82,6 +82,10 @@
         tx.executeSql('INSERT INTO JUGUETE VALUES ('+nextIdJuguete+',"'+nombre+'","'+estado+'",'+marcaId+')');
         nextIdJuguete++;
       });
+      if(document.querySelector('#tabla')){
+        document.body.removeChild(document.querySelector('#tabla'));
+      }
+      selectForTable();
     }
 
     document.querySelector('#enviar').addEventListener('click',(e)=>{
@@ -140,7 +144,7 @@
     function selectForTable() {
 
       db.transaction(function (tx) {
-        tx.executeSql('SELECT M.nombre AS marca_nombre, M.id AS marca_id, estado, J.nombre AS juguete_nombre FROM MARCA M INNER JOIN JUGUETE J ON marca_id=J.marca_id', [], function (tx, result) {
+        tx.executeSql('SELECT M.nombre AS marca_nombre, M.id, estado, J.nombre AS juguete_nombre FROM MARCA M,JUGUETE J WHERE M.id=J.marca_id', [], function (tx, result) {
           let re = result.rows;
           let rows = [];
 
