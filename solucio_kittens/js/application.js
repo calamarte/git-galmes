@@ -8,6 +8,7 @@ var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '4 Months', '2 Months', '14 Weeks',
              '6 Months', '10 Weeks', '8 Months'];
 
+
 $('.kittens').find('li').each( function(i, el) {
   var img = $(el).find('img');
   var name = $(el).find('.name');
