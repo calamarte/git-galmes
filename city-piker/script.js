@@ -4,25 +4,26 @@ let keys = [];
 let allCities = [];
 let mark;
 
+if(localStorage.getItem('divs')) {
+  let local = JSON.parse(localStorage.getItem('divs'));
+  document.querySelector('#search').value = local[1];
+  onHtml(local[0]);
+}
 
+  w.onmessage = (event) => {
+    data = event.data;
 
-w.onmessage = (event)=>{
-  data = event.data;
+    for (let key in data) {
+      keys.push(key);
+      allCities = allCities.concat(data[key]);
+    }
+  };
 
-  for (let key in data){
-    keys.push(key);
-    allCities = allCities.concat(data[key]);
-  }
-};
-
-document.querySelector('#search').addEventListener('change',(e)=>{
+document.querySelector('#search').addEventListener('keyup',(e)=>{
   if(data && e.target.value.length >= 3)onHtml(search());
 });
 
 function search() {
-  let set;
-  let citiesCountry = [];
-
 
   const keyFilter = keys.filter((country)=>{
     return country.toLowerCase().includes(document.querySelector('#search')
@@ -34,19 +35,18 @@ function search() {
     .value.toLowerCase());
   });
 
-
-  for (let i = 0; i < keyFilter.length;i++){
-    citiesCountry = citiesCountry.concat(data[keyFilter[i]]);
-  }
-
-  set = new Set(citiesCountry.concat(citiesFilter));
-  return set.toArray();
+  return keyFilter.concat(citiesFilter);
 }
 
 function onHtml(divs) {
   if(document.querySelector('#cities')){
     document.body.removeChild(document.querySelector('#cities'));
   }
+
+  localStorage.setItem('divs',JSON.stringify([
+    divs,
+    document.querySelector('#search').value
+  ]));
 
   let div = document.createElement('div');
   div.id = 'cities';
