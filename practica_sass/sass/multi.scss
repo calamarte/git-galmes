@@ -1,0 +1,99 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin style-creator($tag) {
+  @each $class, $color, $back in (success, #23cc71, darken(#23cc71, 25%)),
+          (warning, #f1c40f, darken(#f1c40f, 25%)),
+          (error, #e74c3c, darken(#e74c3c, 25%)),
+          (regular, #333333, lighten(#333333, 50%)) {
+
+    @if $class != regular {
+      #{$tag}.#{$class} {
+        color: $color;
+        background-color: $back;
+      }
+    }
+    @else {
+      #{$tag} {
+        color: $color;
+        background-color: $back;
+      }
+    }
+  }
+}
+
+$em: 2;
+@for $i from 1 through 6{
+  h#{$i}{
+    font-size: #{$em}em;
+  }
+  @include style-creator(h#{$i});
+
+  $em : $em - 0.2;
+}
+
+p{
+  text-align: justify;
+}
+
+@include style-creator(p);
+@include style-creator(span);
+
+$i:0;
+@while($i <= 100){
+  $j:0;
+  @while($j <= 100){
+    $k:0;
+    @while($k <= 100){
+      $rgb: rgb(($i * 255)/100,($j * 255)/100,($k * 255)/100);
+      $class: -#{$i}-#{$j}-#{$k};
+      .color#{$class}{
+        color: $rgb;
+      }
+      .colorbg#{$class}{
+        background-color: $rgb;
+      }
+      $k:$k+10;
+    }
+    $j: $j+10;
+  }
+  $i: $i+10;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  th,td{
+    border:1px solid black;
+  }
+}
+
+
+
+img{
+  border-radius: 45%;
+  width: 300px;
+}
+
+@each $class,$animation in ((grayscale,grayscale(100%)),(blur,blur(5px)),
+        (hue-rotate,hue-rotate(150deg)),
+        (invert,invert(80%)),
+        (brightness,brightness(50%)),
+        (contrast,contrast(20%)),
+        (sepia,sepia(100%))){
+  .#{$class}{
+    animation-name: #{$class};
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes #{$class} {
+    to{
+      filter: $animation;
+    }
+  }
+}

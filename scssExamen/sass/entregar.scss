@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+$color-principal: #2ecc71;
+$color-secundario: #27ae60;
+$color-principal25:#176437;
+
+@mixin borde($width,$color,$radio){
+  border-width: $width;
+  border-color: $color;
+  border-radius: $radio;
+}
+
+@import "header";
+@import "main";
+@import "grid";
+@import "footer";
+
+

@@ -6,9 +6,9 @@ let scss = require('gulp-sass');
 // });
 
 gulp.task('compiladorSass', () =>{
-  return gulp.src('sass/entregar.scss').pipe(scss()).pipe(gulp.dest('css'));
+  return gulp.src('sass/multi.scss').pipe(scss()).pipe(gulp.dest('css'));
 });
 
 gulp.task('compiladorSass:watch', () => {
-  gulp.watch('./sass/entregar.scss', ['compiladorSass']);
+  return gulp.watch('sass/multi.scss', ['compiladorSass']);
 });

@@ -1,0 +1,8212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 2em; }
+
+h1.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h1.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h1.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h1 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+h2 {
+  font-size: 1.8em; }
+
+h2.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h2.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h2.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h2 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+h3 {
+  font-size: 1.6em; }
+
+h3.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h3.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h3.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h3 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+h4 {
+  font-size: 1.4em; }
+
+h4.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h4.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h4.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h4 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+h5 {
+  font-size: 1.2em; }
+
+h5.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h5.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h5.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h5 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+h6 {
+  font-size: 1em; }
+
+h6.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+h6.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+h6.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+h6 {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+p {
+  text-align: justify; }
+
+p.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+p.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+p.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+p {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+span.success {
+  color: #23cc71;
+  background-color: #105f35; }
+
+span.warning {
+  color: #f1c40f;
+  background-color: #796307; }
+
+span.error {
+  color: #e74c3c;
+  background-color: #921e12; }
+
+span {
+  color: #333333;
+  background-color: #b3b3b3; }
+
+.color-0-0-0 {
+  color: black; }
+
+.colorbg-0-0-0 {
+  background-color: black; }
+
+.color-0-0-10 {
+  color: #00001a; }
+
+.colorbg-0-0-10 {
+  background-color: #00001a; }
+
+.color-0-0-20 {
+  color: #000033; }
+
+.colorbg-0-0-20 {
+  background-color: #000033; }
+
+.color-0-0-30 {
+  color: #00004d; }
+
+.colorbg-0-0-30 {
+  background-color: #00004d; }
+
+.color-0-0-40 {
+  color: #000066; }
+
+.colorbg-0-0-40 {
+  background-color: #000066; }
+
+.color-0-0-50 {
+  color: navy; }
+
+.colorbg-0-0-50 {
+  background-color: navy; }
+
+.color-0-0-60 {
+  color: #000099; }
+
+.colorbg-0-0-60 {
+  background-color: #000099; }
+
+.color-0-0-70 {
+  color: #0000b3; }
+
+.colorbg-0-0-70 {
+  background-color: #0000b3; }
+
+.color-0-0-80 {
+  color: #0000cc; }
+
+.colorbg-0-0-80 {
+  background-color: #0000cc; }
+
+.color-0-0-90 {
+  color: #0000e6; }
+
+.colorbg-0-0-90 {
+  background-color: #0000e6; }
+
+.color-0-0-100 {
+  color: blue; }
+
+.colorbg-0-0-100 {
+  background-color: blue; }
+
+.color-0-10-0 {
+  color: #001a00; }
+
+.colorbg-0-10-0 {
+  background-color: #001a00; }
+
+.color-0-10-10 {
+  color: #001a1a; }
+
+.colorbg-0-10-10 {
+  background-color: #001a1a; }
+
+.color-0-10-20 {
+  color: #001a33; }
+
+.colorbg-0-10-20 {
+  background-color: #001a33; }
+
+.color-0-10-30 {
+  color: #001a4d; }
+
+.colorbg-0-10-30 {
+  background-color: #001a4d; }
+
+.color-0-10-40 {
+  color: #001a66; }
+
+.colorbg-0-10-40 {
+  background-color: #001a66; }
+
+.color-0-10-50 {
+  color: #001a80; }
+
+.colorbg-0-10-50 {
+  background-color: #001a80; }
+
+.color-0-10-60 {
+  color: #001a99; }
+
+.colorbg-0-10-60 {
+  background-color: #001a99; }
+
+.color-0-10-70 {
+  color: #001ab3; }
+
+.colorbg-0-10-70 {
+  background-color: #001ab3; }
+
+.color-0-10-80 {
+  color: #001acc; }
+
+.colorbg-0-10-80 {
+  background-color: #001acc; }
+
+.color-0-10-90 {
+  color: #001ae6; }
+
+.colorbg-0-10-90 {
+  background-color: #001ae6; }
+
+.color-0-10-100 {
+  color: #001aff; }
+
+.colorbg-0-10-100 {
+  background-color: #001aff; }
+
+.color-0-20-0 {
+  color: #003300; }
+
+.colorbg-0-20-0 {
+  background-color: #003300; }
+
+.color-0-20-10 {
+  color: #00331a; }
+
+.colorbg-0-20-10 {
+  background-color: #00331a; }
+
+.color-0-20-20 {
+  color: #003333; }
+
+.colorbg-0-20-20 {
+  background-color: #003333; }
+
+.color-0-20-30 {
+  color: #00334d; }
+
+.colorbg-0-20-30 {
+  background-color: #00334d; }
+
+.color-0-20-40 {
+  color: #003366; }
+
+.colorbg-0-20-40 {
+  background-color: #003366; }
+
+.color-0-20-50 {
+  color: #003380; }
+
+.colorbg-0-20-50 {
+  background-color: #003380; }
+
+.color-0-20-60 {
+  color: #003399; }
+
+.colorbg-0-20-60 {
+  background-color: #003399; }
+
+.color-0-20-70 {
+  color: #0033b3; }
+
+.colorbg-0-20-70 {
+  background-color: #0033b3; }
+
+.color-0-20-80 {
+  color: #0033cc; }
+
+.colorbg-0-20-80 {
+  background-color: #0033cc; }
+
+.color-0-20-90 {
+  color: #0033e6; }
+
+.colorbg-0-20-90 {
+  background-color: #0033e6; }
+
+.color-0-20-100 {
+  color: #0033ff; }
+
+.colorbg-0-20-100 {
+  background-color: #0033ff; }
+
+.color-0-30-0 {
+  color: #004d00; }
+
+.colorbg-0-30-0 {
+  background-color: #004d00; }
+
+.color-0-30-10 {
+  color: #004d1a; }
+
+.colorbg-0-30-10 {
+  background-color: #004d1a; }
+
+.color-0-30-20 {
+  color: #004d33; }
+
+.colorbg-0-30-20 {
+  background-color: #004d33; }
+
+.color-0-30-30 {
+  color: #004d4d; }
+
+.colorbg-0-30-30 {
+  background-color: #004d4d; }
+
+.color-0-30-40 {
+  color: #004d66; }
+
+.colorbg-0-30-40 {
+  background-color: #004d66; }
+
+.color-0-30-50 {
+  color: #004d80; }
+
+.colorbg-0-30-50 {
+  background-color: #004d80; }
+
+.color-0-30-60 {
+  color: #004d99; }
+
+.colorbg-0-30-60 {
+  background-color: #004d99; }
+
+.color-0-30-70 {
+  color: #004db3; }
+
+.colorbg-0-30-70 {
+  background-color: #004db3; }
+
+.color-0-30-80 {
+  color: #004dcc; }
+
+.colorbg-0-30-80 {
+  background-color: #004dcc; }
+
+.color-0-30-90 {
+  color: #004de6; }
+
+.colorbg-0-30-90 {
+  background-color: #004de6; }
+
+.color-0-30-100 {
+  color: #004dff; }
+
+.colorbg-0-30-100 {
+  background-color: #004dff; }
+
+.color-0-40-0 {
+  color: #006600; }
+
+.colorbg-0-40-0 {
+  background-color: #006600; }
+
+.color-0-40-10 {
+  color: #00661a; }
+
+.colorbg-0-40-10 {
+  background-color: #00661a; }
+
+.color-0-40-20 {
+  color: #006633; }
+
+.colorbg-0-40-20 {
+  background-color: #006633; }
+
+.color-0-40-30 {
+  color: #00664d; }
+
+.colorbg-0-40-30 {
+  background-color: #00664d; }
+
+.color-0-40-40 {
+  color: #006666; }
+
+.colorbg-0-40-40 {
+  background-color: #006666; }
+
+.color-0-40-50 {
+  color: #006680; }
+
+.colorbg-0-40-50 {
+  background-color: #006680; }
+
+.color-0-40-60 {
+  color: #006699; }
+
+.colorbg-0-40-60 {
+  background-color: #006699; }
+
+.color-0-40-70 {
+  color: #0066b3; }
+
+.colorbg-0-40-70 {
+  background-color: #0066b3; }
+
+.color-0-40-80 {
+  color: #0066cc; }
+
+.colorbg-0-40-80 {
+  background-color: #0066cc; }
+
+.color-0-40-90 {
+  color: #0066e6; }
+
+.colorbg-0-40-90 {
+  background-color: #0066e6; }
+
+.color-0-40-100 {
+  color: #0066ff; }
+
+.colorbg-0-40-100 {
+  background-color: #0066ff; }
+
+.color-0-50-0 {
+  color: green; }
+
+.colorbg-0-50-0 {
+  background-color: green; }
+
+.color-0-50-10 {
+  color: #00801a; }
+
+.colorbg-0-50-10 {
+  background-color: #00801a; }
+
+.color-0-50-20 {
+  color: #008033; }
+
+.colorbg-0-50-20 {
+  background-color: #008033; }
+
+.color-0-50-30 {
+  color: #00804d; }
+
+.colorbg-0-50-30 {
+  background-color: #00804d; }
+
+.color-0-50-40 {
+  color: #008066; }
+
+.colorbg-0-50-40 {
+  background-color: #008066; }
+
+.color-0-50-50 {
+  color: teal; }
+
+.colorbg-0-50-50 {
+  background-color: teal; }
+
+.color-0-50-60 {
+  color: #008099; }
+
+.colorbg-0-50-60 {
+  background-color: #008099; }
+
+.color-0-50-70 {
+  color: #0080b3; }
+
+.colorbg-0-50-70 {
+  background-color: #0080b3; }
+
+.color-0-50-80 {
+  color: #0080cc; }
+
+.colorbg-0-50-80 {
+  background-color: #0080cc; }
+
+.color-0-50-90 {
+  color: #0080e6; }
+
+.colorbg-0-50-90 {
+  background-color: #0080e6; }
+
+.color-0-50-100 {
+  color: #0080ff; }
+
+.colorbg-0-50-100 {
+  background-color: #0080ff; }
+
+.color-0-60-0 {
+  color: #009900; }
+
+.colorbg-0-60-0 {
+  background-color: #009900; }
+
+.color-0-60-10 {
+  color: #00991a; }
+
+.colorbg-0-60-10 {
+  background-color: #00991a; }
+
+.color-0-60-20 {
+  color: #009933; }
+
+.colorbg-0-60-20 {
+  background-color: #009933; }
+
+.color-0-60-30 {
+  color: #00994d; }
+
+.colorbg-0-60-30 {
+  background-color: #00994d; }
+
+.color-0-60-40 {
+  color: #009966; }
+
+.colorbg-0-60-40 {
+  background-color: #009966; }
+
+.color-0-60-50 {
+  color: #009980; }
+
+.colorbg-0-60-50 {
+  background-color: #009980; }
+
+.color-0-60-60 {
+  color: #009999; }
+
+.colorbg-0-60-60 {
+  background-color: #009999; }
+
+.color-0-60-70 {
+  color: #0099b3; }
+
+.colorbg-0-60-70 {
+  background-color: #0099b3; }
+
+.color-0-60-80 {
+  color: #0099cc; }
+
+.colorbg-0-60-80 {
+  background-color: #0099cc; }
+
+.color-0-60-90 {
+  color: #0099e6; }
+
+.colorbg-0-60-90 {
+  background-color: #0099e6; }
+
+.color-0-60-100 {
+  color: #0099ff; }
+
+.colorbg-0-60-100 {
+  background-color: #0099ff; }
+
+.color-0-70-0 {
+  color: #00b300; }
+
+.colorbg-0-70-0 {
+  background-color: #00b300; }
+
+.color-0-70-10 {
+  color: #00b31a; }
+
+.colorbg-0-70-10 {
+  background-color: #00b31a; }
+
+.color-0-70-20 {
+  color: #00b333; }
+
+.colorbg-0-70-20 {
+  background-color: #00b333; }
+
+.color-0-70-30 {
+  color: #00b34d; }
+
+.colorbg-0-70-30 {
+  background-color: #00b34d; }
+
+.color-0-70-40 {
+  color: #00b366; }
+
+.colorbg-0-70-40 {
+  background-color: #00b366; }
+
+.color-0-70-50 {
+  color: #00b380; }
+
+.colorbg-0-70-50 {
+  background-color: #00b380; }
+
+.color-0-70-60 {
+  color: #00b399; }
+
+.colorbg-0-70-60 {
+  background-color: #00b399; }
+
+.color-0-70-70 {
+  color: #00b3b3; }
+
+.colorbg-0-70-70 {
+  background-color: #00b3b3; }
+
+.color-0-70-80 {
+  color: #00b3cc; }
+
+.colorbg-0-70-80 {
+  background-color: #00b3cc; }
+
+.color-0-70-90 {
+  color: #00b3e6; }
+
+.colorbg-0-70-90 {
+  background-color: #00b3e6; }
+
+.color-0-70-100 {
+  color: #00b3ff; }
+
+.colorbg-0-70-100 {
+  background-color: #00b3ff; }
+
+.color-0-80-0 {
+  color: #00cc00; }
+
+.colorbg-0-80-0 {
+  background-color: #00cc00; }
+
+.color-0-80-10 {
+  color: #00cc1a; }
+
+.colorbg-0-80-10 {
+  background-color: #00cc1a; }
+
+.color-0-80-20 {
+  color: #00cc33; }
+
+.colorbg-0-80-20 {
+  background-color: #00cc33; }
+
+.color-0-80-30 {
+  color: #00cc4d; }
+
+.colorbg-0-80-30 {
+  background-color: #00cc4d; }
+
+.color-0-80-40 {
+  color: #00cc66; }
+
+.colorbg-0-80-40 {
+  background-color: #00cc66; }
+
+.color-0-80-50 {
+  color: #00cc80; }
+
+.colorbg-0-80-50 {
+  background-color: #00cc80; }
+
+.color-0-80-60 {
+  color: #00cc99; }
+
+.colorbg-0-80-60 {
+  background-color: #00cc99; }
+
+.color-0-80-70 {
+  color: #00ccb3; }
+
+.colorbg-0-80-70 {
+  background-color: #00ccb3; }
+
+.color-0-80-80 {
+  color: #00cccc; }
+
+.colorbg-0-80-80 {
+  background-color: #00cccc; }
+
+.color-0-80-90 {
+  color: #00cce6; }
+
+.colorbg-0-80-90 {
+  background-color: #00cce6; }
+
+.color-0-80-100 {
+  color: #00ccff; }
+
+.colorbg-0-80-100 {
+  background-color: #00ccff; }
+
+.color-0-90-0 {
+  color: #00e600; }
+
+.colorbg-0-90-0 {
+  background-color: #00e600; }
+
+.color-0-90-10 {
+  color: #00e61a; }
+
+.colorbg-0-90-10 {
+  background-color: #00e61a; }
+
+.color-0-90-20 {
+  color: #00e633; }
+
+.colorbg-0-90-20 {
+  background-color: #00e633; }
+
+.color-0-90-30 {
+  color: #00e64d; }
+
+.colorbg-0-90-30 {
+  background-color: #00e64d; }
+
+.color-0-90-40 {
+  color: #00e666; }
+
+.colorbg-0-90-40 {
+  background-color: #00e666; }
+
+.color-0-90-50 {
+  color: #00e680; }
+
+.colorbg-0-90-50 {
+  background-color: #00e680; }
+
+.color-0-90-60 {
+  color: #00e699; }
+
+.colorbg-0-90-60 {
+  background-color: #00e699; }
+
+.color-0-90-70 {
+  color: #00e6b3; }
+
+.colorbg-0-90-70 {
+  background-color: #00e6b3; }
+
+.color-0-90-80 {
+  color: #00e6cc; }
+
+.colorbg-0-90-80 {
+  background-color: #00e6cc; }
+
+.color-0-90-90 {
+  color: #00e6e6; }
+
+.colorbg-0-90-90 {
+  background-color: #00e6e6; }
+
+.color-0-90-100 {
+  color: #00e6ff; }
+
+.colorbg-0-90-100 {
+  background-color: #00e6ff; }
+
+.color-0-100-0 {
+  color: lime; }
+
+.colorbg-0-100-0 {
+  background-color: lime; }
+
+.color-0-100-10 {
+  color: #00ff1a; }
+
+.colorbg-0-100-10 {
+  background-color: #00ff1a; }
+
+.color-0-100-20 {
+  color: #00ff33; }
+
+.colorbg-0-100-20 {
+  background-color: #00ff33; }
+
+.color-0-100-30 {
+  color: #00ff4d; }
+
+.colorbg-0-100-30 {
+  background-color: #00ff4d; }
+
+.color-0-100-40 {
+  color: #00ff66; }
+
+.colorbg-0-100-40 {
+  background-color: #00ff66; }
+
+.color-0-100-50 {
+  color: #00ff80; }
+
+.colorbg-0-100-50 {
+  background-color: #00ff80; }
+
+.color-0-100-60 {
+  color: #00ff99; }
+
+.colorbg-0-100-60 {
+  background-color: #00ff99; }
+
+.color-0-100-70 {
+  color: #00ffb3; }
+
+.colorbg-0-100-70 {
+  background-color: #00ffb3; }
+
+.color-0-100-80 {
+  color: #00ffcc; }
+
+.colorbg-0-100-80 {
+  background-color: #00ffcc; }
+
+.color-0-100-90 {
+  color: #00ffe6; }
+
+.colorbg-0-100-90 {
+  background-color: #00ffe6; }
+
+.color-0-100-100 {
+  color: cyan; }
+
+.colorbg-0-100-100 {
+  background-color: cyan; }
+
+.color-10-0-0 {
+  color: #1a0000; }
+
+.colorbg-10-0-0 {
+  background-color: #1a0000; }
+
+.color-10-0-10 {
+  color: #1a001a; }
+
+.colorbg-10-0-10 {
+  background-color: #1a001a; }
+
+.color-10-0-20 {
+  color: #1a0033; }
+
+.colorbg-10-0-20 {
+  background-color: #1a0033; }
+
+.color-10-0-30 {
+  color: #1a004d; }
+
+.colorbg-10-0-30 {
+  background-color: #1a004d; }
+
+.color-10-0-40 {
+  color: #1a0066; }
+
+.colorbg-10-0-40 {
+  background-color: #1a0066; }
+
+.color-10-0-50 {
+  color: #1a0080; }
+
+.colorbg-10-0-50 {
+  background-color: #1a0080; }
+
+.color-10-0-60 {
+  color: #1a0099; }
+
+.colorbg-10-0-60 {
+  background-color: #1a0099; }
+
+.color-10-0-70 {
+  color: #1a00b3; }
+
+.colorbg-10-0-70 {
+  background-color: #1a00b3; }
+
+.color-10-0-80 {
+  color: #1a00cc; }
+
+.colorbg-10-0-80 {
+  background-color: #1a00cc; }
+
+.color-10-0-90 {
+  color: #1a00e6; }
+
+.colorbg-10-0-90 {
+  background-color: #1a00e6; }
+
+.color-10-0-100 {
+  color: #1a00ff; }
+
+.colorbg-10-0-100 {
+  background-color: #1a00ff; }
+
+.color-10-10-0 {
+  color: #1a1a00; }
+
+.colorbg-10-10-0 {
+  background-color: #1a1a00; }
+
+.color-10-10-10 {
+  color: #1a1a1a; }
+
+.colorbg-10-10-10 {
+  background-color: #1a1a1a; }
+
+.color-10-10-20 {
+  color: #1a1a33; }
+
+.colorbg-10-10-20 {
+  background-color: #1a1a33; }
+
+.color-10-10-30 {
+  color: #1a1a4d; }
+
+.colorbg-10-10-30 {
+  background-color: #1a1a4d; }
+
+.color-10-10-40 {
+  color: #1a1a66; }
+
+.colorbg-10-10-40 {
+  background-color: #1a1a66; }
+
+.color-10-10-50 {
+  color: #1a1a80; }
+
+.colorbg-10-10-50 {
+  background-color: #1a1a80; }
+
+.color-10-10-60 {
+  color: #1a1a99; }
+
+.colorbg-10-10-60 {
+  background-color: #1a1a99; }
+
+.color-10-10-70 {
+  color: #1a1ab3; }
+
+.colorbg-10-10-70 {
+  background-color: #1a1ab3; }
+
+.color-10-10-80 {
+  color: #1a1acc; }
+
+.colorbg-10-10-80 {
+  background-color: #1a1acc; }
+
+.color-10-10-90 {
+  color: #1a1ae6; }
+
+.colorbg-10-10-90 {
+  background-color: #1a1ae6; }
+
+.color-10-10-100 {
+  color: #1a1aff; }
+
+.colorbg-10-10-100 {
+  background-color: #1a1aff; }
+
+.color-10-20-0 {
+  color: #1a3300; }
+
+.colorbg-10-20-0 {
+  background-color: #1a3300; }
+
+.color-10-20-10 {
+  color: #1a331a; }
+
+.colorbg-10-20-10 {
+  background-color: #1a331a; }
+
+.color-10-20-20 {
+  color: #1a3333; }
+
+.colorbg-10-20-20 {
+  background-color: #1a3333; }
+
+.color-10-20-30 {
+  color: #1a334d; }
+
+.colorbg-10-20-30 {
+  background-color: #1a334d; }
+
+.color-10-20-40 {
+  color: #1a3366; }
+
+.colorbg-10-20-40 {
+  background-color: #1a3366; }
+
+.color-10-20-50 {
+  color: #1a3380; }
+
+.colorbg-10-20-50 {
+  background-color: #1a3380; }
+
+.color-10-20-60 {
+  color: #1a3399; }
+
+.colorbg-10-20-60 {
+  background-color: #1a3399; }
+
+.color-10-20-70 {
+  color: #1a33b3; }
+
+.colorbg-10-20-70 {
+  background-color: #1a33b3; }
+
+.color-10-20-80 {
+  color: #1a33cc; }
+
+.colorbg-10-20-80 {
+  background-color: #1a33cc; }
+
+.color-10-20-90 {
+  color: #1a33e6; }
+
+.colorbg-10-20-90 {
+  background-color: #1a33e6; }
+
+.color-10-20-100 {
+  color: #1a33ff; }
+
+.colorbg-10-20-100 {
+  background-color: #1a33ff; }
+
+.color-10-30-0 {
+  color: #1a4d00; }
+
+.colorbg-10-30-0 {
+  background-color: #1a4d00; }
+
+.color-10-30-10 {
+  color: #1a4d1a; }
+
+.colorbg-10-30-10 {
+  background-color: #1a4d1a; }
+
+.color-10-30-20 {
+  color: #1a4d33; }
+
+.colorbg-10-30-20 {
+  background-color: #1a4d33; }
+
+.color-10-30-30 {
+  color: #1a4d4d; }
+
+.colorbg-10-30-30 {
+  background-color: #1a4d4d; }
+
+.color-10-30-40 {
+  color: #1a4d66; }
+
+.colorbg-10-30-40 {
+  background-color: #1a4d66; }
+
+.color-10-30-50 {
+  color: #1a4d80; }
+
+.colorbg-10-30-50 {
+  background-color: #1a4d80; }
+
+.color-10-30-60 {
+  color: #1a4d99; }
+
+.colorbg-10-30-60 {
+  background-color: #1a4d99; }
+
+.color-10-30-70 {
+  color: #1a4db3; }
+
+.colorbg-10-30-70 {
+  background-color: #1a4db3; }
+
+.color-10-30-80 {
+  color: #1a4dcc; }
+
+.colorbg-10-30-80 {
+  background-color: #1a4dcc; }
+
+.color-10-30-90 {
+  color: #1a4de6; }
+
+.colorbg-10-30-90 {
+  background-color: #1a4de6; }
+
+.color-10-30-100 {
+  color: #1a4dff; }
+
+.colorbg-10-30-100 {
+  background-color: #1a4dff; }
+
+.color-10-40-0 {
+  color: #1a6600; }
+
+.colorbg-10-40-0 {
+  background-color: #1a6600; }
+
+.color-10-40-10 {
+  color: #1a661a; }
+
+.colorbg-10-40-10 {
+  background-color: #1a661a; }
+
+.color-10-40-20 {
+  color: #1a6633; }
+
+.colorbg-10-40-20 {
+  background-color: #1a6633; }
+
+.color-10-40-30 {
+  color: #1a664d; }
+
+.colorbg-10-40-30 {
+  background-color: #1a664d; }
+
+.color-10-40-40 {
+  color: #1a6666; }
+
+.colorbg-10-40-40 {
+  background-color: #1a6666; }
+
+.color-10-40-50 {
+  color: #1a6680; }
+
+.colorbg-10-40-50 {
+  background-color: #1a6680; }
+
+.color-10-40-60 {
+  color: #1a6699; }
+
+.colorbg-10-40-60 {
+  background-color: #1a6699; }
+
+.color-10-40-70 {
+  color: #1a66b3; }
+
+.colorbg-10-40-70 {
+  background-color: #1a66b3; }
+
+.color-10-40-80 {
+  color: #1a66cc; }
+
+.colorbg-10-40-80 {
+  background-color: #1a66cc; }
+
+.color-10-40-90 {
+  color: #1a66e6; }
+
+.colorbg-10-40-90 {
+  background-color: #1a66e6; }
+
+.color-10-40-100 {
+  color: #1a66ff; }
+
+.colorbg-10-40-100 {
+  background-color: #1a66ff; }
+
+.color-10-50-0 {
+  color: #1a8000; }
+
+.colorbg-10-50-0 {
+  background-color: #1a8000; }
+
+.color-10-50-10 {
+  color: #1a801a; }
+
+.colorbg-10-50-10 {
+  background-color: #1a801a; }
+
+.color-10-50-20 {
+  color: #1a8033; }
+
+.colorbg-10-50-20 {
+  background-color: #1a8033; }
+
+.color-10-50-30 {
+  color: #1a804d; }
+
+.colorbg-10-50-30 {
+  background-color: #1a804d; }
+
+.color-10-50-40 {
+  color: #1a8066; }
+
+.colorbg-10-50-40 {
+  background-color: #1a8066; }
+
+.color-10-50-50 {
+  color: #1a8080; }
+
+.colorbg-10-50-50 {
+  background-color: #1a8080; }
+
+.color-10-50-60 {
+  color: #1a8099; }
+
+.colorbg-10-50-60 {
+  background-color: #1a8099; }
+
+.color-10-50-70 {
+  color: #1a80b3; }
+
+.colorbg-10-50-70 {
+  background-color: #1a80b3; }
+
+.color-10-50-80 {
+  color: #1a80cc; }
+
+.colorbg-10-50-80 {
+  background-color: #1a80cc; }
+
+.color-10-50-90 {
+  color: #1a80e6; }
+
+.colorbg-10-50-90 {
+  background-color: #1a80e6; }
+
+.color-10-50-100 {
+  color: #1a80ff; }
+
+.colorbg-10-50-100 {
+  background-color: #1a80ff; }
+
+.color-10-60-0 {
+  color: #1a9900; }
+
+.colorbg-10-60-0 {
+  background-color: #1a9900; }
+
+.color-10-60-10 {
+  color: #1a991a; }
+
+.colorbg-10-60-10 {
+  background-color: #1a991a; }
+
+.color-10-60-20 {
+  color: #1a9933; }
+
+.colorbg-10-60-20 {
+  background-color: #1a9933; }
+
+.color-10-60-30 {
+  color: #1a994d; }
+
+.colorbg-10-60-30 {
+  background-color: #1a994d; }
+
+.color-10-60-40 {
+  color: #1a9966; }
+
+.colorbg-10-60-40 {
+  background-color: #1a9966; }
+
+.color-10-60-50 {
+  color: #1a9980; }
+
+.colorbg-10-60-50 {
+  background-color: #1a9980; }
+
+.color-10-60-60 {
+  color: #1a9999; }
+
+.colorbg-10-60-60 {
+  background-color: #1a9999; }
+
+.color-10-60-70 {
+  color: #1a99b3; }
+
+.colorbg-10-60-70 {
+  background-color: #1a99b3; }
+
+.color-10-60-80 {
+  color: #1a99cc; }
+
+.colorbg-10-60-80 {
+  background-color: #1a99cc; }
+
+.color-10-60-90 {
+  color: #1a99e6; }
+
+.colorbg-10-60-90 {
+  background-color: #1a99e6; }
+
+.color-10-60-100 {
+  color: #1a99ff; }
+
+.colorbg-10-60-100 {
+  background-color: #1a99ff; }
+
+.color-10-70-0 {
+  color: #1ab300; }
+
+.colorbg-10-70-0 {
+  background-color: #1ab300; }
+
+.color-10-70-10 {
+  color: #1ab31a; }
+
+.colorbg-10-70-10 {
+  background-color: #1ab31a; }
+
+.color-10-70-20 {
+  color: #1ab333; }
+
+.colorbg-10-70-20 {
+  background-color: #1ab333; }
+
+.color-10-70-30 {
+  color: #1ab34d; }
+
+.colorbg-10-70-30 {
+  background-color: #1ab34d; }
+
+.color-10-70-40 {
+  color: #1ab366; }
+
+.colorbg-10-70-40 {
+  background-color: #1ab366; }
+
+.color-10-70-50 {
+  color: #1ab380; }
+
+.colorbg-10-70-50 {
+  background-color: #1ab380; }
+
+.color-10-70-60 {
+  color: #1ab399; }
+
+.colorbg-10-70-60 {
+  background-color: #1ab399; }
+
+.color-10-70-70 {
+  color: #1ab3b3; }
+
+.colorbg-10-70-70 {
+  background-color: #1ab3b3; }
+
+.color-10-70-80 {
+  color: #1ab3cc; }
+
+.colorbg-10-70-80 {
+  background-color: #1ab3cc; }
+
+.color-10-70-90 {
+  color: #1ab3e6; }
+
+.colorbg-10-70-90 {
+  background-color: #1ab3e6; }
+
+.color-10-70-100 {
+  color: #1ab3ff; }
+
+.colorbg-10-70-100 {
+  background-color: #1ab3ff; }
+
+.color-10-80-0 {
+  color: #1acc00; }
+
+.colorbg-10-80-0 {
+  background-color: #1acc00; }
+
+.color-10-80-10 {
+  color: #1acc1a; }
+
+.colorbg-10-80-10 {
+  background-color: #1acc1a; }
+
+.color-10-80-20 {
+  color: #1acc33; }
+
+.colorbg-10-80-20 {
+  background-color: #1acc33; }
+
+.color-10-80-30 {
+  color: #1acc4d; }
+
+.colorbg-10-80-30 {
+  background-color: #1acc4d; }
+
+.color-10-80-40 {
+  color: #1acc66; }
+
+.colorbg-10-80-40 {
+  background-color: #1acc66; }
+
+.color-10-80-50 {
+  color: #1acc80; }
+
+.colorbg-10-80-50 {
+  background-color: #1acc80; }
+
+.color-10-80-60 {
+  color: #1acc99; }
+
+.colorbg-10-80-60 {
+  background-color: #1acc99; }
+
+.color-10-80-70 {
+  color: #1accb3; }
+
+.colorbg-10-80-70 {
+  background-color: #1accb3; }
+
+.color-10-80-80 {
+  color: #1acccc; }
+
+.colorbg-10-80-80 {
+  background-color: #1acccc; }
+
+.color-10-80-90 {
+  color: #1acce6; }
+
+.colorbg-10-80-90 {
+  background-color: #1acce6; }
+
+.color-10-80-100 {
+  color: #1accff; }
+
+.colorbg-10-80-100 {
+  background-color: #1accff; }
+
+.color-10-90-0 {
+  color: #1ae600; }
+
+.colorbg-10-90-0 {
+  background-color: #1ae600; }
+
+.color-10-90-10 {
+  color: #1ae61a; }
+
+.colorbg-10-90-10 {
+  background-color: #1ae61a; }
+
+.color-10-90-20 {
+  color: #1ae633; }
+
+.colorbg-10-90-20 {
+  background-color: #1ae633; }
+
+.color-10-90-30 {
+  color: #1ae64d; }
+
+.colorbg-10-90-30 {
+  background-color: #1ae64d; }
+
+.color-10-90-40 {
+  color: #1ae666; }
+
+.colorbg-10-90-40 {
+  background-color: #1ae666; }
+
+.color-10-90-50 {
+  color: #1ae680; }
+
+.colorbg-10-90-50 {
+  background-color: #1ae680; }
+
+.color-10-90-60 {
+  color: #1ae699; }
+
+.colorbg-10-90-60 {
+  background-color: #1ae699; }
+
+.color-10-90-70 {
+  color: #1ae6b3; }
+
+.colorbg-10-90-70 {
+  background-color: #1ae6b3; }
+
+.color-10-90-80 {
+  color: #1ae6cc; }
+
+.colorbg-10-90-80 {
+  background-color: #1ae6cc; }
+
+.color-10-90-90 {
+  color: #1ae6e6; }
+
+.colorbg-10-90-90 {
+  background-color: #1ae6e6; }
+
+.color-10-90-100 {
+  color: #1ae6ff; }
+
+.colorbg-10-90-100 {
+  background-color: #1ae6ff; }
+
+.color-10-100-0 {
+  color: #1aff00; }
+
+.colorbg-10-100-0 {
+  background-color: #1aff00; }
+
+.color-10-100-10 {
+  color: #1aff1a; }
+
+.colorbg-10-100-10 {
+  background-color: #1aff1a; }
+
+.color-10-100-20 {
+  color: #1aff33; }
+
+.colorbg-10-100-20 {
+  background-color: #1aff33; }
+
+.color-10-100-30 {
+  color: #1aff4d; }
+
+.colorbg-10-100-30 {
+  background-color: #1aff4d; }
+
+.color-10-100-40 {
+  color: #1aff66; }
+
+.colorbg-10-100-40 {
+  background-color: #1aff66; }
+
+.color-10-100-50 {
+  color: #1aff80; }
+
+.colorbg-10-100-50 {
+  background-color: #1aff80; }
+
+.color-10-100-60 {
+  color: #1aff99; }
+
+.colorbg-10-100-60 {
+  background-color: #1aff99; }
+
+.color-10-100-70 {
+  color: #1affb3; }
+
+.colorbg-10-100-70 {
+  background-color: #1affb3; }
+
+.color-10-100-80 {
+  color: #1affcc; }
+
+.colorbg-10-100-80 {
+  background-color: #1affcc; }
+
+.color-10-100-90 {
+  color: #1affe6; }
+
+.colorbg-10-100-90 {
+  background-color: #1affe6; }
+
+.color-10-100-100 {
+  color: #1affff; }
+
+.colorbg-10-100-100 {
+  background-color: #1affff; }
+
+.color-20-0-0 {
+  color: #330000; }
+
+.colorbg-20-0-0 {
+  background-color: #330000; }
+
+.color-20-0-10 {
+  color: #33001a; }
+
+.colorbg-20-0-10 {
+  background-color: #33001a; }
+
+.color-20-0-20 {
+  color: #330033; }
+
+.colorbg-20-0-20 {
+  background-color: #330033; }
+
+.color-20-0-30 {
+  color: #33004d; }
+
+.colorbg-20-0-30 {
+  background-color: #33004d; }
+
+.color-20-0-40 {
+  color: #330066; }
+
+.colorbg-20-0-40 {
+  background-color: #330066; }
+
+.color-20-0-50 {
+  color: #330080; }
+
+.colorbg-20-0-50 {
+  background-color: #330080; }
+
+.color-20-0-60 {
+  color: #330099; }
+
+.colorbg-20-0-60 {
+  background-color: #330099; }
+
+.color-20-0-70 {
+  color: #3300b3; }
+
+.colorbg-20-0-70 {
+  background-color: #3300b3; }
+
+.color-20-0-80 {
+  color: #3300cc; }
+
+.colorbg-20-0-80 {
+  background-color: #3300cc; }
+
+.color-20-0-90 {
+  color: #3300e6; }
+
+.colorbg-20-0-90 {
+  background-color: #3300e6; }
+
+.color-20-0-100 {
+  color: #3300ff; }
+
+.colorbg-20-0-100 {
+  background-color: #3300ff; }
+
+.color-20-10-0 {
+  color: #331a00; }
+
+.colorbg-20-10-0 {
+  background-color: #331a00; }
+
+.color-20-10-10 {
+  color: #331a1a; }
+
+.colorbg-20-10-10 {
+  background-color: #331a1a; }
+
+.color-20-10-20 {
+  color: #331a33; }
+
+.colorbg-20-10-20 {
+  background-color: #331a33; }
+
+.color-20-10-30 {
+  color: #331a4d; }
+
+.colorbg-20-10-30 {
+  background-color: #331a4d; }
+
+.color-20-10-40 {
+  color: #331a66; }
+
+.colorbg-20-10-40 {
+  background-color: #331a66; }
+
+.color-20-10-50 {
+  color: #331a80; }
+
+.colorbg-20-10-50 {
+  background-color: #331a80; }
+
+.color-20-10-60 {
+  color: #331a99; }
+
+.colorbg-20-10-60 {
+  background-color: #331a99; }
+
+.color-20-10-70 {
+  color: #331ab3; }
+
+.colorbg-20-10-70 {
+  background-color: #331ab3; }
+
+.color-20-10-80 {
+  color: #331acc; }
+
+.colorbg-20-10-80 {
+  background-color: #331acc; }
+
+.color-20-10-90 {
+  color: #331ae6; }
+
+.colorbg-20-10-90 {
+  background-color: #331ae6; }
+
+.color-20-10-100 {
+  color: #331aff; }
+
+.colorbg-20-10-100 {
+  background-color: #331aff; }
+
+.color-20-20-0 {
+  color: #333300; }
+
+.colorbg-20-20-0 {
+  background-color: #333300; }
+
+.color-20-20-10 {
+  color: #33331a; }
+
+.colorbg-20-20-10 {
+  background-color: #33331a; }
+
+.color-20-20-20 {
+  color: #333333; }
+
+.colorbg-20-20-20 {
+  background-color: #333333; }
+
+.color-20-20-30 {
+  color: #33334d; }
+
+.colorbg-20-20-30 {
+  background-color: #33334d; }
+
+.color-20-20-40 {
+  color: #333366; }
+
+.colorbg-20-20-40 {
+  background-color: #333366; }
+
+.color-20-20-50 {
+  color: #333380; }
+
+.colorbg-20-20-50 {
+  background-color: #333380; }
+
+.color-20-20-60 {
+  color: #333399; }
+
+.colorbg-20-20-60 {
+  background-color: #333399; }
+
+.color-20-20-70 {
+  color: #3333b3; }
+
+.colorbg-20-20-70 {
+  background-color: #3333b3; }
+
+.color-20-20-80 {
+  color: #3333cc; }
+
+.colorbg-20-20-80 {
+  background-color: #3333cc; }
+
+.color-20-20-90 {
+  color: #3333e6; }
+
+.colorbg-20-20-90 {
+  background-color: #3333e6; }
+
+.color-20-20-100 {
+  color: #3333ff; }
+
+.colorbg-20-20-100 {
+  background-color: #3333ff; }
+
+.color-20-30-0 {
+  color: #334d00; }
+
+.colorbg-20-30-0 {
+  background-color: #334d00; }
+
+.color-20-30-10 {
+  color: #334d1a; }
+
+.colorbg-20-30-10 {
+  background-color: #334d1a; }
+
+.color-20-30-20 {
+  color: #334d33; }
+
+.colorbg-20-30-20 {
+  background-color: #334d33; }
+
+.color-20-30-30 {
+  color: #334d4d; }
+
+.colorbg-20-30-30 {
+  background-color: #334d4d; }
+
+.color-20-30-40 {
+  color: #334d66; }
+
+.colorbg-20-30-40 {
+  background-color: #334d66; }
+
+.color-20-30-50 {
+  color: #334d80; }
+
+.colorbg-20-30-50 {
+  background-color: #334d80; }
+
+.color-20-30-60 {
+  color: #334d99; }
+
+.colorbg-20-30-60 {
+  background-color: #334d99; }
+
+.color-20-30-70 {
+  color: #334db3; }
+
+.colorbg-20-30-70 {
+  background-color: #334db3; }
+
+.color-20-30-80 {
+  color: #334dcc; }
+
+.colorbg-20-30-80 {
+  background-color: #334dcc; }
+
+.color-20-30-90 {
+  color: #334de6; }
+
+.colorbg-20-30-90 {
+  background-color: #334de6; }
+
+.color-20-30-100 {
+  color: #334dff; }
+
+.colorbg-20-30-100 {
+  background-color: #334dff; }
+
+.color-20-40-0 {
+  color: #336600; }
+
+.colorbg-20-40-0 {
+  background-color: #336600; }
+
+.color-20-40-10 {
+  color: #33661a; }
+
+.colorbg-20-40-10 {
+  background-color: #33661a; }
+
+.color-20-40-20 {
+  color: #336633; }
+
+.colorbg-20-40-20 {
+  background-color: #336633; }
+
+.color-20-40-30 {
+  color: #33664d; }
+
+.colorbg-20-40-30 {
+  background-color: #33664d; }
+
+.color-20-40-40 {
+  color: #336666; }
+
+.colorbg-20-40-40 {
+  background-color: #336666; }
+
+.color-20-40-50 {
+  color: #336680; }
+
+.colorbg-20-40-50 {
+  background-color: #336680; }
+
+.color-20-40-60 {
+  color: #336699; }
+
+.colorbg-20-40-60 {
+  background-color: #336699; }
+
+.color-20-40-70 {
+  color: #3366b3; }
+
+.colorbg-20-40-70 {
+  background-color: #3366b3; }
+
+.color-20-40-80 {
+  color: #3366cc; }
+
+.colorbg-20-40-80 {
+  background-color: #3366cc; }
+
+.color-20-40-90 {
+  color: #3366e6; }
+
+.colorbg-20-40-90 {
+  background-color: #3366e6; }
+
+.color-20-40-100 {
+  color: #3366ff; }
+
+.colorbg-20-40-100 {
+  background-color: #3366ff; }
+
+.color-20-50-0 {
+  color: #338000; }
+
+.colorbg-20-50-0 {
+  background-color: #338000; }
+
+.color-20-50-10 {
+  color: #33801a; }
+
+.colorbg-20-50-10 {
+  background-color: #33801a; }
+
+.color-20-50-20 {
+  color: #338033; }
+
+.colorbg-20-50-20 {
+  background-color: #338033; }
+
+.color-20-50-30 {
+  color: #33804d; }
+
+.colorbg-20-50-30 {
+  background-color: #33804d; }
+
+.color-20-50-40 {
+  color: #338066; }
+
+.colorbg-20-50-40 {
+  background-color: #338066; }
+
+.color-20-50-50 {
+  color: #338080; }
+
+.colorbg-20-50-50 {
+  background-color: #338080; }
+
+.color-20-50-60 {
+  color: #338099; }
+
+.colorbg-20-50-60 {
+  background-color: #338099; }
+
+.color-20-50-70 {
+  color: #3380b3; }
+
+.colorbg-20-50-70 {
+  background-color: #3380b3; }
+
+.color-20-50-80 {
+  color: #3380cc; }
+
+.colorbg-20-50-80 {
+  background-color: #3380cc; }
+
+.color-20-50-90 {
+  color: #3380e6; }
+
+.colorbg-20-50-90 {
+  background-color: #3380e6; }
+
+.color-20-50-100 {
+  color: #3380ff; }
+
+.colorbg-20-50-100 {
+  background-color: #3380ff; }
+
+.color-20-60-0 {
+  color: #339900; }
+
+.colorbg-20-60-0 {
+  background-color: #339900; }
+
+.color-20-60-10 {
+  color: #33991a; }
+
+.colorbg-20-60-10 {
+  background-color: #33991a; }
+
+.color-20-60-20 {
+  color: #339933; }
+
+.colorbg-20-60-20 {
+  background-color: #339933; }
+
+.color-20-60-30 {
+  color: #33994d; }
+
+.colorbg-20-60-30 {
+  background-color: #33994d; }
+
+.color-20-60-40 {
+  color: #339966; }
+
+.colorbg-20-60-40 {
+  background-color: #339966; }
+
+.color-20-60-50 {
+  color: #339980; }
+
+.colorbg-20-60-50 {
+  background-color: #339980; }
+
+.color-20-60-60 {
+  color: #339999; }
+
+.colorbg-20-60-60 {
+  background-color: #339999; }
+
+.color-20-60-70 {
+  color: #3399b3; }
+
+.colorbg-20-60-70 {
+  background-color: #3399b3; }
+
+.color-20-60-80 {
+  color: #3399cc; }
+
+.colorbg-20-60-80 {
+  background-color: #3399cc; }
+
+.color-20-60-90 {
+  color: #3399e6; }
+
+.colorbg-20-60-90 {
+  background-color: #3399e6; }
+
+.color-20-60-100 {
+  color: #3399ff; }
+
+.colorbg-20-60-100 {
+  background-color: #3399ff; }
+
+.color-20-70-0 {
+  color: #33b300; }
+
+.colorbg-20-70-0 {
+  background-color: #33b300; }
+
+.color-20-70-10 {
+  color: #33b31a; }
+
+.colorbg-20-70-10 {
+  background-color: #33b31a; }
+
+.color-20-70-20 {
+  color: #33b333; }
+
+.colorbg-20-70-20 {
+  background-color: #33b333; }
+
+.color-20-70-30 {
+  color: #33b34d; }
+
+.colorbg-20-70-30 {
+  background-color: #33b34d; }
+
+.color-20-70-40 {
+  color: #33b366; }
+
+.colorbg-20-70-40 {
+  background-color: #33b366; }
+
+.color-20-70-50 {
+  color: #33b380; }
+
+.colorbg-20-70-50 {
+  background-color: #33b380; }
+
+.color-20-70-60 {
+  color: #33b399; }
+
+.colorbg-20-70-60 {
+  background-color: #33b399; }
+
+.color-20-70-70 {
+  color: #33b3b3; }
+
+.colorbg-20-70-70 {
+  background-color: #33b3b3; }
+
+.color-20-70-80 {
+  color: #33b3cc; }
+
+.colorbg-20-70-80 {
+  background-color: #33b3cc; }
+
+.color-20-70-90 {
+  color: #33b3e6; }
+
+.colorbg-20-70-90 {
+  background-color: #33b3e6; }
+
+.color-20-70-100 {
+  color: #33b3ff; }
+
+.colorbg-20-70-100 {
+  background-color: #33b3ff; }
+
+.color-20-80-0 {
+  color: #33cc00; }
+
+.colorbg-20-80-0 {
+  background-color: #33cc00; }
+
+.color-20-80-10 {
+  color: #33cc1a; }
+
+.colorbg-20-80-10 {
+  background-color: #33cc1a; }
+
+.color-20-80-20 {
+  color: #33cc33; }
+
+.colorbg-20-80-20 {
+  background-color: #33cc33; }
+
+.color-20-80-30 {
+  color: #33cc4d; }
+
+.colorbg-20-80-30 {
+  background-color: #33cc4d; }
+
+.color-20-80-40 {
+  color: #33cc66; }
+
+.colorbg-20-80-40 {
+  background-color: #33cc66; }
+
+.color-20-80-50 {
+  color: #33cc80; }
+
+.colorbg-20-80-50 {
+  background-color: #33cc80; }
+
+.color-20-80-60 {
+  color: #33cc99; }
+
+.colorbg-20-80-60 {
+  background-color: #33cc99; }
+
+.color-20-80-70 {
+  color: #33ccb3; }
+
+.colorbg-20-80-70 {
+  background-color: #33ccb3; }
+
+.color-20-80-80 {
+  color: #33cccc; }
+
+.colorbg-20-80-80 {
+  background-color: #33cccc; }
+
+.color-20-80-90 {
+  color: #33cce6; }
+
+.colorbg-20-80-90 {
+  background-color: #33cce6; }
+
+.color-20-80-100 {
+  color: #33ccff; }
+
+.colorbg-20-80-100 {
+  background-color: #33ccff; }
+
+.color-20-90-0 {
+  color: #33e600; }
+
+.colorbg-20-90-0 {
+  background-color: #33e600; }
+
+.color-20-90-10 {
+  color: #33e61a; }
+
+.colorbg-20-90-10 {
+  background-color: #33e61a; }
+
+.color-20-90-20 {
+  color: #33e633; }
+
+.colorbg-20-90-20 {
+  background-color: #33e633; }
+
+.color-20-90-30 {
+  color: #33e64d; }
+
+.colorbg-20-90-30 {
+  background-color: #33e64d; }
+
+.color-20-90-40 {
+  color: #33e666; }
+
+.colorbg-20-90-40 {
+  background-color: #33e666; }
+
+.color-20-90-50 {
+  color: #33e680; }
+
+.colorbg-20-90-50 {
+  background-color: #33e680; }
+
+.color-20-90-60 {
+  color: #33e699; }
+
+.colorbg-20-90-60 {
+  background-color: #33e699; }
+
+.color-20-90-70 {
+  color: #33e6b3; }
+
+.colorbg-20-90-70 {
+  background-color: #33e6b3; }
+
+.color-20-90-80 {
+  color: #33e6cc; }
+
+.colorbg-20-90-80 {
+  background-color: #33e6cc; }
+
+.color-20-90-90 {
+  color: #33e6e6; }
+
+.colorbg-20-90-90 {
+  background-color: #33e6e6; }
+
+.color-20-90-100 {
+  color: #33e6ff; }
+
+.colorbg-20-90-100 {
+  background-color: #33e6ff; }
+
+.color-20-100-0 {
+  color: #33ff00; }
+
+.colorbg-20-100-0 {
+  background-color: #33ff00; }
+
+.color-20-100-10 {
+  color: #33ff1a; }
+
+.colorbg-20-100-10 {
+  background-color: #33ff1a; }
+
+.color-20-100-20 {
+  color: #33ff33; }
+
+.colorbg-20-100-20 {
+  background-color: #33ff33; }
+
+.color-20-100-30 {
+  color: #33ff4d; }
+
+.colorbg-20-100-30 {
+  background-color: #33ff4d; }
+
+.color-20-100-40 {
+  color: #33ff66; }
+
+.colorbg-20-100-40 {
+  background-color: #33ff66; }
+
+.color-20-100-50 {
+  color: #33ff80; }
+
+.colorbg-20-100-50 {
+  background-color: #33ff80; }
+
+.color-20-100-60 {
+  color: #33ff99; }
+
+.colorbg-20-100-60 {
+  background-color: #33ff99; }
+
+.color-20-100-70 {
+  color: #33ffb3; }
+
+.colorbg-20-100-70 {
+  background-color: #33ffb3; }
+
+.color-20-100-80 {
+  color: #33ffcc; }
+
+.colorbg-20-100-80 {
+  background-color: #33ffcc; }
+
+.color-20-100-90 {
+  color: #33ffe6; }
+
+.colorbg-20-100-90 {
+  background-color: #33ffe6; }
+
+.color-20-100-100 {
+  color: #33ffff; }
+
+.colorbg-20-100-100 {
+  background-color: #33ffff; }
+
+.color-30-0-0 {
+  color: #4d0000; }
+
+.colorbg-30-0-0 {
+  background-color: #4d0000; }
+
+.color-30-0-10 {
+  color: #4d001a; }
+
+.colorbg-30-0-10 {
+  background-color: #4d001a; }
+
+.color-30-0-20 {
+  color: #4d0033; }
+
+.colorbg-30-0-20 {
+  background-color: #4d0033; }
+
+.color-30-0-30 {
+  color: #4d004d; }
+
+.colorbg-30-0-30 {
+  background-color: #4d004d; }
+
+.color-30-0-40 {
+  color: #4d0066; }
+
+.colorbg-30-0-40 {
+  background-color: #4d0066; }
+
+.color-30-0-50 {
+  color: #4d0080; }
+
+.colorbg-30-0-50 {
+  background-color: #4d0080; }
+
+.color-30-0-60 {
+  color: #4d0099; }
+
+.colorbg-30-0-60 {
+  background-color: #4d0099; }
+
+.color-30-0-70 {
+  color: #4d00b3; }
+
+.colorbg-30-0-70 {
+  background-color: #4d00b3; }
+
+.color-30-0-80 {
+  color: #4d00cc; }
+
+.colorbg-30-0-80 {
+  background-color: #4d00cc; }
+
+.color-30-0-90 {
+  color: #4d00e6; }
+
+.colorbg-30-0-90 {
+  background-color: #4d00e6; }
+
+.color-30-0-100 {
+  color: #4d00ff; }
+
+.colorbg-30-0-100 {
+  background-color: #4d00ff; }
+
+.color-30-10-0 {
+  color: #4d1a00; }
+
+.colorbg-30-10-0 {
+  background-color: #4d1a00; }
+
+.color-30-10-10 {
+  color: #4d1a1a; }
+
+.colorbg-30-10-10 {
+  background-color: #4d1a1a; }
+
+.color-30-10-20 {
+  color: #4d1a33; }
+
+.colorbg-30-10-20 {
+  background-color: #4d1a33; }
+
+.color-30-10-30 {
+  color: #4d1a4d; }
+
+.colorbg-30-10-30 {
+  background-color: #4d1a4d; }
+
+.color-30-10-40 {
+  color: #4d1a66; }
+
+.colorbg-30-10-40 {
+  background-color: #4d1a66; }
+
+.color-30-10-50 {
+  color: #4d1a80; }
+
+.colorbg-30-10-50 {
+  background-color: #4d1a80; }
+
+.color-30-10-60 {
+  color: #4d1a99; }
+
+.colorbg-30-10-60 {
+  background-color: #4d1a99; }
+
+.color-30-10-70 {
+  color: #4d1ab3; }
+
+.colorbg-30-10-70 {
+  background-color: #4d1ab3; }
+
+.color-30-10-80 {
+  color: #4d1acc; }
+
+.colorbg-30-10-80 {
+  background-color: #4d1acc; }
+
+.color-30-10-90 {
+  color: #4d1ae6; }
+
+.colorbg-30-10-90 {
+  background-color: #4d1ae6; }
+
+.color-30-10-100 {
+  color: #4d1aff; }
+
+.colorbg-30-10-100 {
+  background-color: #4d1aff; }
+
+.color-30-20-0 {
+  color: #4d3300; }
+
+.colorbg-30-20-0 {
+  background-color: #4d3300; }
+
+.color-30-20-10 {
+  color: #4d331a; }
+
+.colorbg-30-20-10 {
+  background-color: #4d331a; }
+
+.color-30-20-20 {
+  color: #4d3333; }
+
+.colorbg-30-20-20 {
+  background-color: #4d3333; }
+
+.color-30-20-30 {
+  color: #4d334d; }
+
+.colorbg-30-20-30 {
+  background-color: #4d334d; }
+
+.color-30-20-40 {
+  color: #4d3366; }
+
+.colorbg-30-20-40 {
+  background-color: #4d3366; }
+
+.color-30-20-50 {
+  color: #4d3380; }
+
+.colorbg-30-20-50 {
+  background-color: #4d3380; }
+
+.color-30-20-60 {
+  color: #4d3399; }
+
+.colorbg-30-20-60 {
+  background-color: #4d3399; }
+
+.color-30-20-70 {
+  color: #4d33b3; }
+
+.colorbg-30-20-70 {
+  background-color: #4d33b3; }
+
+.color-30-20-80 {
+  color: #4d33cc; }
+
+.colorbg-30-20-80 {
+  background-color: #4d33cc; }
+
+.color-30-20-90 {
+  color: #4d33e6; }
+
+.colorbg-30-20-90 {
+  background-color: #4d33e6; }
+
+.color-30-20-100 {
+  color: #4d33ff; }
+
+.colorbg-30-20-100 {
+  background-color: #4d33ff; }
+
+.color-30-30-0 {
+  color: #4d4d00; }
+
+.colorbg-30-30-0 {
+  background-color: #4d4d00; }
+
+.color-30-30-10 {
+  color: #4d4d1a; }
+
+.colorbg-30-30-10 {
+  background-color: #4d4d1a; }
+
+.color-30-30-20 {
+  color: #4d4d33; }
+
+.colorbg-30-30-20 {
+  background-color: #4d4d33; }
+
+.color-30-30-30 {
+  color: #4d4d4d; }
+
+.colorbg-30-30-30 {
+  background-color: #4d4d4d; }
+
+.color-30-30-40 {
+  color: #4d4d66; }
+
+.colorbg-30-30-40 {
+  background-color: #4d4d66; }
+
+.color-30-30-50 {
+  color: #4d4d80; }
+
+.colorbg-30-30-50 {
+  background-color: #4d4d80; }
+
+.color-30-30-60 {
+  color: #4d4d99; }
+
+.colorbg-30-30-60 {
+  background-color: #4d4d99; }
+
+.color-30-30-70 {
+  color: #4d4db3; }
+
+.colorbg-30-30-70 {
+  background-color: #4d4db3; }
+
+.color-30-30-80 {
+  color: #4d4dcc; }
+
+.colorbg-30-30-80 {
+  background-color: #4d4dcc; }
+
+.color-30-30-90 {
+  color: #4d4de6; }
+
+.colorbg-30-30-90 {
+  background-color: #4d4de6; }
+
+.color-30-30-100 {
+  color: #4d4dff; }
+
+.colorbg-30-30-100 {
+  background-color: #4d4dff; }
+
+.color-30-40-0 {
+  color: #4d6600; }
+
+.colorbg-30-40-0 {
+  background-color: #4d6600; }
+
+.color-30-40-10 {
+  color: #4d661a; }
+
+.colorbg-30-40-10 {
+  background-color: #4d661a; }
+
+.color-30-40-20 {
+  color: #4d6633; }
+
+.colorbg-30-40-20 {
+  background-color: #4d6633; }
+
+.color-30-40-30 {
+  color: #4d664d; }
+
+.colorbg-30-40-30 {
+  background-color: #4d664d; }
+
+.color-30-40-40 {
+  color: #4d6666; }
+
+.colorbg-30-40-40 {
+  background-color: #4d6666; }
+
+.color-30-40-50 {
+  color: #4d6680; }
+
+.colorbg-30-40-50 {
+  background-color: #4d6680; }
+
+.color-30-40-60 {
+  color: #4d6699; }
+
+.colorbg-30-40-60 {
+  background-color: #4d6699; }
+
+.color-30-40-70 {
+  color: #4d66b3; }
+
+.colorbg-30-40-70 {
+  background-color: #4d66b3; }
+
+.color-30-40-80 {
+  color: #4d66cc; }
+
+.colorbg-30-40-80 {
+  background-color: #4d66cc; }
+
+.color-30-40-90 {
+  color: #4d66e6; }
+
+.colorbg-30-40-90 {
+  background-color: #4d66e6; }
+
+.color-30-40-100 {
+  color: #4d66ff; }
+
+.colorbg-30-40-100 {
+  background-color: #4d66ff; }
+
+.color-30-50-0 {
+  color: #4d8000; }
+
+.colorbg-30-50-0 {
+  background-color: #4d8000; }
+
+.color-30-50-10 {
+  color: #4d801a; }
+
+.colorbg-30-50-10 {
+  background-color: #4d801a; }
+
+.color-30-50-20 {
+  color: #4d8033; }
+
+.colorbg-30-50-20 {
+  background-color: #4d8033; }
+
+.color-30-50-30 {
+  color: #4d804d; }
+
+.colorbg-30-50-30 {
+  background-color: #4d804d; }
+
+.color-30-50-40 {
+  color: #4d8066; }
+
+.colorbg-30-50-40 {
+  background-color: #4d8066; }
+
+.color-30-50-50 {
+  color: #4d8080; }
+
+.colorbg-30-50-50 {
+  background-color: #4d8080; }
+
+.color-30-50-60 {
+  color: #4d8099; }
+
+.colorbg-30-50-60 {
+  background-color: #4d8099; }
+
+.color-30-50-70 {
+  color: #4d80b3; }
+
+.colorbg-30-50-70 {
+  background-color: #4d80b3; }
+
+.color-30-50-80 {
+  color: #4d80cc; }
+
+.colorbg-30-50-80 {
+  background-color: #4d80cc; }
+
+.color-30-50-90 {
+  color: #4d80e6; }
+
+.colorbg-30-50-90 {
+  background-color: #4d80e6; }
+
+.color-30-50-100 {
+  color: #4d80ff; }
+
+.colorbg-30-50-100 {
+  background-color: #4d80ff; }
+
+.color-30-60-0 {
+  color: #4d9900; }
+
+.colorbg-30-60-0 {
+  background-color: #4d9900; }
+
+.color-30-60-10 {
+  color: #4d991a; }
+
+.colorbg-30-60-10 {
+  background-color: #4d991a; }
+
+.color-30-60-20 {
+  color: #4d9933; }
+
+.colorbg-30-60-20 {
+  background-color: #4d9933; }
+
+.color-30-60-30 {
+  color: #4d994d; }
+
+.colorbg-30-60-30 {
+  background-color: #4d994d; }
+
+.color-30-60-40 {
+  color: #4d9966; }
+
+.colorbg-30-60-40 {
+  background-color: #4d9966; }
+
+.color-30-60-50 {
+  color: #4d9980; }
+
+.colorbg-30-60-50 {
+  background-color: #4d9980; }
+
+.color-30-60-60 {
+  color: #4d9999; }
+
+.colorbg-30-60-60 {
+  background-color: #4d9999; }
+
+.color-30-60-70 {
+  color: #4d99b3; }
+
+.colorbg-30-60-70 {
+  background-color: #4d99b3; }
+
+.color-30-60-80 {
+  color: #4d99cc; }
+
+.colorbg-30-60-80 {
+  background-color: #4d99cc; }
+
+.color-30-60-90 {
+  color: #4d99e6; }
+
+.colorbg-30-60-90 {
+  background-color: #4d99e6; }
+
+.color-30-60-100 {
+  color: #4d99ff; }
+
+.colorbg-30-60-100 {
+  background-color: #4d99ff; }
+
+.color-30-70-0 {
+  color: #4db300; }
+
+.colorbg-30-70-0 {
+  background-color: #4db300; }
+
+.color-30-70-10 {
+  color: #4db31a; }
+
+.colorbg-30-70-10 {
+  background-color: #4db31a; }
+
+.color-30-70-20 {
+  color: #4db333; }
+
+.colorbg-30-70-20 {
+  background-color: #4db333; }
+
+.color-30-70-30 {
+  color: #4db34d; }
+
+.colorbg-30-70-30 {
+  background-color: #4db34d; }
+
+.color-30-70-40 {
+  color: #4db366; }
+
+.colorbg-30-70-40 {
+  background-color: #4db366; }
+
+.color-30-70-50 {
+  color: #4db380; }
+
+.colorbg-30-70-50 {
+  background-color: #4db380; }
+
+.color-30-70-60 {
+  color: #4db399; }
+
+.colorbg-30-70-60 {
+  background-color: #4db399; }
+
+.color-30-70-70 {
+  color: #4db3b3; }
+
+.colorbg-30-70-70 {
+  background-color: #4db3b3; }
+
+.color-30-70-80 {
+  color: #4db3cc; }
+
+.colorbg-30-70-80 {
+  background-color: #4db3cc; }
+
+.color-30-70-90 {
+  color: #4db3e6; }
+
+.colorbg-30-70-90 {
+  background-color: #4db3e6; }
+
+.color-30-70-100 {
+  color: #4db3ff; }
+
+.colorbg-30-70-100 {
+  background-color: #4db3ff; }
+
+.color-30-80-0 {
+  color: #4dcc00; }
+
+.colorbg-30-80-0 {
+  background-color: #4dcc00; }
+
+.color-30-80-10 {
+  color: #4dcc1a; }
+
+.colorbg-30-80-10 {
+  background-color: #4dcc1a; }
+
+.color-30-80-20 {
+  color: #4dcc33; }
+
+.colorbg-30-80-20 {
+  background-color: #4dcc33; }
+
+.color-30-80-30 {
+  color: #4dcc4d; }
+
+.colorbg-30-80-30 {
+  background-color: #4dcc4d; }
+
+.color-30-80-40 {
+  color: #4dcc66; }
+
+.colorbg-30-80-40 {
+  background-color: #4dcc66; }
+
+.color-30-80-50 {
+  color: #4dcc80; }
+
+.colorbg-30-80-50 {
+  background-color: #4dcc80; }
+
+.color-30-80-60 {
+  color: #4dcc99; }
+
+.colorbg-30-80-60 {
+  background-color: #4dcc99; }
+
+.color-30-80-70 {
+  color: #4dccb3; }
+
+.colorbg-30-80-70 {
+  background-color: #4dccb3; }
+
+.color-30-80-80 {
+  color: #4dcccc; }
+
+.colorbg-30-80-80 {
+  background-color: #4dcccc; }
+
+.color-30-80-90 {
+  color: #4dcce6; }
+
+.colorbg-30-80-90 {
+  background-color: #4dcce6; }
+
+.color-30-80-100 {
+  color: #4dccff; }
+
+.colorbg-30-80-100 {
+  background-color: #4dccff; }
+
+.color-30-90-0 {
+  color: #4de600; }
+
+.colorbg-30-90-0 {
+  background-color: #4de600; }
+
+.color-30-90-10 {
+  color: #4de61a; }
+
+.colorbg-30-90-10 {
+  background-color: #4de61a; }
+
+.color-30-90-20 {
+  color: #4de633; }
+
+.colorbg-30-90-20 {
+  background-color: #4de633; }
+
+.color-30-90-30 {
+  color: #4de64d; }
+
+.colorbg-30-90-30 {
+  background-color: #4de64d; }
+
+.color-30-90-40 {
+  color: #4de666; }
+
+.colorbg-30-90-40 {
+  background-color: #4de666; }
+
+.color-30-90-50 {
+  color: #4de680; }
+
+.colorbg-30-90-50 {
+  background-color: #4de680; }
+
+.color-30-90-60 {
+  color: #4de699; }
+
+.colorbg-30-90-60 {
+  background-color: #4de699; }
+
+.color-30-90-70 {
+  color: #4de6b3; }
+
+.colorbg-30-90-70 {
+  background-color: #4de6b3; }
+
+.color-30-90-80 {
+  color: #4de6cc; }
+
+.colorbg-30-90-80 {
+  background-color: #4de6cc; }
+
+.color-30-90-90 {
+  color: #4de6e6; }
+
+.colorbg-30-90-90 {
+  background-color: #4de6e6; }
+
+.color-30-90-100 {
+  color: #4de6ff; }
+
+.colorbg-30-90-100 {
+  background-color: #4de6ff; }
+
+.color-30-100-0 {
+  color: #4dff00; }
+
+.colorbg-30-100-0 {
+  background-color: #4dff00; }
+
+.color-30-100-10 {
+  color: #4dff1a; }
+
+.colorbg-30-100-10 {
+  background-color: #4dff1a; }
+
+.color-30-100-20 {
+  color: #4dff33; }
+
+.colorbg-30-100-20 {
+  background-color: #4dff33; }
+
+.color-30-100-30 {
+  color: #4dff4d; }
+
+.colorbg-30-100-30 {
+  background-color: #4dff4d; }
+
+.color-30-100-40 {
+  color: #4dff66; }
+
+.colorbg-30-100-40 {
+  background-color: #4dff66; }
+
+.color-30-100-50 {
+  color: #4dff80; }
+
+.colorbg-30-100-50 {
+  background-color: #4dff80; }
+
+.color-30-100-60 {
+  color: #4dff99; }
+
+.colorbg-30-100-60 {
+  background-color: #4dff99; }
+
+.color-30-100-70 {
+  color: #4dffb3; }
+
+.colorbg-30-100-70 {
+  background-color: #4dffb3; }
+
+.color-30-100-80 {
+  color: #4dffcc; }
+
+.colorbg-30-100-80 {
+  background-color: #4dffcc; }
+
+.color-30-100-90 {
+  color: #4dffe6; }
+
+.colorbg-30-100-90 {
+  background-color: #4dffe6; }
+
+.color-30-100-100 {
+  color: #4dffff; }
+
+.colorbg-30-100-100 {
+  background-color: #4dffff; }
+
+.color-40-0-0 {
+  color: #660000; }
+
+.colorbg-40-0-0 {
+  background-color: #660000; }
+
+.color-40-0-10 {
+  color: #66001a; }
+
+.colorbg-40-0-10 {
+  background-color: #66001a; }
+
+.color-40-0-20 {
+  color: #660033; }
+
+.colorbg-40-0-20 {
+  background-color: #660033; }
+
+.color-40-0-30 {
+  color: #66004d; }
+
+.colorbg-40-0-30 {
+  background-color: #66004d; }
+
+.color-40-0-40 {
+  color: #660066; }
+
+.colorbg-40-0-40 {
+  background-color: #660066; }
+
+.color-40-0-50 {
+  color: #660080; }
+
+.colorbg-40-0-50 {
+  background-color: #660080; }
+
+.color-40-0-60 {
+  color: #660099; }
+
+.colorbg-40-0-60 {
+  background-color: #660099; }
+
+.color-40-0-70 {
+  color: #6600b3; }
+
+.colorbg-40-0-70 {
+  background-color: #6600b3; }
+
+.color-40-0-80 {
+  color: #6600cc; }
+
+.colorbg-40-0-80 {
+  background-color: #6600cc; }
+
+.color-40-0-90 {
+  color: #6600e6; }
+
+.colorbg-40-0-90 {
+  background-color: #6600e6; }
+
+.color-40-0-100 {
+  color: #6600ff; }
+
+.colorbg-40-0-100 {
+  background-color: #6600ff; }
+
+.color-40-10-0 {
+  color: #661a00; }
+
+.colorbg-40-10-0 {
+  background-color: #661a00; }
+
+.color-40-10-10 {
+  color: #661a1a; }
+
+.colorbg-40-10-10 {
+  background-color: #661a1a; }
+
+.color-40-10-20 {
+  color: #661a33; }
+
+.colorbg-40-10-20 {
+  background-color: #661a33; }
+
+.color-40-10-30 {
+  color: #661a4d; }
+
+.colorbg-40-10-30 {
+  background-color: #661a4d; }
+
+.color-40-10-40 {
+  color: #661a66; }
+
+.colorbg-40-10-40 {
+  background-color: #661a66; }
+
+.color-40-10-50 {
+  color: #661a80; }
+
+.colorbg-40-10-50 {
+  background-color: #661a80; }
+
+.color-40-10-60 {
+  color: #661a99; }
+
+.colorbg-40-10-60 {
+  background-color: #661a99; }
+
+.color-40-10-70 {
+  color: #661ab3; }
+
+.colorbg-40-10-70 {
+  background-color: #661ab3; }
+
+.color-40-10-80 {
+  color: #661acc; }
+
+.colorbg-40-10-80 {
+  background-color: #661acc; }
+
+.color-40-10-90 {
+  color: #661ae6; }
+
+.colorbg-40-10-90 {
+  background-color: #661ae6; }
+
+.color-40-10-100 {
+  color: #661aff; }
+
+.colorbg-40-10-100 {
+  background-color: #661aff; }
+
+.color-40-20-0 {
+  color: #663300; }
+
+.colorbg-40-20-0 {
+  background-color: #663300; }
+
+.color-40-20-10 {
+  color: #66331a; }
+
+.colorbg-40-20-10 {
+  background-color: #66331a; }
+
+.color-40-20-20 {
+  color: #663333; }
+
+.colorbg-40-20-20 {
+  background-color: #663333; }
+
+.color-40-20-30 {
+  color: #66334d; }
+
+.colorbg-40-20-30 {
+  background-color: #66334d; }
+
+.color-40-20-40 {
+  color: #663366; }
+
+.colorbg-40-20-40 {
+  background-color: #663366; }
+
+.color-40-20-50 {
+  color: #663380; }
+
+.colorbg-40-20-50 {
+  background-color: #663380; }
+
+.color-40-20-60 {
+  color: rebeccapurple; }
+
+.colorbg-40-20-60 {
+  background-color: rebeccapurple; }
+
+.color-40-20-70 {
+  color: #6633b3; }
+
+.colorbg-40-20-70 {
+  background-color: #6633b3; }
+
+.color-40-20-80 {
+  color: #6633cc; }
+
+.colorbg-40-20-80 {
+  background-color: #6633cc; }
+
+.color-40-20-90 {
+  color: #6633e6; }
+
+.colorbg-40-20-90 {
+  background-color: #6633e6; }
+
+.color-40-20-100 {
+  color: #6633ff; }
+
+.colorbg-40-20-100 {
+  background-color: #6633ff; }
+
+.color-40-30-0 {
+  color: #664d00; }
+
+.colorbg-40-30-0 {
+  background-color: #664d00; }
+
+.color-40-30-10 {
+  color: #664d1a; }
+
+.colorbg-40-30-10 {
+  background-color: #664d1a; }
+
+.color-40-30-20 {
+  color: #664d33; }
+
+.colorbg-40-30-20 {
+  background-color: #664d33; }
+
+.color-40-30-30 {
+  color: #664d4d; }
+
+.colorbg-40-30-30 {
+  background-color: #664d4d; }
+
+.color-40-30-40 {
+  color: #664d66; }
+
+.colorbg-40-30-40 {
+  background-color: #664d66; }
+
+.color-40-30-50 {
+  color: #664d80; }
+
+.colorbg-40-30-50 {
+  background-color: #664d80; }
+
+.color-40-30-60 {
+  color: #664d99; }
+
+.colorbg-40-30-60 {
+  background-color: #664d99; }
+
+.color-40-30-70 {
+  color: #664db3; }
+
+.colorbg-40-30-70 {
+  background-color: #664db3; }
+
+.color-40-30-80 {
+  color: #664dcc; }
+
+.colorbg-40-30-80 {
+  background-color: #664dcc; }
+
+.color-40-30-90 {
+  color: #664de6; }
+
+.colorbg-40-30-90 {
+  background-color: #664de6; }
+
+.color-40-30-100 {
+  color: #664dff; }
+
+.colorbg-40-30-100 {
+  background-color: #664dff; }
+
+.color-40-40-0 {
+  color: #666600; }
+
+.colorbg-40-40-0 {
+  background-color: #666600; }
+
+.color-40-40-10 {
+  color: #66661a; }
+
+.colorbg-40-40-10 {
+  background-color: #66661a; }
+
+.color-40-40-20 {
+  color: #666633; }
+
+.colorbg-40-40-20 {
+  background-color: #666633; }
+
+.color-40-40-30 {
+  color: #66664d; }
+
+.colorbg-40-40-30 {
+  background-color: #66664d; }
+
+.color-40-40-40 {
+  color: #666666; }
+
+.colorbg-40-40-40 {
+  background-color: #666666; }
+
+.color-40-40-50 {
+  color: #666680; }
+
+.colorbg-40-40-50 {
+  background-color: #666680; }
+
+.color-40-40-60 {
+  color: #666699; }
+
+.colorbg-40-40-60 {
+  background-color: #666699; }
+
+.color-40-40-70 {
+  color: #6666b3; }
+
+.colorbg-40-40-70 {
+  background-color: #6666b3; }
+
+.color-40-40-80 {
+  color: #6666cc; }
+
+.colorbg-40-40-80 {
+  background-color: #6666cc; }
+
+.color-40-40-90 {
+  color: #6666e6; }
+
+.colorbg-40-40-90 {
+  background-color: #6666e6; }
+
+.color-40-40-100 {
+  color: #6666ff; }
+
+.colorbg-40-40-100 {
+  background-color: #6666ff; }
+
+.color-40-50-0 {
+  color: #668000; }
+
+.colorbg-40-50-0 {
+  background-color: #668000; }
+
+.color-40-50-10 {
+  color: #66801a; }
+
+.colorbg-40-50-10 {
+  background-color: #66801a; }
+
+.color-40-50-20 {
+  color: #668033; }
+
+.colorbg-40-50-20 {
+  background-color: #668033; }
+
+.color-40-50-30 {
+  color: #66804d; }
+
+.colorbg-40-50-30 {
+  background-color: #66804d; }
+
+.color-40-50-40 {
+  color: #668066; }
+
+.colorbg-40-50-40 {
+  background-color: #668066; }
+
+.color-40-50-50 {
+  color: #668080; }
+
+.colorbg-40-50-50 {
+  background-color: #668080; }
+
+.color-40-50-60 {
+  color: #668099; }
+
+.colorbg-40-50-60 {
+  background-color: #668099; }
+
+.color-40-50-70 {
+  color: #6680b3; }
+
+.colorbg-40-50-70 {
+  background-color: #6680b3; }
+
+.color-40-50-80 {
+  color: #6680cc; }
+
+.colorbg-40-50-80 {
+  background-color: #6680cc; }
+
+.color-40-50-90 {
+  color: #6680e6; }
+
+.colorbg-40-50-90 {
+  background-color: #6680e6; }
+
+.color-40-50-100 {
+  color: #6680ff; }
+
+.colorbg-40-50-100 {
+  background-color: #6680ff; }
+
+.color-40-60-0 {
+  color: #669900; }
+
+.colorbg-40-60-0 {
+  background-color: #669900; }
+
+.color-40-60-10 {
+  color: #66991a; }
+
+.colorbg-40-60-10 {
+  background-color: #66991a; }
+
+.color-40-60-20 {
+  color: #669933; }
+
+.colorbg-40-60-20 {
+  background-color: #669933; }
+
+.color-40-60-30 {
+  color: #66994d; }
+
+.colorbg-40-60-30 {
+  background-color: #66994d; }
+
+.color-40-60-40 {
+  color: #669966; }
+
+.colorbg-40-60-40 {
+  background-color: #669966; }
+
+.color-40-60-50 {
+  color: #669980; }
+
+.colorbg-40-60-50 {
+  background-color: #669980; }
+
+.color-40-60-60 {
+  color: #669999; }
+
+.colorbg-40-60-60 {
+  background-color: #669999; }
+
+.color-40-60-70 {
+  color: #6699b3; }
+
+.colorbg-40-60-70 {
+  background-color: #6699b3; }
+
+.color-40-60-80 {
+  color: #6699cc; }
+
+.colorbg-40-60-80 {
+  background-color: #6699cc; }
+
+.color-40-60-90 {
+  color: #6699e6; }
+
+.colorbg-40-60-90 {
+  background-color: #6699e6; }
+
+.color-40-60-100 {
+  color: #6699ff; }
+
+.colorbg-40-60-100 {
+  background-color: #6699ff; }
+
+.color-40-70-0 {
+  color: #66b300; }
+
+.colorbg-40-70-0 {
+  background-color: #66b300; }
+
+.color-40-70-10 {
+  color: #66b31a; }
+
+.colorbg-40-70-10 {
+  background-color: #66b31a; }
+
+.color-40-70-20 {
+  color: #66b333; }
+
+.colorbg-40-70-20 {
+  background-color: #66b333; }
+
+.color-40-70-30 {
+  color: #66b34d; }
+
+.colorbg-40-70-30 {
+  background-color: #66b34d; }
+
+.color-40-70-40 {
+  color: #66b366; }
+
+.colorbg-40-70-40 {
+  background-color: #66b366; }
+
+.color-40-70-50 {
+  color: #66b380; }
+
+.colorbg-40-70-50 {
+  background-color: #66b380; }
+
+.color-40-70-60 {
+  color: #66b399; }
+
+.colorbg-40-70-60 {
+  background-color: #66b399; }
+
+.color-40-70-70 {
+  color: #66b3b3; }
+
+.colorbg-40-70-70 {
+  background-color: #66b3b3; }
+
+.color-40-70-80 {
+  color: #66b3cc; }
+
+.colorbg-40-70-80 {
+  background-color: #66b3cc; }
+
+.color-40-70-90 {
+  color: #66b3e6; }
+
+.colorbg-40-70-90 {
+  background-color: #66b3e6; }
+
+.color-40-70-100 {
+  color: #66b3ff; }
+
+.colorbg-40-70-100 {
+  background-color: #66b3ff; }
+
+.color-40-80-0 {
+  color: #66cc00; }
+
+.colorbg-40-80-0 {
+  background-color: #66cc00; }
+
+.color-40-80-10 {
+  color: #66cc1a; }
+
+.colorbg-40-80-10 {
+  background-color: #66cc1a; }
+
+.color-40-80-20 {
+  color: #66cc33; }
+
+.colorbg-40-80-20 {
+  background-color: #66cc33; }
+
+.color-40-80-30 {
+  color: #66cc4d; }
+
+.colorbg-40-80-30 {
+  background-color: #66cc4d; }
+
+.color-40-80-40 {
+  color: #66cc66; }
+
+.colorbg-40-80-40 {
+  background-color: #66cc66; }
+
+.color-40-80-50 {
+  color: #66cc80; }
+
+.colorbg-40-80-50 {
+  background-color: #66cc80; }
+
+.color-40-80-60 {
+  color: #66cc99; }
+
+.colorbg-40-80-60 {
+  background-color: #66cc99; }
+
+.color-40-80-70 {
+  color: #66ccb3; }
+
+.colorbg-40-80-70 {
+  background-color: #66ccb3; }
+
+.color-40-80-80 {
+  color: #66cccc; }
+
+.colorbg-40-80-80 {
+  background-color: #66cccc; }
+
+.color-40-80-90 {
+  color: #66cce6; }
+
+.colorbg-40-80-90 {
+  background-color: #66cce6; }
+
+.color-40-80-100 {
+  color: #66ccff; }
+
+.colorbg-40-80-100 {
+  background-color: #66ccff; }
+
+.color-40-90-0 {
+  color: #66e600; }
+
+.colorbg-40-90-0 {
+  background-color: #66e600; }
+
+.color-40-90-10 {
+  color: #66e61a; }
+
+.colorbg-40-90-10 {
+  background-color: #66e61a; }
+
+.color-40-90-20 {
+  color: #66e633; }
+
+.colorbg-40-90-20 {
+  background-color: #66e633; }
+
+.color-40-90-30 {
+  color: #66e64d; }
+
+.colorbg-40-90-30 {
+  background-color: #66e64d; }
+
+.color-40-90-40 {
+  color: #66e666; }
+
+.colorbg-40-90-40 {
+  background-color: #66e666; }
+
+.color-40-90-50 {
+  color: #66e680; }
+
+.colorbg-40-90-50 {
+  background-color: #66e680; }
+
+.color-40-90-60 {
+  color: #66e699; }
+
+.colorbg-40-90-60 {
+  background-color: #66e699; }
+
+.color-40-90-70 {
+  color: #66e6b3; }
+
+.colorbg-40-90-70 {
+  background-color: #66e6b3; }
+
+.color-40-90-80 {
+  color: #66e6cc; }
+
+.colorbg-40-90-80 {
+  background-color: #66e6cc; }
+
+.color-40-90-90 {
+  color: #66e6e6; }
+
+.colorbg-40-90-90 {
+  background-color: #66e6e6; }
+
+.color-40-90-100 {
+  color: #66e6ff; }
+
+.colorbg-40-90-100 {
+  background-color: #66e6ff; }
+
+.color-40-100-0 {
+  color: #66ff00; }
+
+.colorbg-40-100-0 {
+  background-color: #66ff00; }
+
+.color-40-100-10 {
+  color: #66ff1a; }
+
+.colorbg-40-100-10 {
+  background-color: #66ff1a; }
+
+.color-40-100-20 {
+  color: #66ff33; }
+
+.colorbg-40-100-20 {
+  background-color: #66ff33; }
+
+.color-40-100-30 {
+  color: #66ff4d; }
+
+.colorbg-40-100-30 {
+  background-color: #66ff4d; }
+
+.color-40-100-40 {
+  color: #66ff66; }
+
+.colorbg-40-100-40 {
+  background-color: #66ff66; }
+
+.color-40-100-50 {
+  color: #66ff80; }
+
+.colorbg-40-100-50 {
+  background-color: #66ff80; }
+
+.color-40-100-60 {
+  color: #66ff99; }
+
+.colorbg-40-100-60 {
+  background-color: #66ff99; }
+
+.color-40-100-70 {
+  color: #66ffb3; }
+
+.colorbg-40-100-70 {
+  background-color: #66ffb3; }
+
+.color-40-100-80 {
+  color: #66ffcc; }
+
+.colorbg-40-100-80 {
+  background-color: #66ffcc; }
+
+.color-40-100-90 {
+  color: #66ffe6; }
+
+.colorbg-40-100-90 {
+  background-color: #66ffe6; }
+
+.color-40-100-100 {
+  color: #66ffff; }
+
+.colorbg-40-100-100 {
+  background-color: #66ffff; }
+
+.color-50-0-0 {
+  color: maroon; }
+
+.colorbg-50-0-0 {
+  background-color: maroon; }
+
+.color-50-0-10 {
+  color: #80001a; }
+
+.colorbg-50-0-10 {
+  background-color: #80001a; }
+
+.color-50-0-20 {
+  color: #800033; }
+
+.colorbg-50-0-20 {
+  background-color: #800033; }
+
+.color-50-0-30 {
+  color: #80004d; }
+
+.colorbg-50-0-30 {
+  background-color: #80004d; }
+
+.color-50-0-40 {
+  color: #800066; }
+
+.colorbg-50-0-40 {
+  background-color: #800066; }
+
+.color-50-0-50 {
+  color: purple; }
+
+.colorbg-50-0-50 {
+  background-color: purple; }
+
+.color-50-0-60 {
+  color: #800099; }
+
+.colorbg-50-0-60 {
+  background-color: #800099; }
+
+.color-50-0-70 {
+  color: #8000b3; }
+
+.colorbg-50-0-70 {
+  background-color: #8000b3; }
+
+.color-50-0-80 {
+  color: #8000cc; }
+
+.colorbg-50-0-80 {
+  background-color: #8000cc; }
+
+.color-50-0-90 {
+  color: #8000e6; }
+
+.colorbg-50-0-90 {
+  background-color: #8000e6; }
+
+.color-50-0-100 {
+  color: #8000ff; }
+
+.colorbg-50-0-100 {
+  background-color: #8000ff; }
+
+.color-50-10-0 {
+  color: #801a00; }
+
+.colorbg-50-10-0 {
+  background-color: #801a00; }
+
+.color-50-10-10 {
+  color: #801a1a; }
+
+.colorbg-50-10-10 {
+  background-color: #801a1a; }
+
+.color-50-10-20 {
+  color: #801a33; }
+
+.colorbg-50-10-20 {
+  background-color: #801a33; }
+
+.color-50-10-30 {
+  color: #801a4d; }
+
+.colorbg-50-10-30 {
+  background-color: #801a4d; }
+
+.color-50-10-40 {
+  color: #801a66; }
+
+.colorbg-50-10-40 {
+  background-color: #801a66; }
+
+.color-50-10-50 {
+  color: #801a80; }
+
+.colorbg-50-10-50 {
+  background-color: #801a80; }
+
+.color-50-10-60 {
+  color: #801a99; }
+
+.colorbg-50-10-60 {
+  background-color: #801a99; }
+
+.color-50-10-70 {
+  color: #801ab3; }
+
+.colorbg-50-10-70 {
+  background-color: #801ab3; }
+
+.color-50-10-80 {
+  color: #801acc; }
+
+.colorbg-50-10-80 {
+  background-color: #801acc; }
+
+.color-50-10-90 {
+  color: #801ae6; }
+
+.colorbg-50-10-90 {
+  background-color: #801ae6; }
+
+.color-50-10-100 {
+  color: #801aff; }
+
+.colorbg-50-10-100 {
+  background-color: #801aff; }
+
+.color-50-20-0 {
+  color: #803300; }
+
+.colorbg-50-20-0 {
+  background-color: #803300; }
+
+.color-50-20-10 {
+  color: #80331a; }
+
+.colorbg-50-20-10 {
+  background-color: #80331a; }
+
+.color-50-20-20 {
+  color: #803333; }
+
+.colorbg-50-20-20 {
+  background-color: #803333; }
+
+.color-50-20-30 {
+  color: #80334d; }
+
+.colorbg-50-20-30 {
+  background-color: #80334d; }
+
+.color-50-20-40 {
+  color: #803366; }
+
+.colorbg-50-20-40 {
+  background-color: #803366; }
+
+.color-50-20-50 {
+  color: #803380; }
+
+.colorbg-50-20-50 {
+  background-color: #803380; }
+
+.color-50-20-60 {
+  color: #803399; }
+
+.colorbg-50-20-60 {
+  background-color: #803399; }
+
+.color-50-20-70 {
+  color: #8033b3; }
+
+.colorbg-50-20-70 {
+  background-color: #8033b3; }
+
+.color-50-20-80 {
+  color: #8033cc; }
+
+.colorbg-50-20-80 {
+  background-color: #8033cc; }
+
+.color-50-20-90 {
+  color: #8033e6; }
+
+.colorbg-50-20-90 {
+  background-color: #8033e6; }
+
+.color-50-20-100 {
+  color: #8033ff; }
+
+.colorbg-50-20-100 {
+  background-color: #8033ff; }
+
+.color-50-30-0 {
+  color: #804d00; }
+
+.colorbg-50-30-0 {
+  background-color: #804d00; }
+
+.color-50-30-10 {
+  color: #804d1a; }
+
+.colorbg-50-30-10 {
+  background-color: #804d1a; }
+
+.color-50-30-20 {
+  color: #804d33; }
+
+.colorbg-50-30-20 {
+  background-color: #804d33; }
+
+.color-50-30-30 {
+  color: #804d4d; }
+
+.colorbg-50-30-30 {
+  background-color: #804d4d; }
+
+.color-50-30-40 {
+  color: #804d66; }
+
+.colorbg-50-30-40 {
+  background-color: #804d66; }
+
+.color-50-30-50 {
+  color: #804d80; }
+
+.colorbg-50-30-50 {
+  background-color: #804d80; }
+
+.color-50-30-60 {
+  color: #804d99; }
+
+.colorbg-50-30-60 {
+  background-color: #804d99; }
+
+.color-50-30-70 {
+  color: #804db3; }
+
+.colorbg-50-30-70 {
+  background-color: #804db3; }
+
+.color-50-30-80 {
+  color: #804dcc; }
+
+.colorbg-50-30-80 {
+  background-color: #804dcc; }
+
+.color-50-30-90 {
+  color: #804de6; }
+
+.colorbg-50-30-90 {
+  background-color: #804de6; }
+
+.color-50-30-100 {
+  color: #804dff; }
+
+.colorbg-50-30-100 {
+  background-color: #804dff; }
+
+.color-50-40-0 {
+  color: #806600; }
+
+.colorbg-50-40-0 {
+  background-color: #806600; }
+
+.color-50-40-10 {
+  color: #80661a; }
+
+.colorbg-50-40-10 {
+  background-color: #80661a; }
+
+.color-50-40-20 {
+  color: #806633; }
+
+.colorbg-50-40-20 {
+  background-color: #806633; }
+
+.color-50-40-30 {
+  color: #80664d; }
+
+.colorbg-50-40-30 {
+  background-color: #80664d; }
+
+.color-50-40-40 {
+  color: #806666; }
+
+.colorbg-50-40-40 {
+  background-color: #806666; }
+
+.color-50-40-50 {
+  color: #806680; }
+
+.colorbg-50-40-50 {
+  background-color: #806680; }
+
+.color-50-40-60 {
+  color: #806699; }
+
+.colorbg-50-40-60 {
+  background-color: #806699; }
+
+.color-50-40-70 {
+  color: #8066b3; }
+
+.colorbg-50-40-70 {
+  background-color: #8066b3; }
+
+.color-50-40-80 {
+  color: #8066cc; }
+
+.colorbg-50-40-80 {
+  background-color: #8066cc; }
+
+.color-50-40-90 {
+  color: #8066e6; }
+
+.colorbg-50-40-90 {
+  background-color: #8066e6; }
+
+.color-50-40-100 {
+  color: #8066ff; }
+
+.colorbg-50-40-100 {
+  background-color: #8066ff; }
+
+.color-50-50-0 {
+  color: olive; }
+
+.colorbg-50-50-0 {
+  background-color: olive; }
+
+.color-50-50-10 {
+  color: #80801a; }
+
+.colorbg-50-50-10 {
+  background-color: #80801a; }
+
+.color-50-50-20 {
+  color: #808033; }
+
+.colorbg-50-50-20 {
+  background-color: #808033; }
+
+.color-50-50-30 {
+  color: #80804d; }
+
+.colorbg-50-50-30 {
+  background-color: #80804d; }
+
+.color-50-50-40 {
+  color: #808066; }
+
+.colorbg-50-50-40 {
+  background-color: #808066; }
+
+.color-50-50-50 {
+  color: gray; }
+
+.colorbg-50-50-50 {
+  background-color: gray; }
+
+.color-50-50-60 {
+  color: #808099; }
+
+.colorbg-50-50-60 {
+  background-color: #808099; }
+
+.color-50-50-70 {
+  color: #8080b3; }
+
+.colorbg-50-50-70 {
+  background-color: #8080b3; }
+
+.color-50-50-80 {
+  color: #8080cc; }
+
+.colorbg-50-50-80 {
+  background-color: #8080cc; }
+
+.color-50-50-90 {
+  color: #8080e6; }
+
+.colorbg-50-50-90 {
+  background-color: #8080e6; }
+
+.color-50-50-100 {
+  color: #8080ff; }
+
+.colorbg-50-50-100 {
+  background-color: #8080ff; }
+
+.color-50-60-0 {
+  color: #809900; }
+
+.colorbg-50-60-0 {
+  background-color: #809900; }
+
+.color-50-60-10 {
+  color: #80991a; }
+
+.colorbg-50-60-10 {
+  background-color: #80991a; }
+
+.color-50-60-20 {
+  color: #809933; }
+
+.colorbg-50-60-20 {
+  background-color: #809933; }
+
+.color-50-60-30 {
+  color: #80994d; }
+
+.colorbg-50-60-30 {
+  background-color: #80994d; }
+
+.color-50-60-40 {
+  color: #809966; }
+
+.colorbg-50-60-40 {
+  background-color: #809966; }
+
+.color-50-60-50 {
+  color: #809980; }
+
+.colorbg-50-60-50 {
+  background-color: #809980; }
+
+.color-50-60-60 {
+  color: #809999; }
+
+.colorbg-50-60-60 {
+  background-color: #809999; }
+
+.color-50-60-70 {
+  color: #8099b3; }
+
+.colorbg-50-60-70 {
+  background-color: #8099b3; }
+
+.color-50-60-80 {
+  color: #8099cc; }
+
+.colorbg-50-60-80 {
+  background-color: #8099cc; }
+
+.color-50-60-90 {
+  color: #8099e6; }
+
+.colorbg-50-60-90 {
+  background-color: #8099e6; }
+
+.color-50-60-100 {
+  color: #8099ff; }
+
+.colorbg-50-60-100 {
+  background-color: #8099ff; }
+
+.color-50-70-0 {
+  color: #80b300; }
+
+.colorbg-50-70-0 {
+  background-color: #80b300; }
+
+.color-50-70-10 {
+  color: #80b31a; }
+
+.colorbg-50-70-10 {
+  background-color: #80b31a; }
+
+.color-50-70-20 {
+  color: #80b333; }
+
+.colorbg-50-70-20 {
+  background-color: #80b333; }
+
+.color-50-70-30 {
+  color: #80b34d; }
+
+.colorbg-50-70-30 {
+  background-color: #80b34d; }
+
+.color-50-70-40 {
+  color: #80b366; }
+
+.colorbg-50-70-40 {
+  background-color: #80b366; }
+
+.color-50-70-50 {
+  color: #80b380; }
+
+.colorbg-50-70-50 {
+  background-color: #80b380; }
+
+.color-50-70-60 {
+  color: #80b399; }
+
+.colorbg-50-70-60 {
+  background-color: #80b399; }
+
+.color-50-70-70 {
+  color: #80b3b3; }
+
+.colorbg-50-70-70 {
+  background-color: #80b3b3; }
+
+.color-50-70-80 {
+  color: #80b3cc; }
+
+.colorbg-50-70-80 {
+  background-color: #80b3cc; }
+
+.color-50-70-90 {
+  color: #80b3e6; }
+
+.colorbg-50-70-90 {
+  background-color: #80b3e6; }
+
+.color-50-70-100 {
+  color: #80b3ff; }
+
+.colorbg-50-70-100 {
+  background-color: #80b3ff; }
+
+.color-50-80-0 {
+  color: #80cc00; }
+
+.colorbg-50-80-0 {
+  background-color: #80cc00; }
+
+.color-50-80-10 {
+  color: #80cc1a; }
+
+.colorbg-50-80-10 {
+  background-color: #80cc1a; }
+
+.color-50-80-20 {
+  color: #80cc33; }
+
+.colorbg-50-80-20 {
+  background-color: #80cc33; }
+
+.color-50-80-30 {
+  color: #80cc4d; }
+
+.colorbg-50-80-30 {
+  background-color: #80cc4d; }
+
+.color-50-80-40 {
+  color: #80cc66; }
+
+.colorbg-50-80-40 {
+  background-color: #80cc66; }
+
+.color-50-80-50 {
+  color: #80cc80; }
+
+.colorbg-50-80-50 {
+  background-color: #80cc80; }
+
+.color-50-80-60 {
+  color: #80cc99; }
+
+.colorbg-50-80-60 {
+  background-color: #80cc99; }
+
+.color-50-80-70 {
+  color: #80ccb3; }
+
+.colorbg-50-80-70 {
+  background-color: #80ccb3; }
+
+.color-50-80-80 {
+  color: #80cccc; }
+
+.colorbg-50-80-80 {
+  background-color: #80cccc; }
+
+.color-50-80-90 {
+  color: #80cce6; }
+
+.colorbg-50-80-90 {
+  background-color: #80cce6; }
+
+.color-50-80-100 {
+  color: #80ccff; }
+
+.colorbg-50-80-100 {
+  background-color: #80ccff; }
+
+.color-50-90-0 {
+  color: #80e600; }
+
+.colorbg-50-90-0 {
+  background-color: #80e600; }
+
+.color-50-90-10 {
+  color: #80e61a; }
+
+.colorbg-50-90-10 {
+  background-color: #80e61a; }
+
+.color-50-90-20 {
+  color: #80e633; }
+
+.colorbg-50-90-20 {
+  background-color: #80e633; }
+
+.color-50-90-30 {
+  color: #80e64d; }
+
+.colorbg-50-90-30 {
+  background-color: #80e64d; }
+
+.color-50-90-40 {
+  color: #80e666; }
+
+.colorbg-50-90-40 {
+  background-color: #80e666; }
+
+.color-50-90-50 {
+  color: #80e680; }
+
+.colorbg-50-90-50 {
+  background-color: #80e680; }
+
+.color-50-90-60 {
+  color: #80e699; }
+
+.colorbg-50-90-60 {
+  background-color: #80e699; }
+
+.color-50-90-70 {
+  color: #80e6b3; }
+
+.colorbg-50-90-70 {
+  background-color: #80e6b3; }
+
+.color-50-90-80 {
+  color: #80e6cc; }
+
+.colorbg-50-90-80 {
+  background-color: #80e6cc; }
+
+.color-50-90-90 {
+  color: #80e6e6; }
+
+.colorbg-50-90-90 {
+  background-color: #80e6e6; }
+
+.color-50-90-100 {
+  color: #80e6ff; }
+
+.colorbg-50-90-100 {
+  background-color: #80e6ff; }
+
+.color-50-100-0 {
+  color: #80ff00; }
+
+.colorbg-50-100-0 {
+  background-color: #80ff00; }
+
+.color-50-100-10 {
+  color: #80ff1a; }
+
+.colorbg-50-100-10 {
+  background-color: #80ff1a; }
+
+.color-50-100-20 {
+  color: #80ff33; }
+
+.colorbg-50-100-20 {
+  background-color: #80ff33; }
+
+.color-50-100-30 {
+  color: #80ff4d; }
+
+.colorbg-50-100-30 {
+  background-color: #80ff4d; }
+
+.color-50-100-40 {
+  color: #80ff66; }
+
+.colorbg-50-100-40 {
+  background-color: #80ff66; }
+
+.color-50-100-50 {
+  color: #80ff80; }
+
+.colorbg-50-100-50 {
+  background-color: #80ff80; }
+
+.color-50-100-60 {
+  color: #80ff99; }
+
+.colorbg-50-100-60 {
+  background-color: #80ff99; }
+
+.color-50-100-70 {
+  color: #80ffb3; }
+
+.colorbg-50-100-70 {
+  background-color: #80ffb3; }
+
+.color-50-100-80 {
+  color: #80ffcc; }
+
+.colorbg-50-100-80 {
+  background-color: #80ffcc; }
+
+.color-50-100-90 {
+  color: #80ffe6; }
+
+.colorbg-50-100-90 {
+  background-color: #80ffe6; }
+
+.color-50-100-100 {
+  color: #80ffff; }
+
+.colorbg-50-100-100 {
+  background-color: #80ffff; }
+
+.color-60-0-0 {
+  color: #990000; }
+
+.colorbg-60-0-0 {
+  background-color: #990000; }
+
+.color-60-0-10 {
+  color: #99001a; }
+
+.colorbg-60-0-10 {
+  background-color: #99001a; }
+
+.color-60-0-20 {
+  color: #990033; }
+
+.colorbg-60-0-20 {
+  background-color: #990033; }
+
+.color-60-0-30 {
+  color: #99004d; }
+
+.colorbg-60-0-30 {
+  background-color: #99004d; }
+
+.color-60-0-40 {
+  color: #990066; }
+
+.colorbg-60-0-40 {
+  background-color: #990066; }
+
+.color-60-0-50 {
+  color: #990080; }
+
+.colorbg-60-0-50 {
+  background-color: #990080; }
+
+.color-60-0-60 {
+  color: #990099; }
+
+.colorbg-60-0-60 {
+  background-color: #990099; }
+
+.color-60-0-70 {
+  color: #9900b3; }
+
+.colorbg-60-0-70 {
+  background-color: #9900b3; }
+
+.color-60-0-80 {
+  color: #9900cc; }
+
+.colorbg-60-0-80 {
+  background-color: #9900cc; }
+
+.color-60-0-90 {
+  color: #9900e6; }
+
+.colorbg-60-0-90 {
+  background-color: #9900e6; }
+
+.color-60-0-100 {
+  color: #9900ff; }
+
+.colorbg-60-0-100 {
+  background-color: #9900ff; }
+
+.color-60-10-0 {
+  color: #991a00; }
+
+.colorbg-60-10-0 {
+  background-color: #991a00; }
+
+.color-60-10-10 {
+  color: #991a1a; }
+
+.colorbg-60-10-10 {
+  background-color: #991a1a; }
+
+.color-60-10-20 {
+  color: #991a33; }
+
+.colorbg-60-10-20 {
+  background-color: #991a33; }
+
+.color-60-10-30 {
+  color: #991a4d; }
+
+.colorbg-60-10-30 {
+  background-color: #991a4d; }
+
+.color-60-10-40 {
+  color: #991a66; }
+
+.colorbg-60-10-40 {
+  background-color: #991a66; }
+
+.color-60-10-50 {
+  color: #991a80; }
+
+.colorbg-60-10-50 {
+  background-color: #991a80; }
+
+.color-60-10-60 {
+  color: #991a99; }
+
+.colorbg-60-10-60 {
+  background-color: #991a99; }
+
+.color-60-10-70 {
+  color: #991ab3; }
+
+.colorbg-60-10-70 {
+  background-color: #991ab3; }
+
+.color-60-10-80 {
+  color: #991acc; }
+
+.colorbg-60-10-80 {
+  background-color: #991acc; }
+
+.color-60-10-90 {
+  color: #991ae6; }
+
+.colorbg-60-10-90 {
+  background-color: #991ae6; }
+
+.color-60-10-100 {
+  color: #991aff; }
+
+.colorbg-60-10-100 {
+  background-color: #991aff; }
+
+.color-60-20-0 {
+  color: #993300; }
+
+.colorbg-60-20-0 {
+  background-color: #993300; }
+
+.color-60-20-10 {
+  color: #99331a; }
+
+.colorbg-60-20-10 {
+  background-color: #99331a; }
+
+.color-60-20-20 {
+  color: #993333; }
+
+.colorbg-60-20-20 {
+  background-color: #993333; }
+
+.color-60-20-30 {
+  color: #99334d; }
+
+.colorbg-60-20-30 {
+  background-color: #99334d; }
+
+.color-60-20-40 {
+  color: #993366; }
+
+.colorbg-60-20-40 {
+  background-color: #993366; }
+
+.color-60-20-50 {
+  color: #993380; }
+
+.colorbg-60-20-50 {
+  background-color: #993380; }
+
+.color-60-20-60 {
+  color: #993399; }
+
+.colorbg-60-20-60 {
+  background-color: #993399; }
+
+.color-60-20-70 {
+  color: #9933b3; }
+
+.colorbg-60-20-70 {
+  background-color: #9933b3; }
+
+.color-60-20-80 {
+  color: #9933cc; }
+
+.colorbg-60-20-80 {
+  background-color: #9933cc; }
+
+.color-60-20-90 {
+  color: #9933e6; }
+
+.colorbg-60-20-90 {
+  background-color: #9933e6; }
+
+.color-60-20-100 {
+  color: #9933ff; }
+
+.colorbg-60-20-100 {
+  background-color: #9933ff; }
+
+.color-60-30-0 {
+  color: #994d00; }
+
+.colorbg-60-30-0 {
+  background-color: #994d00; }
+
+.color-60-30-10 {
+  color: #994d1a; }
+
+.colorbg-60-30-10 {
+  background-color: #994d1a; }
+
+.color-60-30-20 {
+  color: #994d33; }
+
+.colorbg-60-30-20 {
+  background-color: #994d33; }
+
+.color-60-30-30 {
+  color: #994d4d; }
+
+.colorbg-60-30-30 {
+  background-color: #994d4d; }
+
+.color-60-30-40 {
+  color: #994d66; }
+
+.colorbg-60-30-40 {
+  background-color: #994d66; }
+
+.color-60-30-50 {
+  color: #994d80; }
+
+.colorbg-60-30-50 {
+  background-color: #994d80; }
+
+.color-60-30-60 {
+  color: #994d99; }
+
+.colorbg-60-30-60 {
+  background-color: #994d99; }
+
+.color-60-30-70 {
+  color: #994db3; }
+
+.colorbg-60-30-70 {
+  background-color: #994db3; }
+
+.color-60-30-80 {
+  color: #994dcc; }
+
+.colorbg-60-30-80 {
+  background-color: #994dcc; }
+
+.color-60-30-90 {
+  color: #994de6; }
+
+.colorbg-60-30-90 {
+  background-color: #994de6; }
+
+.color-60-30-100 {
+  color: #994dff; }
+
+.colorbg-60-30-100 {
+  background-color: #994dff; }
+
+.color-60-40-0 {
+  color: #996600; }
+
+.colorbg-60-40-0 {
+  background-color: #996600; }
+
+.color-60-40-10 {
+  color: #99661a; }
+
+.colorbg-60-40-10 {
+  background-color: #99661a; }
+
+.color-60-40-20 {
+  color: #996633; }
+
+.colorbg-60-40-20 {
+  background-color: #996633; }
+
+.color-60-40-30 {
+  color: #99664d; }
+
+.colorbg-60-40-30 {
+  background-color: #99664d; }
+
+.color-60-40-40 {
+  color: #996666; }
+
+.colorbg-60-40-40 {
+  background-color: #996666; }
+
+.color-60-40-50 {
+  color: #996680; }
+
+.colorbg-60-40-50 {
+  background-color: #996680; }
+
+.color-60-40-60 {
+  color: #996699; }
+
+.colorbg-60-40-60 {
+  background-color: #996699; }
+
+.color-60-40-70 {
+  color: #9966b3; }
+
+.colorbg-60-40-70 {
+  background-color: #9966b3; }
+
+.color-60-40-80 {
+  color: #9966cc; }
+
+.colorbg-60-40-80 {
+  background-color: #9966cc; }
+
+.color-60-40-90 {
+  color: #9966e6; }
+
+.colorbg-60-40-90 {
+  background-color: #9966e6; }
+
+.color-60-40-100 {
+  color: #9966ff; }
+
+.colorbg-60-40-100 {
+  background-color: #9966ff; }
+
+.color-60-50-0 {
+  color: #998000; }
+
+.colorbg-60-50-0 {
+  background-color: #998000; }
+
+.color-60-50-10 {
+  color: #99801a; }
+
+.colorbg-60-50-10 {
+  background-color: #99801a; }
+
+.color-60-50-20 {
+  color: #998033; }
+
+.colorbg-60-50-20 {
+  background-color: #998033; }
+
+.color-60-50-30 {
+  color: #99804d; }
+
+.colorbg-60-50-30 {
+  background-color: #99804d; }
+
+.color-60-50-40 {
+  color: #998066; }
+
+.colorbg-60-50-40 {
+  background-color: #998066; }
+
+.color-60-50-50 {
+  color: #998080; }
+
+.colorbg-60-50-50 {
+  background-color: #998080; }
+
+.color-60-50-60 {
+  color: #998099; }
+
+.colorbg-60-50-60 {
+  background-color: #998099; }
+
+.color-60-50-70 {
+  color: #9980b3; }
+
+.colorbg-60-50-70 {
+  background-color: #9980b3; }
+
+.color-60-50-80 {
+  color: #9980cc; }
+
+.colorbg-60-50-80 {
+  background-color: #9980cc; }
+
+.color-60-50-90 {
+  color: #9980e6; }
+
+.colorbg-60-50-90 {
+  background-color: #9980e6; }
+
+.color-60-50-100 {
+  color: #9980ff; }
+
+.colorbg-60-50-100 {
+  background-color: #9980ff; }
+
+.color-60-60-0 {
+  color: #999900; }
+
+.colorbg-60-60-0 {
+  background-color: #999900; }
+
+.color-60-60-10 {
+  color: #99991a; }
+
+.colorbg-60-60-10 {
+  background-color: #99991a; }
+
+.color-60-60-20 {
+  color: #999933; }
+
+.colorbg-60-60-20 {
+  background-color: #999933; }
+
+.color-60-60-30 {
+  color: #99994d; }
+
+.colorbg-60-60-30 {
+  background-color: #99994d; }
+
+.color-60-60-40 {
+  color: #999966; }
+
+.colorbg-60-60-40 {
+  background-color: #999966; }
+
+.color-60-60-50 {
+  color: #999980; }
+
+.colorbg-60-60-50 {
+  background-color: #999980; }
+
+.color-60-60-60 {
+  color: #999999; }
+
+.colorbg-60-60-60 {
+  background-color: #999999; }
+
+.color-60-60-70 {
+  color: #9999b3; }
+
+.colorbg-60-60-70 {
+  background-color: #9999b3; }
+
+.color-60-60-80 {
+  color: #9999cc; }
+
+.colorbg-60-60-80 {
+  background-color: #9999cc; }
+
+.color-60-60-90 {
+  color: #9999e6; }
+
+.colorbg-60-60-90 {
+  background-color: #9999e6; }
+
+.color-60-60-100 {
+  color: #9999ff; }
+
+.colorbg-60-60-100 {
+  background-color: #9999ff; }
+
+.color-60-70-0 {
+  color: #99b300; }
+
+.colorbg-60-70-0 {
+  background-color: #99b300; }
+
+.color-60-70-10 {
+  color: #99b31a; }
+
+.colorbg-60-70-10 {
+  background-color: #99b31a; }
+
+.color-60-70-20 {
+  color: #99b333; }
+
+.colorbg-60-70-20 {
+  background-color: #99b333; }
+
+.color-60-70-30 {
+  color: #99b34d; }
+
+.colorbg-60-70-30 {
+  background-color: #99b34d; }
+
+.color-60-70-40 {
+  color: #99b366; }
+
+.colorbg-60-70-40 {
+  background-color: #99b366; }
+
+.color-60-70-50 {
+  color: #99b380; }
+
+.colorbg-60-70-50 {
+  background-color: #99b380; }
+
+.color-60-70-60 {
+  color: #99b399; }
+
+.colorbg-60-70-60 {
+  background-color: #99b399; }
+
+.color-60-70-70 {
+  color: #99b3b3; }
+
+.colorbg-60-70-70 {
+  background-color: #99b3b3; }
+
+.color-60-70-80 {
+  color: #99b3cc; }
+
+.colorbg-60-70-80 {
+  background-color: #99b3cc; }
+
+.color-60-70-90 {
+  color: #99b3e6; }
+
+.colorbg-60-70-90 {
+  background-color: #99b3e6; }
+
+.color-60-70-100 {
+  color: #99b3ff; }
+
+.colorbg-60-70-100 {
+  background-color: #99b3ff; }
+
+.color-60-80-0 {
+  color: #99cc00; }
+
+.colorbg-60-80-0 {
+  background-color: #99cc00; }
+
+.color-60-80-10 {
+  color: #99cc1a; }
+
+.colorbg-60-80-10 {
+  background-color: #99cc1a; }
+
+.color-60-80-20 {
+  color: #99cc33; }
+
+.colorbg-60-80-20 {
+  background-color: #99cc33; }
+
+.color-60-80-30 {
+  color: #99cc4d; }
+
+.colorbg-60-80-30 {
+  background-color: #99cc4d; }
+
+.color-60-80-40 {
+  color: #99cc66; }
+
+.colorbg-60-80-40 {
+  background-color: #99cc66; }
+
+.color-60-80-50 {
+  color: #99cc80; }
+
+.colorbg-60-80-50 {
+  background-color: #99cc80; }
+
+.color-60-80-60 {
+  color: #99cc99; }
+
+.colorbg-60-80-60 {
+  background-color: #99cc99; }
+
+.color-60-80-70 {
+  color: #99ccb3; }
+
+.colorbg-60-80-70 {
+  background-color: #99ccb3; }
+
+.color-60-80-80 {
+  color: #99cccc; }
+
+.colorbg-60-80-80 {
+  background-color: #99cccc; }
+
+.color-60-80-90 {
+  color: #99cce6; }
+
+.colorbg-60-80-90 {
+  background-color: #99cce6; }
+
+.color-60-80-100 {
+  color: #99ccff; }
+
+.colorbg-60-80-100 {
+  background-color: #99ccff; }
+
+.color-60-90-0 {
+  color: #99e600; }
+
+.colorbg-60-90-0 {
+  background-color: #99e600; }
+
+.color-60-90-10 {
+  color: #99e61a; }
+
+.colorbg-60-90-10 {
+  background-color: #99e61a; }
+
+.color-60-90-20 {
+  color: #99e633; }
+
+.colorbg-60-90-20 {
+  background-color: #99e633; }
+
+.color-60-90-30 {
+  color: #99e64d; }
+
+.colorbg-60-90-30 {
+  background-color: #99e64d; }
+
+.color-60-90-40 {
+  color: #99e666; }
+
+.colorbg-60-90-40 {
+  background-color: #99e666; }
+
+.color-60-90-50 {
+  color: #99e680; }
+
+.colorbg-60-90-50 {
+  background-color: #99e680; }
+
+.color-60-90-60 {
+  color: #99e699; }
+
+.colorbg-60-90-60 {
+  background-color: #99e699; }
+
+.color-60-90-70 {
+  color: #99e6b3; }
+
+.colorbg-60-90-70 {
+  background-color: #99e6b3; }
+
+.color-60-90-80 {
+  color: #99e6cc; }
+
+.colorbg-60-90-80 {
+  background-color: #99e6cc; }
+
+.color-60-90-90 {
+  color: #99e6e6; }
+
+.colorbg-60-90-90 {
+  background-color: #99e6e6; }
+
+.color-60-90-100 {
+  color: #99e6ff; }
+
+.colorbg-60-90-100 {
+  background-color: #99e6ff; }
+
+.color-60-100-0 {
+  color: #99ff00; }
+
+.colorbg-60-100-0 {
+  background-color: #99ff00; }
+
+.color-60-100-10 {
+  color: #99ff1a; }
+
+.colorbg-60-100-10 {
+  background-color: #99ff1a; }
+
+.color-60-100-20 {
+  color: #99ff33; }
+
+.colorbg-60-100-20 {
+  background-color: #99ff33; }
+
+.color-60-100-30 {
+  color: #99ff4d; }
+
+.colorbg-60-100-30 {
+  background-color: #99ff4d; }
+
+.color-60-100-40 {
+  color: #99ff66; }
+
+.colorbg-60-100-40 {
+  background-color: #99ff66; }
+
+.color-60-100-50 {
+  color: #99ff80; }
+
+.colorbg-60-100-50 {
+  background-color: #99ff80; }
+
+.color-60-100-60 {
+  color: #99ff99; }
+
+.colorbg-60-100-60 {
+  background-color: #99ff99; }
+
+.color-60-100-70 {
+  color: #99ffb3; }
+
+.colorbg-60-100-70 {
+  background-color: #99ffb3; }
+
+.color-60-100-80 {
+  color: #99ffcc; }
+
+.colorbg-60-100-80 {
+  background-color: #99ffcc; }
+
+.color-60-100-90 {
+  color: #99ffe6; }
+
+.colorbg-60-100-90 {
+  background-color: #99ffe6; }
+
+.color-60-100-100 {
+  color: #99ffff; }
+
+.colorbg-60-100-100 {
+  background-color: #99ffff; }
+
+.color-70-0-0 {
+  color: #b30000; }
+
+.colorbg-70-0-0 {
+  background-color: #b30000; }
+
+.color-70-0-10 {
+  color: #b3001a; }
+
+.colorbg-70-0-10 {
+  background-color: #b3001a; }
+
+.color-70-0-20 {
+  color: #b30033; }
+
+.colorbg-70-0-20 {
+  background-color: #b30033; }
+
+.color-70-0-30 {
+  color: #b3004d; }
+
+.colorbg-70-0-30 {
+  background-color: #b3004d; }
+
+.color-70-0-40 {
+  color: #b30066; }
+
+.colorbg-70-0-40 {
+  background-color: #b30066; }
+
+.color-70-0-50 {
+  color: #b30080; }
+
+.colorbg-70-0-50 {
+  background-color: #b30080; }
+
+.color-70-0-60 {
+  color: #b30099; }
+
+.colorbg-70-0-60 {
+  background-color: #b30099; }
+
+.color-70-0-70 {
+  color: #b300b3; }
+
+.colorbg-70-0-70 {
+  background-color: #b300b3; }
+
+.color-70-0-80 {
+  color: #b300cc; }
+
+.colorbg-70-0-80 {
+  background-color: #b300cc; }
+
+.color-70-0-90 {
+  color: #b300e6; }
+
+.colorbg-70-0-90 {
+  background-color: #b300e6; }
+
+.color-70-0-100 {
+  color: #b300ff; }
+
+.colorbg-70-0-100 {
+  background-color: #b300ff; }
+
+.color-70-10-0 {
+  color: #b31a00; }
+
+.colorbg-70-10-0 {
+  background-color: #b31a00; }
+
+.color-70-10-10 {
+  color: #b31a1a; }
+
+.colorbg-70-10-10 {
+  background-color: #b31a1a; }
+
+.color-70-10-20 {
+  color: #b31a33; }
+
+.colorbg-70-10-20 {
+  background-color: #b31a33; }
+
+.color-70-10-30 {
+  color: #b31a4d; }
+
+.colorbg-70-10-30 {
+  background-color: #b31a4d; }
+
+.color-70-10-40 {
+  color: #b31a66; }
+
+.colorbg-70-10-40 {
+  background-color: #b31a66; }
+
+.color-70-10-50 {
+  color: #b31a80; }
+
+.colorbg-70-10-50 {
+  background-color: #b31a80; }
+
+.color-70-10-60 {
+  color: #b31a99; }
+
+.colorbg-70-10-60 {
+  background-color: #b31a99; }
+
+.color-70-10-70 {
+  color: #b31ab3; }
+
+.colorbg-70-10-70 {
+  background-color: #b31ab3; }
+
+.color-70-10-80 {
+  color: #b31acc; }
+
+.colorbg-70-10-80 {
+  background-color: #b31acc; }
+
+.color-70-10-90 {
+  color: #b31ae6; }
+
+.colorbg-70-10-90 {
+  background-color: #b31ae6; }
+
+.color-70-10-100 {
+  color: #b31aff; }
+
+.colorbg-70-10-100 {
+  background-color: #b31aff; }
+
+.color-70-20-0 {
+  color: #b33300; }
+
+.colorbg-70-20-0 {
+  background-color: #b33300; }
+
+.color-70-20-10 {
+  color: #b3331a; }
+
+.colorbg-70-20-10 {
+  background-color: #b3331a; }
+
+.color-70-20-20 {
+  color: #b33333; }
+
+.colorbg-70-20-20 {
+  background-color: #b33333; }
+
+.color-70-20-30 {
+  color: #b3334d; }
+
+.colorbg-70-20-30 {
+  background-color: #b3334d; }
+
+.color-70-20-40 {
+  color: #b33366; }
+
+.colorbg-70-20-40 {
+  background-color: #b33366; }
+
+.color-70-20-50 {
+  color: #b33380; }
+
+.colorbg-70-20-50 {
+  background-color: #b33380; }
+
+.color-70-20-60 {
+  color: #b33399; }
+
+.colorbg-70-20-60 {
+  background-color: #b33399; }
+
+.color-70-20-70 {
+  color: #b333b3; }
+
+.colorbg-70-20-70 {
+  background-color: #b333b3; }
+
+.color-70-20-80 {
+  color: #b333cc; }
+
+.colorbg-70-20-80 {
+  background-color: #b333cc; }
+
+.color-70-20-90 {
+  color: #b333e6; }
+
+.colorbg-70-20-90 {
+  background-color: #b333e6; }
+
+.color-70-20-100 {
+  color: #b333ff; }
+
+.colorbg-70-20-100 {
+  background-color: #b333ff; }
+
+.color-70-30-0 {
+  color: #b34d00; }
+
+.colorbg-70-30-0 {
+  background-color: #b34d00; }
+
+.color-70-30-10 {
+  color: #b34d1a; }
+
+.colorbg-70-30-10 {
+  background-color: #b34d1a; }
+
+.color-70-30-20 {
+  color: #b34d33; }
+
+.colorbg-70-30-20 {
+  background-color: #b34d33; }
+
+.color-70-30-30 {
+  color: #b34d4d; }
+
+.colorbg-70-30-30 {
+  background-color: #b34d4d; }
+
+.color-70-30-40 {
+  color: #b34d66; }
+
+.colorbg-70-30-40 {
+  background-color: #b34d66; }
+
+.color-70-30-50 {
+  color: #b34d80; }
+
+.colorbg-70-30-50 {
+  background-color: #b34d80; }
+
+.color-70-30-60 {
+  color: #b34d99; }
+
+.colorbg-70-30-60 {
+  background-color: #b34d99; }
+
+.color-70-30-70 {
+  color: #b34db3; }
+
+.colorbg-70-30-70 {
+  background-color: #b34db3; }
+
+.color-70-30-80 {
+  color: #b34dcc; }
+
+.colorbg-70-30-80 {
+  background-color: #b34dcc; }
+
+.color-70-30-90 {
+  color: #b34de6; }
+
+.colorbg-70-30-90 {
+  background-color: #b34de6; }
+
+.color-70-30-100 {
+  color: #b34dff; }
+
+.colorbg-70-30-100 {
+  background-color: #b34dff; }
+
+.color-70-40-0 {
+  color: #b36600; }
+
+.colorbg-70-40-0 {
+  background-color: #b36600; }
+
+.color-70-40-10 {
+  color: #b3661a; }
+
+.colorbg-70-40-10 {
+  background-color: #b3661a; }
+
+.color-70-40-20 {
+  color: #b36633; }
+
+.colorbg-70-40-20 {
+  background-color: #b36633; }
+
+.color-70-40-30 {
+  color: #b3664d; }
+
+.colorbg-70-40-30 {
+  background-color: #b3664d; }
+
+.color-70-40-40 {
+  color: #b36666; }
+
+.colorbg-70-40-40 {
+  background-color: #b36666; }
+
+.color-70-40-50 {
+  color: #b36680; }
+
+.colorbg-70-40-50 {
+  background-color: #b36680; }
+
+.color-70-40-60 {
+  color: #b36699; }
+
+.colorbg-70-40-60 {
+  background-color: #b36699; }
+
+.color-70-40-70 {
+  color: #b366b3; }
+
+.colorbg-70-40-70 {
+  background-color: #b366b3; }
+
+.color-70-40-80 {
+  color: #b366cc; }
+
+.colorbg-70-40-80 {
+  background-color: #b366cc; }
+
+.color-70-40-90 {
+  color: #b366e6; }
+
+.colorbg-70-40-90 {
+  background-color: #b366e6; }
+
+.color-70-40-100 {
+  color: #b366ff; }
+
+.colorbg-70-40-100 {
+  background-color: #b366ff; }
+
+.color-70-50-0 {
+  color: #b38000; }
+
+.colorbg-70-50-0 {
+  background-color: #b38000; }
+
+.color-70-50-10 {
+  color: #b3801a; }
+
+.colorbg-70-50-10 {
+  background-color: #b3801a; }
+
+.color-70-50-20 {
+  color: #b38033; }
+
+.colorbg-70-50-20 {
+  background-color: #b38033; }
+
+.color-70-50-30 {
+  color: #b3804d; }
+
+.colorbg-70-50-30 {
+  background-color: #b3804d; }
+
+.color-70-50-40 {
+  color: #b38066; }
+
+.colorbg-70-50-40 {
+  background-color: #b38066; }
+
+.color-70-50-50 {
+  color: #b38080; }
+
+.colorbg-70-50-50 {
+  background-color: #b38080; }
+
+.color-70-50-60 {
+  color: #b38099; }
+
+.colorbg-70-50-60 {
+  background-color: #b38099; }
+
+.color-70-50-70 {
+  color: #b380b3; }
+
+.colorbg-70-50-70 {
+  background-color: #b380b3; }
+
+.color-70-50-80 {
+  color: #b380cc; }
+
+.colorbg-70-50-80 {
+  background-color: #b380cc; }
+
+.color-70-50-90 {
+  color: #b380e6; }
+
+.colorbg-70-50-90 {
+  background-color: #b380e6; }
+
+.color-70-50-100 {
+  color: #b380ff; }
+
+.colorbg-70-50-100 {
+  background-color: #b380ff; }
+
+.color-70-60-0 {
+  color: #b39900; }
+
+.colorbg-70-60-0 {
+  background-color: #b39900; }
+
+.color-70-60-10 {
+  color: #b3991a; }
+
+.colorbg-70-60-10 {
+  background-color: #b3991a; }
+
+.color-70-60-20 {
+  color: #b39933; }
+
+.colorbg-70-60-20 {
+  background-color: #b39933; }
+
+.color-70-60-30 {
+  color: #b3994d; }
+
+.colorbg-70-60-30 {
+  background-color: #b3994d; }
+
+.color-70-60-40 {
+  color: #b39966; }
+
+.colorbg-70-60-40 {
+  background-color: #b39966; }
+
+.color-70-60-50 {
+  color: #b39980; }
+
+.colorbg-70-60-50 {
+  background-color: #b39980; }
+
+.color-70-60-60 {
+  color: #b39999; }
+
+.colorbg-70-60-60 {
+  background-color: #b39999; }
+
+.color-70-60-70 {
+  color: #b399b3; }
+
+.colorbg-70-60-70 {
+  background-color: #b399b3; }
+
+.color-70-60-80 {
+  color: #b399cc; }
+
+.colorbg-70-60-80 {
+  background-color: #b399cc; }
+
+.color-70-60-90 {
+  color: #b399e6; }
+
+.colorbg-70-60-90 {
+  background-color: #b399e6; }
+
+.color-70-60-100 {
+  color: #b399ff; }
+
+.colorbg-70-60-100 {
+  background-color: #b399ff; }
+
+.color-70-70-0 {
+  color: #b3b300; }
+
+.colorbg-70-70-0 {
+  background-color: #b3b300; }
+
+.color-70-70-10 {
+  color: #b3b31a; }
+
+.colorbg-70-70-10 {
+  background-color: #b3b31a; }
+
+.color-70-70-20 {
+  color: #b3b333; }
+
+.colorbg-70-70-20 {
+  background-color: #b3b333; }
+
+.color-70-70-30 {
+  color: #b3b34d; }
+
+.colorbg-70-70-30 {
+  background-color: #b3b34d; }
+
+.color-70-70-40 {
+  color: #b3b366; }
+
+.colorbg-70-70-40 {
+  background-color: #b3b366; }
+
+.color-70-70-50 {
+  color: #b3b380; }
+
+.colorbg-70-70-50 {
+  background-color: #b3b380; }
+
+.color-70-70-60 {
+  color: #b3b399; }
+
+.colorbg-70-70-60 {
+  background-color: #b3b399; }
+
+.color-70-70-70 {
+  color: #b3b3b3; }
+
+.colorbg-70-70-70 {
+  background-color: #b3b3b3; }
+
+.color-70-70-80 {
+  color: #b3b3cc; }
+
+.colorbg-70-70-80 {
+  background-color: #b3b3cc; }
+
+.color-70-70-90 {
+  color: #b3b3e6; }
+
+.colorbg-70-70-90 {
+  background-color: #b3b3e6; }
+
+.color-70-70-100 {
+  color: #b3b3ff; }
+
+.colorbg-70-70-100 {
+  background-color: #b3b3ff; }
+
+.color-70-80-0 {
+  color: #b3cc00; }
+
+.colorbg-70-80-0 {
+  background-color: #b3cc00; }
+
+.color-70-80-10 {
+  color: #b3cc1a; }
+
+.colorbg-70-80-10 {
+  background-color: #b3cc1a; }
+
+.color-70-80-20 {
+  color: #b3cc33; }
+
+.colorbg-70-80-20 {
+  background-color: #b3cc33; }
+
+.color-70-80-30 {
+  color: #b3cc4d; }
+
+.colorbg-70-80-30 {
+  background-color: #b3cc4d; }
+
+.color-70-80-40 {
+  color: #b3cc66; }
+
+.colorbg-70-80-40 {
+  background-color: #b3cc66; }
+
+.color-70-80-50 {
+  color: #b3cc80; }
+
+.colorbg-70-80-50 {
+  background-color: #b3cc80; }
+
+.color-70-80-60 {
+  color: #b3cc99; }
+
+.colorbg-70-80-60 {
+  background-color: #b3cc99; }
+
+.color-70-80-70 {
+  color: #b3ccb3; }
+
+.colorbg-70-80-70 {
+  background-color: #b3ccb3; }
+
+.color-70-80-80 {
+  color: #b3cccc; }
+
+.colorbg-70-80-80 {
+  background-color: #b3cccc; }
+
+.color-70-80-90 {
+  color: #b3cce6; }
+
+.colorbg-70-80-90 {
+  background-color: #b3cce6; }
+
+.color-70-80-100 {
+  color: #b3ccff; }
+
+.colorbg-70-80-100 {
+  background-color: #b3ccff; }
+
+.color-70-90-0 {
+  color: #b3e600; }
+
+.colorbg-70-90-0 {
+  background-color: #b3e600; }
+
+.color-70-90-10 {
+  color: #b3e61a; }
+
+.colorbg-70-90-10 {
+  background-color: #b3e61a; }
+
+.color-70-90-20 {
+  color: #b3e633; }
+
+.colorbg-70-90-20 {
+  background-color: #b3e633; }
+
+.color-70-90-30 {
+  color: #b3e64d; }
+
+.colorbg-70-90-30 {
+  background-color: #b3e64d; }
+
+.color-70-90-40 {
+  color: #b3e666; }
+
+.colorbg-70-90-40 {
+  background-color: #b3e666; }
+
+.color-70-90-50 {
+  color: #b3e680; }
+
+.colorbg-70-90-50 {
+  background-color: #b3e680; }
+
+.color-70-90-60 {
+  color: #b3e699; }
+
+.colorbg-70-90-60 {
+  background-color: #b3e699; }
+
+.color-70-90-70 {
+  color: #b3e6b3; }
+
+.colorbg-70-90-70 {
+  background-color: #b3e6b3; }
+
+.color-70-90-80 {
+  color: #b3e6cc; }
+
+.colorbg-70-90-80 {
+  background-color: #b3e6cc; }
+
+.color-70-90-90 {
+  color: #b3e6e6; }
+
+.colorbg-70-90-90 {
+  background-color: #b3e6e6; }
+
+.color-70-90-100 {
+  color: #b3e6ff; }
+
+.colorbg-70-90-100 {
+  background-color: #b3e6ff; }
+
+.color-70-100-0 {
+  color: #b3ff00; }
+
+.colorbg-70-100-0 {
+  background-color: #b3ff00; }
+
+.color-70-100-10 {
+  color: #b3ff1a; }
+
+.colorbg-70-100-10 {
+  background-color: #b3ff1a; }
+
+.color-70-100-20 {
+  color: #b3ff33; }
+
+.colorbg-70-100-20 {
+  background-color: #b3ff33; }
+
+.color-70-100-30 {
+  color: #b3ff4d; }
+
+.colorbg-70-100-30 {
+  background-color: #b3ff4d; }
+
+.color-70-100-40 {
+  color: #b3ff66; }
+
+.colorbg-70-100-40 {
+  background-color: #b3ff66; }
+
+.color-70-100-50 {
+  color: #b3ff80; }
+
+.colorbg-70-100-50 {
+  background-color: #b3ff80; }
+
+.color-70-100-60 {
+  color: #b3ff99; }
+
+.colorbg-70-100-60 {
+  background-color: #b3ff99; }
+
+.color-70-100-70 {
+  color: #b3ffb3; }
+
+.colorbg-70-100-70 {
+  background-color: #b3ffb3; }
+
+.color-70-100-80 {
+  color: #b3ffcc; }
+
+.colorbg-70-100-80 {
+  background-color: #b3ffcc; }
+
+.color-70-100-90 {
+  color: #b3ffe6; }
+
+.colorbg-70-100-90 {
+  background-color: #b3ffe6; }
+
+.color-70-100-100 {
+  color: #b3ffff; }
+
+.colorbg-70-100-100 {
+  background-color: #b3ffff; }
+
+.color-80-0-0 {
+  color: #cc0000; }
+
+.colorbg-80-0-0 {
+  background-color: #cc0000; }
+
+.color-80-0-10 {
+  color: #cc001a; }
+
+.colorbg-80-0-10 {
+  background-color: #cc001a; }
+
+.color-80-0-20 {
+  color: #cc0033; }
+
+.colorbg-80-0-20 {
+  background-color: #cc0033; }
+
+.color-80-0-30 {
+  color: #cc004d; }
+
+.colorbg-80-0-30 {
+  background-color: #cc004d; }
+
+.color-80-0-40 {
+  color: #cc0066; }
+
+.colorbg-80-0-40 {
+  background-color: #cc0066; }
+
+.color-80-0-50 {
+  color: #cc0080; }
+
+.colorbg-80-0-50 {
+  background-color: #cc0080; }
+
+.color-80-0-60 {
+  color: #cc0099; }
+
+.colorbg-80-0-60 {
+  background-color: #cc0099; }
+
+.color-80-0-70 {
+  color: #cc00b3; }
+
+.colorbg-80-0-70 {
+  background-color: #cc00b3; }
+
+.color-80-0-80 {
+  color: #cc00cc; }
+
+.colorbg-80-0-80 {
+  background-color: #cc00cc; }
+
+.color-80-0-90 {
+  color: #cc00e6; }
+
+.colorbg-80-0-90 {
+  background-color: #cc00e6; }
+
+.color-80-0-100 {
+  color: #cc00ff; }
+
+.colorbg-80-0-100 {
+  background-color: #cc00ff; }
+
+.color-80-10-0 {
+  color: #cc1a00; }
+
+.colorbg-80-10-0 {
+  background-color: #cc1a00; }
+
+.color-80-10-10 {
+  color: #cc1a1a; }
+
+.colorbg-80-10-10 {
+  background-color: #cc1a1a; }
+
+.color-80-10-20 {
+  color: #cc1a33; }
+
+.colorbg-80-10-20 {
+  background-color: #cc1a33; }
+
+.color-80-10-30 {
+  color: #cc1a4d; }
+
+.colorbg-80-10-30 {
+  background-color: #cc1a4d; }
+
+.color-80-10-40 {
+  color: #cc1a66; }
+
+.colorbg-80-10-40 {
+  background-color: #cc1a66; }
+
+.color-80-10-50 {
+  color: #cc1a80; }
+
+.colorbg-80-10-50 {
+  background-color: #cc1a80; }
+
+.color-80-10-60 {
+  color: #cc1a99; }
+
+.colorbg-80-10-60 {
+  background-color: #cc1a99; }
+
+.color-80-10-70 {
+  color: #cc1ab3; }
+
+.colorbg-80-10-70 {
+  background-color: #cc1ab3; }
+
+.color-80-10-80 {
+  color: #cc1acc; }
+
+.colorbg-80-10-80 {
+  background-color: #cc1acc; }
+
+.color-80-10-90 {
+  color: #cc1ae6; }
+
+.colorbg-80-10-90 {
+  background-color: #cc1ae6; }
+
+.color-80-10-100 {
+  color: #cc1aff; }
+
+.colorbg-80-10-100 {
+  background-color: #cc1aff; }
+
+.color-80-20-0 {
+  color: #cc3300; }
+
+.colorbg-80-20-0 {
+  background-color: #cc3300; }
+
+.color-80-20-10 {
+  color: #cc331a; }
+
+.colorbg-80-20-10 {
+  background-color: #cc331a; }
+
+.color-80-20-20 {
+  color: #cc3333; }
+
+.colorbg-80-20-20 {
+  background-color: #cc3333; }
+
+.color-80-20-30 {
+  color: #cc334d; }
+
+.colorbg-80-20-30 {
+  background-color: #cc334d; }
+
+.color-80-20-40 {
+  color: #cc3366; }
+
+.colorbg-80-20-40 {
+  background-color: #cc3366; }
+
+.color-80-20-50 {
+  color: #cc3380; }
+
+.colorbg-80-20-50 {
+  background-color: #cc3380; }
+
+.color-80-20-60 {
+  color: #cc3399; }
+
+.colorbg-80-20-60 {
+  background-color: #cc3399; }
+
+.color-80-20-70 {
+  color: #cc33b3; }
+
+.colorbg-80-20-70 {
+  background-color: #cc33b3; }
+
+.color-80-20-80 {
+  color: #cc33cc; }
+
+.colorbg-80-20-80 {
+  background-color: #cc33cc; }
+
+.color-80-20-90 {
+  color: #cc33e6; }
+
+.colorbg-80-20-90 {
+  background-color: #cc33e6; }
+
+.color-80-20-100 {
+  color: #cc33ff; }
+
+.colorbg-80-20-100 {
+  background-color: #cc33ff; }
+
+.color-80-30-0 {
+  color: #cc4d00; }
+
+.colorbg-80-30-0 {
+  background-color: #cc4d00; }
+
+.color-80-30-10 {
+  color: #cc4d1a; }
+
+.colorbg-80-30-10 {
+  background-color: #cc4d1a; }
+
+.color-80-30-20 {
+  color: #cc4d33; }
+
+.colorbg-80-30-20 {
+  background-color: #cc4d33; }
+
+.color-80-30-30 {
+  color: #cc4d4d; }
+
+.colorbg-80-30-30 {
+  background-color: #cc4d4d; }
+
+.color-80-30-40 {
+  color: #cc4d66; }
+
+.colorbg-80-30-40 {
+  background-color: #cc4d66; }
+
+.color-80-30-50 {
+  color: #cc4d80; }
+
+.colorbg-80-30-50 {
+  background-color: #cc4d80; }
+
+.color-80-30-60 {
+  color: #cc4d99; }
+
+.colorbg-80-30-60 {
+  background-color: #cc4d99; }
+
+.color-80-30-70 {
+  color: #cc4db3; }
+
+.colorbg-80-30-70 {
+  background-color: #cc4db3; }
+
+.color-80-30-80 {
+  color: #cc4dcc; }
+
+.colorbg-80-30-80 {
+  background-color: #cc4dcc; }
+
+.color-80-30-90 {
+  color: #cc4de6; }
+
+.colorbg-80-30-90 {
+  background-color: #cc4de6; }
+
+.color-80-30-100 {
+  color: #cc4dff; }
+
+.colorbg-80-30-100 {
+  background-color: #cc4dff; }
+
+.color-80-40-0 {
+  color: #cc6600; }
+
+.colorbg-80-40-0 {
+  background-color: #cc6600; }
+
+.color-80-40-10 {
+  color: #cc661a; }
+
+.colorbg-80-40-10 {
+  background-color: #cc661a; }
+
+.color-80-40-20 {
+  color: #cc6633; }
+
+.colorbg-80-40-20 {
+  background-color: #cc6633; }
+
+.color-80-40-30 {
+  color: #cc664d; }
+
+.colorbg-80-40-30 {
+  background-color: #cc664d; }
+
+.color-80-40-40 {
+  color: #cc6666; }
+
+.colorbg-80-40-40 {
+  background-color: #cc6666; }
+
+.color-80-40-50 {
+  color: #cc6680; }
+
+.colorbg-80-40-50 {
+  background-color: #cc6680; }
+
+.color-80-40-60 {
+  color: #cc6699; }
+
+.colorbg-80-40-60 {
+  background-color: #cc6699; }
+
+.color-80-40-70 {
+  color: #cc66b3; }
+
+.colorbg-80-40-70 {
+  background-color: #cc66b3; }
+
+.color-80-40-80 {
+  color: #cc66cc; }
+
+.colorbg-80-40-80 {
+  background-color: #cc66cc; }
+
+.color-80-40-90 {
+  color: #cc66e6; }
+
+.colorbg-80-40-90 {
+  background-color: #cc66e6; }
+
+.color-80-40-100 {
+  color: #cc66ff; }
+
+.colorbg-80-40-100 {
+  background-color: #cc66ff; }
+
+.color-80-50-0 {
+  color: #cc8000; }
+
+.colorbg-80-50-0 {
+  background-color: #cc8000; }
+
+.color-80-50-10 {
+  color: #cc801a; }
+
+.colorbg-80-50-10 {
+  background-color: #cc801a; }
+
+.color-80-50-20 {
+  color: #cc8033; }
+
+.colorbg-80-50-20 {
+  background-color: #cc8033; }
+
+.color-80-50-30 {
+  color: #cc804d; }
+
+.colorbg-80-50-30 {
+  background-color: #cc804d; }
+
+.color-80-50-40 {
+  color: #cc8066; }
+
+.colorbg-80-50-40 {
+  background-color: #cc8066; }
+
+.color-80-50-50 {
+  color: #cc8080; }
+
+.colorbg-80-50-50 {
+  background-color: #cc8080; }
+
+.color-80-50-60 {
+  color: #cc8099; }
+
+.colorbg-80-50-60 {
+  background-color: #cc8099; }
+
+.color-80-50-70 {
+  color: #cc80b3; }
+
+.colorbg-80-50-70 {
+  background-color: #cc80b3; }
+
+.color-80-50-80 {
+  color: #cc80cc; }
+
+.colorbg-80-50-80 {
+  background-color: #cc80cc; }
+
+.color-80-50-90 {
+  color: #cc80e6; }
+
+.colorbg-80-50-90 {
+  background-color: #cc80e6; }
+
+.color-80-50-100 {
+  color: #cc80ff; }
+
+.colorbg-80-50-100 {
+  background-color: #cc80ff; }
+
+.color-80-60-0 {
+  color: #cc9900; }
+
+.colorbg-80-60-0 {
+  background-color: #cc9900; }
+
+.color-80-60-10 {
+  color: #cc991a; }
+
+.colorbg-80-60-10 {
+  background-color: #cc991a; }
+
+.color-80-60-20 {
+  color: #cc9933; }
+
+.colorbg-80-60-20 {
+  background-color: #cc9933; }
+
+.color-80-60-30 {
+  color: #cc994d; }
+
+.colorbg-80-60-30 {
+  background-color: #cc994d; }
+
+.color-80-60-40 {
+  color: #cc9966; }
+
+.colorbg-80-60-40 {
+  background-color: #cc9966; }
+
+.color-80-60-50 {
+  color: #cc9980; }
+
+.colorbg-80-60-50 {
+  background-color: #cc9980; }
+
+.color-80-60-60 {
+  color: #cc9999; }
+
+.colorbg-80-60-60 {
+  background-color: #cc9999; }
+
+.color-80-60-70 {
+  color: #cc99b3; }
+
+.colorbg-80-60-70 {
+  background-color: #cc99b3; }
+
+.color-80-60-80 {
+  color: #cc99cc; }
+
+.colorbg-80-60-80 {
+  background-color: #cc99cc; }
+
+.color-80-60-90 {
+  color: #cc99e6; }
+
+.colorbg-80-60-90 {
+  background-color: #cc99e6; }
+
+.color-80-60-100 {
+  color: #cc99ff; }
+
+.colorbg-80-60-100 {
+  background-color: #cc99ff; }
+
+.color-80-70-0 {
+  color: #ccb300; }
+
+.colorbg-80-70-0 {
+  background-color: #ccb300; }
+
+.color-80-70-10 {
+  color: #ccb31a; }
+
+.colorbg-80-70-10 {
+  background-color: #ccb31a; }
+
+.color-80-70-20 {
+  color: #ccb333; }
+
+.colorbg-80-70-20 {
+  background-color: #ccb333; }
+
+.color-80-70-30 {
+  color: #ccb34d; }
+
+.colorbg-80-70-30 {
+  background-color: #ccb34d; }
+
+.color-80-70-40 {
+  color: #ccb366; }
+
+.colorbg-80-70-40 {
+  background-color: #ccb366; }
+
+.color-80-70-50 {
+  color: #ccb380; }
+
+.colorbg-80-70-50 {
+  background-color: #ccb380; }
+
+.color-80-70-60 {
+  color: #ccb399; }
+
+.colorbg-80-70-60 {
+  background-color: #ccb399; }
+
+.color-80-70-70 {
+  color: #ccb3b3; }
+
+.colorbg-80-70-70 {
+  background-color: #ccb3b3; }
+
+.color-80-70-80 {
+  color: #ccb3cc; }
+
+.colorbg-80-70-80 {
+  background-color: #ccb3cc; }
+
+.color-80-70-90 {
+  color: #ccb3e6; }
+
+.colorbg-80-70-90 {
+  background-color: #ccb3e6; }
+
+.color-80-70-100 {
+  color: #ccb3ff; }
+
+.colorbg-80-70-100 {
+  background-color: #ccb3ff; }
+
+.color-80-80-0 {
+  color: #cccc00; }
+
+.colorbg-80-80-0 {
+  background-color: #cccc00; }
+
+.color-80-80-10 {
+  color: #cccc1a; }
+
+.colorbg-80-80-10 {
+  background-color: #cccc1a; }
+
+.color-80-80-20 {
+  color: #cccc33; }
+
+.colorbg-80-80-20 {
+  background-color: #cccc33; }
+
+.color-80-80-30 {
+  color: #cccc4d; }
+
+.colorbg-80-80-30 {
+  background-color: #cccc4d; }
+
+.color-80-80-40 {
+  color: #cccc66; }
+
+.colorbg-80-80-40 {
+  background-color: #cccc66; }
+
+.color-80-80-50 {
+  color: #cccc80; }
+
+.colorbg-80-80-50 {
+  background-color: #cccc80; }
+
+.color-80-80-60 {
+  color: #cccc99; }
+
+.colorbg-80-80-60 {
+  background-color: #cccc99; }
+
+.color-80-80-70 {
+  color: #ccccb3; }
+
+.colorbg-80-80-70 {
+  background-color: #ccccb3; }
+
+.color-80-80-80 {
+  color: #cccccc; }
+
+.colorbg-80-80-80 {
+  background-color: #cccccc; }
+
+.color-80-80-90 {
+  color: #cccce6; }
+
+.colorbg-80-80-90 {
+  background-color: #cccce6; }
+
+.color-80-80-100 {
+  color: #ccccff; }
+
+.colorbg-80-80-100 {
+  background-color: #ccccff; }
+
+.color-80-90-0 {
+  color: #cce600; }
+
+.colorbg-80-90-0 {
+  background-color: #cce600; }
+
+.color-80-90-10 {
+  color: #cce61a; }
+
+.colorbg-80-90-10 {
+  background-color: #cce61a; }
+
+.color-80-90-20 {
+  color: #cce633; }
+
+.colorbg-80-90-20 {
+  background-color: #cce633; }
+
+.color-80-90-30 {
+  color: #cce64d; }
+
+.colorbg-80-90-30 {
+  background-color: #cce64d; }
+
+.color-80-90-40 {
+  color: #cce666; }
+
+.colorbg-80-90-40 {
+  background-color: #cce666; }
+
+.color-80-90-50 {
+  color: #cce680; }
+
+.colorbg-80-90-50 {
+  background-color: #cce680; }
+
+.color-80-90-60 {
+  color: #cce699; }
+
+.colorbg-80-90-60 {
+  background-color: #cce699; }
+
+.color-80-90-70 {
+  color: #cce6b3; }
+
+.colorbg-80-90-70 {
+  background-color: #cce6b3; }
+
+.color-80-90-80 {
+  color: #cce6cc; }
+
+.colorbg-80-90-80 {
+  background-color: #cce6cc; }
+
+.color-80-90-90 {
+  color: #cce6e6; }
+
+.colorbg-80-90-90 {
+  background-color: #cce6e6; }
+
+.color-80-90-100 {
+  color: #cce6ff; }
+
+.colorbg-80-90-100 {
+  background-color: #cce6ff; }
+
+.color-80-100-0 {
+  color: #ccff00; }
+
+.colorbg-80-100-0 {
+  background-color: #ccff00; }
+
+.color-80-100-10 {
+  color: #ccff1a; }
+
+.colorbg-80-100-10 {
+  background-color: #ccff1a; }
+
+.color-80-100-20 {
+  color: #ccff33; }
+
+.colorbg-80-100-20 {
+  background-color: #ccff33; }
+
+.color-80-100-30 {
+  color: #ccff4d; }
+
+.colorbg-80-100-30 {
+  background-color: #ccff4d; }
+
+.color-80-100-40 {
+  color: #ccff66; }
+
+.colorbg-80-100-40 {
+  background-color: #ccff66; }
+
+.color-80-100-50 {
+  color: #ccff80; }
+
+.colorbg-80-100-50 {
+  background-color: #ccff80; }
+
+.color-80-100-60 {
+  color: #ccff99; }
+
+.colorbg-80-100-60 {
+  background-color: #ccff99; }
+
+.color-80-100-70 {
+  color: #ccffb3; }
+
+.colorbg-80-100-70 {
+  background-color: #ccffb3; }
+
+.color-80-100-80 {
+  color: #ccffcc; }
+
+.colorbg-80-100-80 {
+  background-color: #ccffcc; }
+
+.color-80-100-90 {
+  color: #ccffe6; }
+
+.colorbg-80-100-90 {
+  background-color: #ccffe6; }
+
+.color-80-100-100 {
+  color: #ccffff; }
+
+.colorbg-80-100-100 {
+  background-color: #ccffff; }
+
+.color-90-0-0 {
+  color: #e60000; }
+
+.colorbg-90-0-0 {
+  background-color: #e60000; }
+
+.color-90-0-10 {
+  color: #e6001a; }
+
+.colorbg-90-0-10 {
+  background-color: #e6001a; }
+
+.color-90-0-20 {
+  color: #e60033; }
+
+.colorbg-90-0-20 {
+  background-color: #e60033; }
+
+.color-90-0-30 {
+  color: #e6004d; }
+
+.colorbg-90-0-30 {
+  background-color: #e6004d; }
+
+.color-90-0-40 {
+  color: #e60066; }
+
+.colorbg-90-0-40 {
+  background-color: #e60066; }
+
+.color-90-0-50 {
+  color: #e60080; }
+
+.colorbg-90-0-50 {
+  background-color: #e60080; }
+
+.color-90-0-60 {
+  color: #e60099; }
+
+.colorbg-90-0-60 {
+  background-color: #e60099; }
+
+.color-90-0-70 {
+  color: #e600b3; }
+
+.colorbg-90-0-70 {
+  background-color: #e600b3; }
+
+.color-90-0-80 {
+  color: #e600cc; }
+
+.colorbg-90-0-80 {
+  background-color: #e600cc; }
+
+.color-90-0-90 {
+  color: #e600e6; }
+
+.colorbg-90-0-90 {
+  background-color: #e600e6; }
+
+.color-90-0-100 {
+  color: #e600ff; }
+
+.colorbg-90-0-100 {
+  background-color: #e600ff; }
+
+.color-90-10-0 {
+  color: #e61a00; }
+
+.colorbg-90-10-0 {
+  background-color: #e61a00; }
+
+.color-90-10-10 {
+  color: #e61a1a; }
+
+.colorbg-90-10-10 {
+  background-color: #e61a1a; }
+
+.color-90-10-20 {
+  color: #e61a33; }
+
+.colorbg-90-10-20 {
+  background-color: #e61a33; }
+
+.color-90-10-30 {
+  color: #e61a4d; }
+
+.colorbg-90-10-30 {
+  background-color: #e61a4d; }
+
+.color-90-10-40 {
+  color: #e61a66; }
+
+.colorbg-90-10-40 {
+  background-color: #e61a66; }
+
+.color-90-10-50 {
+  color: #e61a80; }
+
+.colorbg-90-10-50 {
+  background-color: #e61a80; }
+
+.color-90-10-60 {
+  color: #e61a99; }
+
+.colorbg-90-10-60 {
+  background-color: #e61a99; }
+
+.color-90-10-70 {
+  color: #e61ab3; }
+
+.colorbg-90-10-70 {
+  background-color: #e61ab3; }
+
+.color-90-10-80 {
+  color: #e61acc; }
+
+.colorbg-90-10-80 {
+  background-color: #e61acc; }
+
+.color-90-10-90 {
+  color: #e61ae6; }
+
+.colorbg-90-10-90 {
+  background-color: #e61ae6; }
+
+.color-90-10-100 {
+  color: #e61aff; }
+
+.colorbg-90-10-100 {
+  background-color: #e61aff; }
+
+.color-90-20-0 {
+  color: #e63300; }
+
+.colorbg-90-20-0 {
+  background-color: #e63300; }
+
+.color-90-20-10 {
+  color: #e6331a; }
+
+.colorbg-90-20-10 {
+  background-color: #e6331a; }
+
+.color-90-20-20 {
+  color: #e63333; }
+
+.colorbg-90-20-20 {
+  background-color: #e63333; }
+
+.color-90-20-30 {
+  color: #e6334d; }
+
+.colorbg-90-20-30 {
+  background-color: #e6334d; }
+
+.color-90-20-40 {
+  color: #e63366; }
+
+.colorbg-90-20-40 {
+  background-color: #e63366; }
+
+.color-90-20-50 {
+  color: #e63380; }
+
+.colorbg-90-20-50 {
+  background-color: #e63380; }
+
+.color-90-20-60 {
+  color: #e63399; }
+
+.colorbg-90-20-60 {
+  background-color: #e63399; }
+
+.color-90-20-70 {
+  color: #e633b3; }
+
+.colorbg-90-20-70 {
+  background-color: #e633b3; }
+
+.color-90-20-80 {
+  color: #e633cc; }
+
+.colorbg-90-20-80 {
+  background-color: #e633cc; }
+
+.color-90-20-90 {
+  color: #e633e6; }
+
+.colorbg-90-20-90 {
+  background-color: #e633e6; }
+
+.color-90-20-100 {
+  color: #e633ff; }
+
+.colorbg-90-20-100 {
+  background-color: #e633ff; }
+
+.color-90-30-0 {
+  color: #e64d00; }
+
+.colorbg-90-30-0 {
+  background-color: #e64d00; }
+
+.color-90-30-10 {
+  color: #e64d1a; }
+
+.colorbg-90-30-10 {
+  background-color: #e64d1a; }
+
+.color-90-30-20 {
+  color: #e64d33; }
+
+.colorbg-90-30-20 {
+  background-color: #e64d33; }
+
+.color-90-30-30 {
+  color: #e64d4d; }
+
+.colorbg-90-30-30 {
+  background-color: #e64d4d; }
+
+.color-90-30-40 {
+  color: #e64d66; }
+
+.colorbg-90-30-40 {
+  background-color: #e64d66; }
+
+.color-90-30-50 {
+  color: #e64d80; }
+
+.colorbg-90-30-50 {
+  background-color: #e64d80; }
+
+.color-90-30-60 {
+  color: #e64d99; }
+
+.colorbg-90-30-60 {
+  background-color: #e64d99; }
+
+.color-90-30-70 {
+  color: #e64db3; }
+
+.colorbg-90-30-70 {
+  background-color: #e64db3; }
+
+.color-90-30-80 {
+  color: #e64dcc; }
+
+.colorbg-90-30-80 {
+  background-color: #e64dcc; }
+
+.color-90-30-90 {
+  color: #e64de6; }
+
+.colorbg-90-30-90 {
+  background-color: #e64de6; }
+
+.color-90-30-100 {
+  color: #e64dff; }
+
+.colorbg-90-30-100 {
+  background-color: #e64dff; }
+
+.color-90-40-0 {
+  color: #e66600; }
+
+.colorbg-90-40-0 {
+  background-color: #e66600; }
+
+.color-90-40-10 {
+  color: #e6661a; }
+
+.colorbg-90-40-10 {
+  background-color: #e6661a; }
+
+.color-90-40-20 {
+  color: #e66633; }
+
+.colorbg-90-40-20 {
+  background-color: #e66633; }
+
+.color-90-40-30 {
+  color: #e6664d; }
+
+.colorbg-90-40-30 {
+  background-color: #e6664d; }
+
+.color-90-40-40 {
+  color: #e66666; }
+
+.colorbg-90-40-40 {
+  background-color: #e66666; }
+
+.color-90-40-50 {
+  color: #e66680; }
+
+.colorbg-90-40-50 {
+  background-color: #e66680; }
+
+.color-90-40-60 {
+  color: #e66699; }
+
+.colorbg-90-40-60 {
+  background-color: #e66699; }
+
+.color-90-40-70 {
+  color: #e666b3; }
+
+.colorbg-90-40-70 {
+  background-color: #e666b3; }
+
+.color-90-40-80 {
+  color: #e666cc; }
+
+.colorbg-90-40-80 {
+  background-color: #e666cc; }
+
+.color-90-40-90 {
+  color: #e666e6; }
+
+.colorbg-90-40-90 {
+  background-color: #e666e6; }
+
+.color-90-40-100 {
+  color: #e666ff; }
+
+.colorbg-90-40-100 {
+  background-color: #e666ff; }
+
+.color-90-50-0 {
+  color: #e68000; }
+
+.colorbg-90-50-0 {
+  background-color: #e68000; }
+
+.color-90-50-10 {
+  color: #e6801a; }
+
+.colorbg-90-50-10 {
+  background-color: #e6801a; }
+
+.color-90-50-20 {
+  color: #e68033; }
+
+.colorbg-90-50-20 {
+  background-color: #e68033; }
+
+.color-90-50-30 {
+  color: #e6804d; }
+
+.colorbg-90-50-30 {
+  background-color: #e6804d; }
+
+.color-90-50-40 {
+  color: #e68066; }
+
+.colorbg-90-50-40 {
+  background-color: #e68066; }
+
+.color-90-50-50 {
+  color: #e68080; }
+
+.colorbg-90-50-50 {
+  background-color: #e68080; }
+
+.color-90-50-60 {
+  color: #e68099; }
+
+.colorbg-90-50-60 {
+  background-color: #e68099; }
+
+.color-90-50-70 {
+  color: #e680b3; }
+
+.colorbg-90-50-70 {
+  background-color: #e680b3; }
+
+.color-90-50-80 {
+  color: #e680cc; }
+
+.colorbg-90-50-80 {
+  background-color: #e680cc; }
+
+.color-90-50-90 {
+  color: #e680e6; }
+
+.colorbg-90-50-90 {
+  background-color: #e680e6; }
+
+.color-90-50-100 {
+  color: #e680ff; }
+
+.colorbg-90-50-100 {
+  background-color: #e680ff; }
+
+.color-90-60-0 {
+  color: #e69900; }
+
+.colorbg-90-60-0 {
+  background-color: #e69900; }
+
+.color-90-60-10 {
+  color: #e6991a; }
+
+.colorbg-90-60-10 {
+  background-color: #e6991a; }
+
+.color-90-60-20 {
+  color: #e69933; }
+
+.colorbg-90-60-20 {
+  background-color: #e69933; }
+
+.color-90-60-30 {
+  color: #e6994d; }
+
+.colorbg-90-60-30 {
+  background-color: #e6994d; }
+
+.color-90-60-40 {
+  color: #e69966; }
+
+.colorbg-90-60-40 {
+  background-color: #e69966; }
+
+.color-90-60-50 {
+  color: #e69980; }
+
+.colorbg-90-60-50 {
+  background-color: #e69980; }
+
+.color-90-60-60 {
+  color: #e69999; }
+
+.colorbg-90-60-60 {
+  background-color: #e69999; }
+
+.color-90-60-70 {
+  color: #e699b3; }
+
+.colorbg-90-60-70 {
+  background-color: #e699b3; }
+
+.color-90-60-80 {
+  color: #e699cc; }
+
+.colorbg-90-60-80 {
+  background-color: #e699cc; }
+
+.color-90-60-90 {
+  color: #e699e6; }
+
+.colorbg-90-60-90 {
+  background-color: #e699e6; }
+
+.color-90-60-100 {
+  color: #e699ff; }
+
+.colorbg-90-60-100 {
+  background-color: #e699ff; }
+
+.color-90-70-0 {
+  color: #e6b300; }
+
+.colorbg-90-70-0 {
+  background-color: #e6b300; }
+
+.color-90-70-10 {
+  color: #e6b31a; }
+
+.colorbg-90-70-10 {
+  background-color: #e6b31a; }
+
+.color-90-70-20 {
+  color: #e6b333; }
+
+.colorbg-90-70-20 {
+  background-color: #e6b333; }
+
+.color-90-70-30 {
+  color: #e6b34d; }
+
+.colorbg-90-70-30 {
+  background-color: #e6b34d; }
+
+.color-90-70-40 {
+  color: #e6b366; }
+
+.colorbg-90-70-40 {
+  background-color: #e6b366; }
+
+.color-90-70-50 {
+  color: #e6b380; }
+
+.colorbg-90-70-50 {
+  background-color: #e6b380; }
+
+.color-90-70-60 {
+  color: #e6b399; }
+
+.colorbg-90-70-60 {
+  background-color: #e6b399; }
+
+.color-90-70-70 {
+  color: #e6b3b3; }
+
+.colorbg-90-70-70 {
+  background-color: #e6b3b3; }
+
+.color-90-70-80 {
+  color: #e6b3cc; }
+
+.colorbg-90-70-80 {
+  background-color: #e6b3cc; }
+
+.color-90-70-90 {
+  color: #e6b3e6; }
+
+.colorbg-90-70-90 {
+  background-color: #e6b3e6; }
+
+.color-90-70-100 {
+  color: #e6b3ff; }
+
+.colorbg-90-70-100 {
+  background-color: #e6b3ff; }
+
+.color-90-80-0 {
+  color: #e6cc00; }
+
+.colorbg-90-80-0 {
+  background-color: #e6cc00; }
+
+.color-90-80-10 {
+  color: #e6cc1a; }
+
+.colorbg-90-80-10 {
+  background-color: #e6cc1a; }
+
+.color-90-80-20 {
+  color: #e6cc33; }
+
+.colorbg-90-80-20 {
+  background-color: #e6cc33; }
+
+.color-90-80-30 {
+  color: #e6cc4d; }
+
+.colorbg-90-80-30 {
+  background-color: #e6cc4d; }
+
+.color-90-80-40 {
+  color: #e6cc66; }
+
+.colorbg-90-80-40 {
+  background-color: #e6cc66; }
+
+.color-90-80-50 {
+  color: #e6cc80; }
+
+.colorbg-90-80-50 {
+  background-color: #e6cc80; }
+
+.color-90-80-60 {
+  color: #e6cc99; }
+
+.colorbg-90-80-60 {
+  background-color: #e6cc99; }
+
+.color-90-80-70 {
+  color: #e6ccb3; }
+
+.colorbg-90-80-70 {
+  background-color: #e6ccb3; }
+
+.color-90-80-80 {
+  color: #e6cccc; }
+
+.colorbg-90-80-80 {
+  background-color: #e6cccc; }
+
+.color-90-80-90 {
+  color: #e6cce6; }
+
+.colorbg-90-80-90 {
+  background-color: #e6cce6; }
+
+.color-90-80-100 {
+  color: #e6ccff; }
+
+.colorbg-90-80-100 {
+  background-color: #e6ccff; }
+
+.color-90-90-0 {
+  color: #e6e600; }
+
+.colorbg-90-90-0 {
+  background-color: #e6e600; }
+
+.color-90-90-10 {
+  color: #e6e61a; }
+
+.colorbg-90-90-10 {
+  background-color: #e6e61a; }
+
+.color-90-90-20 {
+  color: #e6e633; }
+
+.colorbg-90-90-20 {
+  background-color: #e6e633; }
+
+.color-90-90-30 {
+  color: #e6e64d; }
+
+.colorbg-90-90-30 {
+  background-color: #e6e64d; }
+
+.color-90-90-40 {
+  color: #e6e666; }
+
+.colorbg-90-90-40 {
+  background-color: #e6e666; }
+
+.color-90-90-50 {
+  color: #e6e680; }
+
+.colorbg-90-90-50 {
+  background-color: #e6e680; }
+
+.color-90-90-60 {
+  color: #e6e699; }
+
+.colorbg-90-90-60 {
+  background-color: #e6e699; }
+
+.color-90-90-70 {
+  color: #e6e6b3; }
+
+.colorbg-90-90-70 {
+  background-color: #e6e6b3; }
+
+.color-90-90-80 {
+  color: #e6e6cc; }
+
+.colorbg-90-90-80 {
+  background-color: #e6e6cc; }
+
+.color-90-90-90 {
+  color: #e6e6e6; }
+
+.colorbg-90-90-90 {
+  background-color: #e6e6e6; }
+
+.color-90-90-100 {
+  color: #e6e6ff; }
+
+.colorbg-90-90-100 {
+  background-color: #e6e6ff; }
+
+.color-90-100-0 {
+  color: #e6ff00; }
+
+.colorbg-90-100-0 {
+  background-color: #e6ff00; }
+
+.color-90-100-10 {
+  color: #e6ff1a; }
+
+.colorbg-90-100-10 {
+  background-color: #e6ff1a; }
+
+.color-90-100-20 {
+  color: #e6ff33; }
+
+.colorbg-90-100-20 {
+  background-color: #e6ff33; }
+
+.color-90-100-30 {
+  color: #e6ff4d; }
+
+.colorbg-90-100-30 {
+  background-color: #e6ff4d; }
+
+.color-90-100-40 {
+  color: #e6ff66; }
+
+.colorbg-90-100-40 {
+  background-color: #e6ff66; }
+
+.color-90-100-50 {
+  color: #e6ff80; }
+
+.colorbg-90-100-50 {
+  background-color: #e6ff80; }
+
+.color-90-100-60 {
+  color: #e6ff99; }
+
+.colorbg-90-100-60 {
+  background-color: #e6ff99; }
+
+.color-90-100-70 {
+  color: #e6ffb3; }
+
+.colorbg-90-100-70 {
+  background-color: #e6ffb3; }
+
+.color-90-100-80 {
+  color: #e6ffcc; }
+
+.colorbg-90-100-80 {
+  background-color: #e6ffcc; }
+
+.color-90-100-90 {
+  color: #e6ffe6; }
+
+.colorbg-90-100-90 {
+  background-color: #e6ffe6; }
+
+.color-90-100-100 {
+  color: #e6ffff; }
+
+.colorbg-90-100-100 {
+  background-color: #e6ffff; }
+
+.color-100-0-0 {
+  color: red; }
+
+.colorbg-100-0-0 {
+  background-color: red; }
+
+.color-100-0-10 {
+  color: #ff001a; }
+
+.colorbg-100-0-10 {
+  background-color: #ff001a; }
+
+.color-100-0-20 {
+  color: #ff0033; }
+
+.colorbg-100-0-20 {
+  background-color: #ff0033; }
+
+.color-100-0-30 {
+  color: #ff004d; }
+
+.colorbg-100-0-30 {
+  background-color: #ff004d; }
+
+.color-100-0-40 {
+  color: #ff0066; }
+
+.colorbg-100-0-40 {
+  background-color: #ff0066; }
+
+.color-100-0-50 {
+  color: #ff0080; }
+
+.colorbg-100-0-50 {
+  background-color: #ff0080; }
+
+.color-100-0-60 {
+  color: #ff0099; }
+
+.colorbg-100-0-60 {
+  background-color: #ff0099; }
+
+.color-100-0-70 {
+  color: #ff00b3; }
+
+.colorbg-100-0-70 {
+  background-color: #ff00b3; }
+
+.color-100-0-80 {
+  color: #ff00cc; }
+
+.colorbg-100-0-80 {
+  background-color: #ff00cc; }
+
+.color-100-0-90 {
+  color: #ff00e6; }
+
+.colorbg-100-0-90 {
+  background-color: #ff00e6; }
+
+.color-100-0-100 {
+  color: magenta; }
+
+.colorbg-100-0-100 {
+  background-color: magenta; }
+
+.color-100-10-0 {
+  color: #ff1a00; }
+
+.colorbg-100-10-0 {
+  background-color: #ff1a00; }
+
+.color-100-10-10 {
+  color: #ff1a1a; }
+
+.colorbg-100-10-10 {
+  background-color: #ff1a1a; }
+
+.color-100-10-20 {
+  color: #ff1a33; }
+
+.colorbg-100-10-20 {
+  background-color: #ff1a33; }
+
+.color-100-10-30 {
+  color: #ff1a4d; }
+
+.colorbg-100-10-30 {
+  background-color: #ff1a4d; }
+
+.color-100-10-40 {
+  color: #ff1a66; }
+
+.colorbg-100-10-40 {
+  background-color: #ff1a66; }
+
+.color-100-10-50 {
+  color: #ff1a80; }
+
+.colorbg-100-10-50 {
+  background-color: #ff1a80; }
+
+.color-100-10-60 {
+  color: #ff1a99; }
+
+.colorbg-100-10-60 {
+  background-color: #ff1a99; }
+
+.color-100-10-70 {
+  color: #ff1ab3; }
+
+.colorbg-100-10-70 {
+  background-color: #ff1ab3; }
+
+.color-100-10-80 {
+  color: #ff1acc; }
+
+.colorbg-100-10-80 {
+  background-color: #ff1acc; }
+
+.color-100-10-90 {
+  color: #ff1ae6; }
+
+.colorbg-100-10-90 {
+  background-color: #ff1ae6; }
+
+.color-100-10-100 {
+  color: #ff1aff; }
+
+.colorbg-100-10-100 {
+  background-color: #ff1aff; }
+
+.color-100-20-0 {
+  color: #ff3300; }
+
+.colorbg-100-20-0 {
+  background-color: #ff3300; }
+
+.color-100-20-10 {
+  color: #ff331a; }
+
+.colorbg-100-20-10 {
+  background-color: #ff331a; }
+
+.color-100-20-20 {
+  color: #ff3333; }
+
+.colorbg-100-20-20 {
+  background-color: #ff3333; }
+
+.color-100-20-30 {
+  color: #ff334d; }
+
+.colorbg-100-20-30 {
+  background-color: #ff334d; }
+
+.color-100-20-40 {
+  color: #ff3366; }
+
+.colorbg-100-20-40 {
+  background-color: #ff3366; }
+
+.color-100-20-50 {
+  color: #ff3380; }
+
+.colorbg-100-20-50 {
+  background-color: #ff3380; }
+
+.color-100-20-60 {
+  color: #ff3399; }
+
+.colorbg-100-20-60 {
+  background-color: #ff3399; }
+
+.color-100-20-70 {
+  color: #ff33b3; }
+
+.colorbg-100-20-70 {
+  background-color: #ff33b3; }
+
+.color-100-20-80 {
+  color: #ff33cc; }
+
+.colorbg-100-20-80 {
+  background-color: #ff33cc; }
+
+.color-100-20-90 {
+  color: #ff33e6; }
+
+.colorbg-100-20-90 {
+  background-color: #ff33e6; }
+
+.color-100-20-100 {
+  color: #ff33ff; }
+
+.colorbg-100-20-100 {
+  background-color: #ff33ff; }
+
+.color-100-30-0 {
+  color: #ff4d00; }
+
+.colorbg-100-30-0 {
+  background-color: #ff4d00; }
+
+.color-100-30-10 {
+  color: #ff4d1a; }
+
+.colorbg-100-30-10 {
+  background-color: #ff4d1a; }
+
+.color-100-30-20 {
+  color: #ff4d33; }
+
+.colorbg-100-30-20 {
+  background-color: #ff4d33; }
+
+.color-100-30-30 {
+  color: #ff4d4d; }
+
+.colorbg-100-30-30 {
+  background-color: #ff4d4d; }
+
+.color-100-30-40 {
+  color: #ff4d66; }
+
+.colorbg-100-30-40 {
+  background-color: #ff4d66; }
+
+.color-100-30-50 {
+  color: #ff4d80; }
+
+.colorbg-100-30-50 {
+  background-color: #ff4d80; }
+
+.color-100-30-60 {
+  color: #ff4d99; }
+
+.colorbg-100-30-60 {
+  background-color: #ff4d99; }
+
+.color-100-30-70 {
+  color: #ff4db3; }
+
+.colorbg-100-30-70 {
+  background-color: #ff4db3; }
+
+.color-100-30-80 {
+  color: #ff4dcc; }
+
+.colorbg-100-30-80 {
+  background-color: #ff4dcc; }
+
+.color-100-30-90 {
+  color: #ff4de6; }
+
+.colorbg-100-30-90 {
+  background-color: #ff4de6; }
+
+.color-100-30-100 {
+  color: #ff4dff; }
+
+.colorbg-100-30-100 {
+  background-color: #ff4dff; }
+
+.color-100-40-0 {
+  color: #ff6600; }
+
+.colorbg-100-40-0 {
+  background-color: #ff6600; }
+
+.color-100-40-10 {
+  color: #ff661a; }
+
+.colorbg-100-40-10 {
+  background-color: #ff661a; }
+
+.color-100-40-20 {
+  color: #ff6633; }
+
+.colorbg-100-40-20 {
+  background-color: #ff6633; }
+
+.color-100-40-30 {
+  color: #ff664d; }
+
+.colorbg-100-40-30 {
+  background-color: #ff664d; }
+
+.color-100-40-40 {
+  color: #ff6666; }
+
+.colorbg-100-40-40 {
+  background-color: #ff6666; }
+
+.color-100-40-50 {
+  color: #ff6680; }
+
+.colorbg-100-40-50 {
+  background-color: #ff6680; }
+
+.color-100-40-60 {
+  color: #ff6699; }
+
+.colorbg-100-40-60 {
+  background-color: #ff6699; }
+
+.color-100-40-70 {
+  color: #ff66b3; }
+
+.colorbg-100-40-70 {
+  background-color: #ff66b3; }
+
+.color-100-40-80 {
+  color: #ff66cc; }
+
+.colorbg-100-40-80 {
+  background-color: #ff66cc; }
+
+.color-100-40-90 {
+  color: #ff66e6; }
+
+.colorbg-100-40-90 {
+  background-color: #ff66e6; }
+
+.color-100-40-100 {
+  color: #ff66ff; }
+
+.colorbg-100-40-100 {
+  background-color: #ff66ff; }
+
+.color-100-50-0 {
+  color: #ff8000; }
+
+.colorbg-100-50-0 {
+  background-color: #ff8000; }
+
+.color-100-50-10 {
+  color: #ff801a; }
+
+.colorbg-100-50-10 {
+  background-color: #ff801a; }
+
+.color-100-50-20 {
+  color: #ff8033; }
+
+.colorbg-100-50-20 {
+  background-color: #ff8033; }
+
+.color-100-50-30 {
+  color: #ff804d; }
+
+.colorbg-100-50-30 {
+  background-color: #ff804d; }
+
+.color-100-50-40 {
+  color: #ff8066; }
+
+.colorbg-100-50-40 {
+  background-color: #ff8066; }
+
+.color-100-50-50 {
+  color: #ff8080; }
+
+.colorbg-100-50-50 {
+  background-color: #ff8080; }
+
+.color-100-50-60 {
+  color: #ff8099; }
+
+.colorbg-100-50-60 {
+  background-color: #ff8099; }
+
+.color-100-50-70 {
+  color: #ff80b3; }
+
+.colorbg-100-50-70 {
+  background-color: #ff80b3; }
+
+.color-100-50-80 {
+  color: #ff80cc; }
+
+.colorbg-100-50-80 {
+  background-color: #ff80cc; }
+
+.color-100-50-90 {
+  color: #ff80e6; }
+
+.colorbg-100-50-90 {
+  background-color: #ff80e6; }
+
+.color-100-50-100 {
+  color: #ff80ff; }
+
+.colorbg-100-50-100 {
+  background-color: #ff80ff; }
+
+.color-100-60-0 {
+  color: #ff9900; }
+
+.colorbg-100-60-0 {
+  background-color: #ff9900; }
+
+.color-100-60-10 {
+  color: #ff991a; }
+
+.colorbg-100-60-10 {
+  background-color: #ff991a; }
+
+.color-100-60-20 {
+  color: #ff9933; }
+
+.colorbg-100-60-20 {
+  background-color: #ff9933; }
+
+.color-100-60-30 {
+  color: #ff994d; }
+
+.colorbg-100-60-30 {
+  background-color: #ff994d; }
+
+.color-100-60-40 {
+  color: #ff9966; }
+
+.colorbg-100-60-40 {
+  background-color: #ff9966; }
+
+.color-100-60-50 {
+  color: #ff9980; }
+
+.colorbg-100-60-50 {
+  background-color: #ff9980; }
+
+.color-100-60-60 {
+  color: #ff9999; }
+
+.colorbg-100-60-60 {
+  background-color: #ff9999; }
+
+.color-100-60-70 {
+  color: #ff99b3; }
+
+.colorbg-100-60-70 {
+  background-color: #ff99b3; }
+
+.color-100-60-80 {
+  color: #ff99cc; }
+
+.colorbg-100-60-80 {
+  background-color: #ff99cc; }
+
+.color-100-60-90 {
+  color: #ff99e6; }
+
+.colorbg-100-60-90 {
+  background-color: #ff99e6; }
+
+.color-100-60-100 {
+  color: #ff99ff; }
+
+.colorbg-100-60-100 {
+  background-color: #ff99ff; }
+
+.color-100-70-0 {
+  color: #ffb300; }
+
+.colorbg-100-70-0 {
+  background-color: #ffb300; }
+
+.color-100-70-10 {
+  color: #ffb31a; }
+
+.colorbg-100-70-10 {
+  background-color: #ffb31a; }
+
+.color-100-70-20 {
+  color: #ffb333; }
+
+.colorbg-100-70-20 {
+  background-color: #ffb333; }
+
+.color-100-70-30 {
+  color: #ffb34d; }
+
+.colorbg-100-70-30 {
+  background-color: #ffb34d; }
+
+.color-100-70-40 {
+  color: #ffb366; }
+
+.colorbg-100-70-40 {
+  background-color: #ffb366; }
+
+.color-100-70-50 {
+  color: #ffb380; }
+
+.colorbg-100-70-50 {
+  background-color: #ffb380; }
+
+.color-100-70-60 {
+  color: #ffb399; }
+
+.colorbg-100-70-60 {
+  background-color: #ffb399; }
+
+.color-100-70-70 {
+  color: #ffb3b3; }
+
+.colorbg-100-70-70 {
+  background-color: #ffb3b3; }
+
+.color-100-70-80 {
+  color: #ffb3cc; }
+
+.colorbg-100-70-80 {
+  background-color: #ffb3cc; }
+
+.color-100-70-90 {
+  color: #ffb3e6; }
+
+.colorbg-100-70-90 {
+  background-color: #ffb3e6; }
+
+.color-100-70-100 {
+  color: #ffb3ff; }
+
+.colorbg-100-70-100 {
+  background-color: #ffb3ff; }
+
+.color-100-80-0 {
+  color: #ffcc00; }
+
+.colorbg-100-80-0 {
+  background-color: #ffcc00; }
+
+.color-100-80-10 {
+  color: #ffcc1a; }
+
+.colorbg-100-80-10 {
+  background-color: #ffcc1a; }
+
+.color-100-80-20 {
+  color: #ffcc33; }
+
+.colorbg-100-80-20 {
+  background-color: #ffcc33; }
+
+.color-100-80-30 {
+  color: #ffcc4d; }
+
+.colorbg-100-80-30 {
+  background-color: #ffcc4d; }
+
+.color-100-80-40 {
+  color: #ffcc66; }
+
+.colorbg-100-80-40 {
+  background-color: #ffcc66; }
+
+.color-100-80-50 {
+  color: #ffcc80; }
+
+.colorbg-100-80-50 {
+  background-color: #ffcc80; }
+
+.color-100-80-60 {
+  color: #ffcc99; }
+
+.colorbg-100-80-60 {
+  background-color: #ffcc99; }
+
+.color-100-80-70 {
+  color: #ffccb3; }
+
+.colorbg-100-80-70 {
+  background-color: #ffccb3; }
+
+.color-100-80-80 {
+  color: #ffcccc; }
+
+.colorbg-100-80-80 {
+  background-color: #ffcccc; }
+
+.color-100-80-90 {
+  color: #ffcce6; }
+
+.colorbg-100-80-90 {
+  background-color: #ffcce6; }
+
+.color-100-80-100 {
+  color: #ffccff; }
+
+.colorbg-100-80-100 {
+  background-color: #ffccff; }
+
+.color-100-90-0 {
+  color: #ffe600; }
+
+.colorbg-100-90-0 {
+  background-color: #ffe600; }
+
+.color-100-90-10 {
+  color: #ffe61a; }
+
+.colorbg-100-90-10 {
+  background-color: #ffe61a; }
+
+.color-100-90-20 {
+  color: #ffe633; }
+
+.colorbg-100-90-20 {
+  background-color: #ffe633; }
+
+.color-100-90-30 {
+  color: #ffe64d; }
+
+.colorbg-100-90-30 {
+  background-color: #ffe64d; }
+
+.color-100-90-40 {
+  color: #ffe666; }
+
+.colorbg-100-90-40 {
+  background-color: #ffe666; }
+
+.color-100-90-50 {
+  color: #ffe680; }
+
+.colorbg-100-90-50 {
+  background-color: #ffe680; }
+
+.color-100-90-60 {
+  color: #ffe699; }
+
+.colorbg-100-90-60 {
+  background-color: #ffe699; }
+
+.color-100-90-70 {
+  color: #ffe6b3; }
+
+.colorbg-100-90-70 {
+  background-color: #ffe6b3; }
+
+.color-100-90-80 {
+  color: #ffe6cc; }
+
+.colorbg-100-90-80 {
+  background-color: #ffe6cc; }
+
+.color-100-90-90 {
+  color: #ffe6e6; }
+
+.colorbg-100-90-90 {
+  background-color: #ffe6e6; }
+
+.color-100-90-100 {
+  color: #ffe6ff; }
+
+.colorbg-100-90-100 {
+  background-color: #ffe6ff; }
+
+.color-100-100-0 {
+  color: yellow; }
+
+.colorbg-100-100-0 {
+  background-color: yellow; }
+
+.color-100-100-10 {
+  color: #ffff1a; }
+
+.colorbg-100-100-10 {
+  background-color: #ffff1a; }
+
+.color-100-100-20 {
+  color: #ffff33; }
+
+.colorbg-100-100-20 {
+  background-color: #ffff33; }
+
+.color-100-100-30 {
+  color: #ffff4d; }
+
+.colorbg-100-100-30 {
+  background-color: #ffff4d; }
+
+.color-100-100-40 {
+  color: #ffff66; }
+
+.colorbg-100-100-40 {
+  background-color: #ffff66; }
+
+.color-100-100-50 {
+  color: #ffff80; }
+
+.colorbg-100-100-50 {
+  background-color: #ffff80; }
+
+.color-100-100-60 {
+  color: #ffff99; }
+
+.colorbg-100-100-60 {
+  background-color: #ffff99; }
+
+.color-100-100-70 {
+  color: #ffffb3; }
+
+.colorbg-100-100-70 {
+  background-color: #ffffb3; }
+
+.color-100-100-80 {
+  color: #ffffcc; }
+
+.colorbg-100-100-80 {
+  background-color: #ffffcc; }
+
+.color-100-100-90 {
+  color: #ffffe6; }
+
+.colorbg-100-100-90 {
+  background-color: #ffffe6; }
+
+.color-100-100-100 {
+  color: white; }
+
+.colorbg-100-100-100 {
+  background-color: white; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table th, table td {
+    border: 1px solid black; }
+
+img {
+  border-radius: 45%;
+  width: 300px; }
+
+.grayscale {
+  animation-name: grayscale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes grayscale {
+  to {
+    filter: grayscale(100%); } }
+
+.blur {
+  animation-name: blur;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes blur {
+  to {
+    filter: blur(5px); } }
+
+.hue-rotate {
+  animation-name: hue-rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(150deg); } }
+
+.invert {
+  animation-name: invert;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes invert {
+  to {
+    filter: invert(80%); } }
+
+.brightness {
+  animation-name: brightness;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes brightness {
+  to {
+    filter: brightness(50%); } }
+
+.contrast {
+  animation-name: contrast;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes contrast {
+  to {
+    filter: contrast(20%); } }
+
+.sepia {
+  animation-name: sepia;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes sepia {
+  to {
+    filter: sepia(100%); } }

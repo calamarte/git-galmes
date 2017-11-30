@@ -1,4 +1,4 @@
-let w = new Worker('worker.js');
+const w = new Worker('worker.js');
 let data = false;
 let keys = [];
 let allCities = [];
@@ -10,14 +10,14 @@ if(localStorage.getItem('divs')) {
   onHtml(local[0]);
 }
 
-  w.onmessage = (event) => {
-    data = event.data;
+w.onmessage = (event) => {
+  data = event.data;
 
-    for (let key in data) {
-      keys.push(key);
-      allCities = allCities.concat(data[key]);
-    }
-  };
+  for (let key in data) {
+    keys.push(key);
+    allCities = allCities.concat(data[key]);
+  }
+};
 
 document.querySelector('#search').addEventListener('keyup',(e)=>{
   if(data && e.target.value.length >= 3)onHtml(search());
