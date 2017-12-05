@@ -16,10 +16,15 @@
 //
 // document.body.appendChild(select);
 
+let airports;
+let saved  = [];
+let map;
+let marker;
+
 
 function response () {
    $.ajax({url: 'http://35.194.72.13/airports/airports.json', success:(result)=>{
-
+    airports = result;
     createTable(result);
   },
      dataType: 'json'
@@ -29,7 +34,7 @@ response();
 
 
 function createHeader(tabla) {
-  let columnas = ["País","Ciudad"];
+  let columnas = ["País","Ciudad",'Botones'];
   let tHead = document.createElement('thead');
   let cabecera = document.createElement('tr');
 
@@ -53,15 +58,57 @@ function createTable(filtrado) {
     let tupla = document.createElement('tr');
     let pais = document.createElement('td');
     let ciudad = document.createElement('td');
+    let botones = document.createElement('td');
+
+    let mapa = document.createElement('input');
+    mapa.type = 'button';
+    mapa.value = 'Mapa';
+    mapa.id = 'mapa-'+ i;
+    mapa.onclick = (event)=>{
+      let airport = airports[event.target.id.split('-')[1]];
+
+      $('#mapModal').on('shown.bs.modal', function () {
+        google.maps.event.trigger(map, "resize");
+        let posicion = new google.maps.LatLng(
+          airport.lat,
+          airport.lon
+        );
+        map.setCenter(posicion);
+
+        if (!marker){
+          marker = new google.maps.Marker({
+            position: posicion,
+            map: map,
+            title: 'airport'
+          });
+        }else marker.setPosition(posicion);
+
+        marker.setMap(map);
+      });
+      $('#mapTitle').text(airport.name);
+      $('#mapModal').modal('show');
+    }
+
+    let volar = document.createElement('input');
+    volar.type = 'button';
+    volar.value = 'Volar';
+    volar.id = 'mapa-' + i;
+    volar.onclick = (event)=>{
+      $('#origen').val(event.target.id.split('-')[1]);
+      $('#selects').modal('show');
+    }
+
+    botones.appendChild(mapa);
+    botones.appendChild(volar);
 
     let option = document.createElement('option');
-    option.value = filtrado[i].name;
+    option.value = i;
     option.textContent = filtrado[i].name;
 
     document.querySelector('#origen').appendChild(option);
 
     option = document.createElement('option');
-    option.value = filtrado[i].name;
+    option.value = i;
     option.textContent = filtrado[i].name;
 
     document.querySelector('#destino').appendChild(option);
@@ -72,6 +119,7 @@ function createTable(filtrado) {
 
     tupla.appendChild(pais);
     tupla.appendChild(ciudad);
+    tupla.appendChild(botones);
     tBody.appendChild(tupla);
   }
 
@@ -131,12 +179,27 @@ function createTable(filtrado) {
     $('#destino').select2();
 }
 
-// select.addEventListener("change",() =>{
-//   if(information) {
-//     let indice = select.selectedIndex;
-//     localStorage.setItem("seleccion", JSON.stringify(indice));
-//     document.body.removeChild(document.getElementById("tabla"));
-//     createTable(indice);
-//   }
-// });
+function onSaved () {
+
+}
+
+$('#save').click(()=>{
+  if($('#fecha-inicio').val() && $('#fecha-llegada').val() && $('#pasajeros').val()){
+    onSaved({
+      origen: airports[String($('#origen :selected').val())],
+      destino: airports[String($('#destino :selected').val())],
+      fechaInicial: $('#fecha-inicio').val(),
+      fechaFinal: $('#fecha-llegada').val(),
+      pasajeros: $('#pasajeros').val()
+    })
+  }
+});
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 10
+  });
+}
+
 
