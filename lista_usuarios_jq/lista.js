@@ -179,8 +179,30 @@ function createTable(filtrado) {
     $('#destino').select2();
 }
 
-function onSaved () {
+function onSaved (saveT) {
+  saved.push(saveT);
 
+  for(let i = 0;i < saved.length;i++){
+    let div = document.createElement('div');
+    let origen = document.createElement('p');
+    let destino = document.createElement('p');
+    let fechaInicial = document.createElement('p');
+    let fechaFinal = document.createElement('p');
+    let pasajeros = document.createElement('p');
+    origen.textContent = 'Origen: '+saved[i].origen.name;
+    destino.textContent = 'Destino: '+saved[i].destino.name;
+    fechaInicial.textContent = 'Fecha de salido: '+saved[i].fechaInicial;
+    fechaFinal.textContent = 'Fecha de llegada: '+saved[i].fechaFinal;
+    pasajeros.textContent = 'Pasajeros: '+saved[i].pasajeros;
+
+    div.appendChild(origen);
+    div.appendChild(destino);
+    div.appendChild(fechaInicial);
+    div.appendChild(fechaFinal);
+    div.appendChild(pasajeros);
+
+    document.body.appendChild(div);
+  }
 }
 
 $('#save').click(()=>{
@@ -191,7 +213,8 @@ $('#save').click(()=>{
       fechaInicial: $('#fecha-inicio').val(),
       fechaFinal: $('#fecha-llegada').val(),
       pasajeros: $('#pasajeros').val()
-    })
+    });
+    $('#selects').modal('hide');
   }
 });
 
