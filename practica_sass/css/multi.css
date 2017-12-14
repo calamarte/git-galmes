@@ -8154,8 +8154,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes grayscale {
-  to {
-    filter: grayscale(100%); } }
+  50% {
+    filter: grayscale(100%); }
+  100% {
+    filter: none; } }
 
 .blur {
   animation-name: blur;
@@ -8163,8 +8165,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes blur {
-  to {
-    filter: blur(5px); } }
+  50% {
+    filter: blur(5px); }
+  100% {
+    filter: none; } }
 
 .hue-rotate {
   animation-name: hue-rotate;
@@ -8172,8 +8176,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes hue-rotate {
-  to {
-    filter: hue-rotate(150deg); } }
+  50% {
+    filter: hue-rotate(150deg); }
+  100% {
+    filter: none; } }
 
 .invert {
   animation-name: invert;
@@ -8181,8 +8187,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes invert {
-  to {
-    filter: invert(80%); } }
+  50% {
+    filter: invert(80%); }
+  100% {
+    filter: none; } }
 
 .brightness {
   animation-name: brightness;
@@ -8190,8 +8198,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes brightness {
-  to {
-    filter: brightness(50%); } }
+  50% {
+    filter: brightness(50%); }
+  100% {
+    filter: none; } }
 
 .contrast {
   animation-name: contrast;
@@ -8199,8 +8209,10 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes contrast {
-  to {
-    filter: contrast(20%); } }
+  50% {
+    filter: contrast(20%); }
+  100% {
+    filter: none; } }
 
 .sepia {
   animation-name: sepia;
@@ -8208,5 +8220,7 @@ img {
   animation-iteration-count: infinite; }
 
 @keyframes sepia {
-  to {
-    filter: sepia(100%); } }
+  50% {
+    filter: sepia(100%); }
+  100% {
+    filter: none; } }

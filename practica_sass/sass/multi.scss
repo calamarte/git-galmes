@@ -72,8 +72,6 @@ table{
   }
 }
 
-
-
 img{
   border-radius: 45%;
   width: 300px;
@@ -92,8 +90,11 @@ img{
   }
 
   @keyframes #{$class} {
-    to{
+    50%{
       filter: $animation;
+    }
+    100%{
+      filter: none;
     }
   }
 }
