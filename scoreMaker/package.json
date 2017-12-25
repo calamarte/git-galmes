@@ -1,0 +1,17 @@
+{
+  "name": "score",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.3"
+  }
+}
