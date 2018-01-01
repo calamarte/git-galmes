@@ -1,0 +1,70 @@
+.tecla{
+    height: 300px;
+}
+.sostenido{
+    height: 180px;
+    background-color: #343a40;
+    z-index: 3;
+}
+
+#pentagramaContainer{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+#pentagrama{
+    position: absolute;
+}
+
+.nota{
+    position: absolute;
+}
+
+#nota-1{
+    margin-left: 300px;
+}
+
+#nota-2{
+    margin-left: 500px;
+}
+
+#nota-3{
+    margin-left: 700px;
+}
+
+#nota-4{
+    margin-left: 900px;
+}
+
+.do{
+    margin-top: 250px;
+}
+
+.re{
+    margin-top: 210px;
+}
+
+.mi{
+    margin-top: 170px;
+}
+
+.fa{
+    margin-top: 150px;
+}
+
+.sol{
+    margin-top: 120px;
+}
+
+.la{
+    margin-top: 100px;
+}
+
+.si{
+    margin-top: 70px;
+}
+
+.do-alto{
+    margin-top: 50px;
+}

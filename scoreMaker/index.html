@@ -4,65 +4,79 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <style>
-        .tecla{
-            height: 300px;
-        }
-        .sostenido{
-            height: 180px;
-            background-color: #343a40;
-            z-index: 3;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<img src="assets/pentagrama.png">
+<div id="pentagramaContainer">
+    <img src="assets/pentagrama.png" id="pentagrama" usemap="#mapa">
+
+    <img src="assets/nota1sust.png" class="nota sol" id="nota-1" alt="">
+    <img src="assets/nota1.png" class="nota la" id="nota-2" alt="">
+    <img src="assets/nota1.png" class="nota si" id="nota-3" alt="">
+    <img src="assets/nota1.png" class="nota do-alto" id="nota-4" alt="">
+
+</div>
+
+<map name="mapa">
+    <area target="" alt="do" title="do" href="" coords="186,410,1000,456" shape="rect">
+    <area target="" alt="re" title="re" href="" coords="188,363,1000,409" shape="rect">
+    <area target="" alt="mi" title="mi" href="" coords="189,336,1000,362" shape="rect">
+    <area target="" alt="fa" title="fa" href="" coords="189,312,999,336" shape="rect">
+    <area target="" alt="sol" title="sol" href="" coords="189,287,999,311,642,292" shape="rect">
+    <area target="" alt="la" title="la" href="" coords="190,262,999,286" shape="rect">
+    <area target="" alt="si" title="si" href="" coords="191,239,998,261" shape="rect">
+    <area target="" alt="do" title="do" href="" coords="191,90,999,238" shape="rect">
+</map>
+
+<!--<img src="assets/nota1.png" alt="">-->
+<!--<img src="assets/nota1sust.png" alt="">-->
 
 <audio src="notes/do.wav"></audio>
 <audio src="notes/do-sust.wav"></audio>
-<audio src="notes/fa.wav"></audio>
-<audio src="notes/fa-sust.wav"></audio>
-<audio src="notes/la.wav"></audio>
-<audio src="notes/la-sust.wav"></audio>
-<audio src="notes/mi.wav"></audio>
 <audio src="notes/re.wav"></audio>
 <audio src="notes/re-sust.wav"></audio>
-<audio src="notes/si.wav"></audio>
+<audio src="notes/mi.wav"></audio>
+<audio src="notes/fa.wav"></audio>
+<audio src="notes/fa-sust.wav"></audio>
 <audio src="notes/sol.wav"></audio>
 <audio src="notes/sol-sust.wav"></audio>
+<audio src="notes/la.wav"></audio>
+<audio src="notes/la-sust.wav"></audio>
+<audio src="notes/si.wav"></audio>
 <audio src="notes/do7.wav"></audio>
 
 
 
 <div class="container">
     <div class="row">
-        <div id="t-0" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-0" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         <div class="row">
-            <div id="t-1" class="col sostenido" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+            <div id="t-1" class="col sostenido" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         </div>
-        <div id="t-2" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-2" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         <div class="row">
-            <div id="t-3" class="col sostenido"  onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+            <div id="t-3" class="col sostenido"  onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         </div>
-        <div id="t-4" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
-        <div id="t-5" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-4" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
+        <div id="t-5" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         <div class="row">
-            <div id="t-6" class="col sostenido" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+            <div id="t-6" class="col sostenido" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         </div>
-        <div id="t-7" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-7" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         <div class="row">
-            <div id="t-8" class="col sostenido" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+            <div id="t-8" class="col sostenido" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         </div>
-        <div id="t-9" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-9" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         <div class="row">
-            <div id="t-10" class="col sostenido" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+            <div id="t-10" class="col sostenido" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
         </div>
-        <div id="t-11" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
-        <div id="t-12" class="col border border-dark tecla" onmousedown="abajoTecla(event)" onmouseup="arribaTecla(event)"></div>
+        <div id="t-11" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
+        <div id="t-12" class="col border border-dark tecla" onmousedown="mouseDown(event)" onmouseup="mouseUp(event)"></div>
     </div>
 </div>
 <script src="node_modules/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
