@@ -1,5 +1,6 @@
 const sonidos = document.querySelectorAll('audio');
 let notas = new Notas();
+let timeOuts = [];
 
 
 function pasusaTodo () {
@@ -19,6 +20,7 @@ function abajoTecla (teclaId,tipo,sostenido) {
   }
   notas.setNota(nota);
   notas.print();
+  console.log(notas.pentagrama);
 
   let tecla = document.getElementById(teclaId);
   if(tecla.className.includes('tecla')){
@@ -69,7 +71,7 @@ function Notas () {
 
   this.setNota = (nota)=> {
 
-    if(this.pentagrama.length >= 5){
+    if(this.pentagrama.length >= 4){
 
       this.pentagrama.unshift(nota);
       this.pentagrama.pop();
@@ -82,6 +84,7 @@ function Notas () {
     this.pentagrama = [];
   }
 
+
   this.print = ()=>{
 
     //Elimina todas las notas del pentagrama
@@ -90,18 +93,18 @@ function Notas () {
       notaDom.parentNode.removeChild(notaDom);
     });
 
-    for(let i = 1; i <= this.pentagrama.length; i++){
+    for(let i = 0; i < this.pentagrama.length; i++){
       let img = document.createElement('img');
 
       let nota = this.pentagrama[i];
       img.className = 'nota '+nota.tipo;
-      img.id = 'nota-'+i;
+      img.id = 'nota-'+(i+1);
       if(nota.tipo === 'do'){
-        if(nota.sostenido)img.src = 'assets/nota2.png';
-        else img.src = 'assets/nota2sust.png';
+        if(nota.sostenido)img.src = 'assets/nota2sust.png';
+        else img.src = 'assets/nota2.png';
 
-      }else if(nota.sostenido)img.src = 'assets/nota1.png';
-      else img.src = 'assets/nota1sust.png';
+      }else if(nota.sostenido)img.src = 'assets/nota1sust.png';
+      else img.src = 'assets/nota1.png';
 
       document.querySelector('#pentagramaContainer').appendChild(img);
     }
@@ -115,6 +118,31 @@ addEventListener('keydown',(event)=>{
 });
 
 addEventListener('keyup',(event)=>{
-  let id = switchKey(event.key)[0];
-  if(id)arribaTecla(id);
+  let id = switchKey(event.key);
+  if(id)arribaTecla(id[0]);
+});
+
+document.querySelector('#reset').addEventListener('click',()=>{
+  notas.reset();
+  notas.print();
+});
+
+document.querySelector('#play').addEventListener('click',()=>{
+  let time = 1000;
+
+  notas.pentagrama.forEach((nota)=>{
+
+   timeOuts.push(setTimeout(()=>{
+      pasusaTodo();
+      nota.sonido.play();
+     },time));
+
+   time += 1000;
+  });
+});
+
+document.querySelector('#stop').addEventListener('click',()=>{
+  timeOuts.forEach((timeOut)=>{
+    clearTimeout(timeOut);
+  })
 });
