@@ -22,6 +22,9 @@ function abajoTecla (teclaId,tipo,sostenido) {
   notas.print();
   console.log(notas.pentagrama);
 
+  pasusaTodo();
+  sonido.play()
+
   let tecla = document.getElementById(teclaId);
   if(tecla.className.includes('tecla')){
     tecla.style.backgroundColor = '#17a2b8';
@@ -112,6 +115,12 @@ function Notas () {
   }
 }
 
+function stopSound () {
+  timeOuts.forEach((timeOut)=>{
+    clearTimeout(timeOut);
+  });
+}
+
 addEventListener('keydown',(event)=>{
   let nota = switchKey(event.key);
   if(nota)abajoTecla(nota[0],nota[1],nota[2]);
@@ -129,6 +138,8 @@ document.querySelector('#reset').addEventListener('click',()=>{
 
 document.querySelector('#play').addEventListener('click',()=>{
   let time = 1000;
+  stopSound();
+  timeOuts = [];
 
   notas.pentagrama.forEach((nota)=>{
 
@@ -142,7 +153,5 @@ document.querySelector('#play').addEventListener('click',()=>{
 });
 
 document.querySelector('#stop').addEventListener('click',()=>{
-  timeOuts.forEach((timeOut)=>{
-    clearTimeout(timeOut);
-  })
+  stopSound();
 });
