@@ -17,13 +17,13 @@ function abajoTecla (teclaId,tipo,sostenido) {
     sonido: sonido,
     tipo: tipo,
     sostenido: sostenido
-  }
+  };
   notas.setNota(nota);
   notas.print();
   console.log(notas.pentagrama);
 
   pasusaTodo();
-  sonido.play()
+  sonido.play();
 
   let tecla = document.getElementById(teclaId);
   if(tecla.className.includes('tecla')){
@@ -81,11 +81,11 @@ function Notas () {
 
     }
     else this.pentagrama.push(nota);
-  }
+  };
 
   this.reset = ()=>{
     this.pentagrama = [];
-  }
+  };
 
 
   this.print = ()=>{
@@ -155,3 +155,70 @@ document.querySelector('#play').addEventListener('click',()=>{
 document.querySelector('#stop').addEventListener('click',()=>{
   stopSound();
 });
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    let sostenido = ev.dataTransfer.getData("text") === 'sostenido';
+    let teclaId = findTecla(ev.target.id,sostenido);
+    if(!teclaId) {
+      sostenido = !sostenido;
+      teclaId = findTecla(ev.target.id,sostenido);
+    }
+
+    let nota = {
+        teclaId: teclaId,
+        sonido: sonidos[parseInt(teclaId.split('-')[1])],
+        tipo: ev.target.id,
+        sostenido: sostenido
+    };
+
+    notas.setNota(nota);
+    notas.print();
+
+}
+
+function findTecla(tipo,sostenido) {
+  switch (tipo){
+      case 'do': {
+        if (!sostenido) return 't-0';
+        else return 't-1';
+      }
+      case 're':{
+        if (!sostenido) return 't-2';
+        else return 't-3';
+      }
+      case 'mi':{
+        if (!sostenido) return 't-4';
+        else return null;
+      }
+      case 'fa':{
+        if (!sostenido) return 't-5';
+        else return 't-6';
+      }
+      case 'sol':{
+        if (!sostenido) return 't-7';
+        else return 't-8';
+      }
+      case 'la':{
+        if (!sostenido) return 't-9';
+        else return 't-10';
+      }
+      case 'si':{
+        if (!sostenido) return 't-11';
+        else return null;
+      }
+      case 'do-alto':{
+        if (!sostenido) return 't-12';
+        else return null;
+      }
+      default: return null;
+  }
+}

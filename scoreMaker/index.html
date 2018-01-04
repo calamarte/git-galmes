@@ -12,19 +12,19 @@
 
 </div>
 
-<img src="assets/nota1.png" alt="">
-<img src="assets/nota1sust.png" alt="">
+<img id="no-sostenido" src="assets/nota1.png" draggable="true" ondragstart="drag(event)" alt="">
+<img id="sostenido" src="assets/nota1sust.png" draggable="true" ondragstart="drag(event)" alt="">
 
 
 <map name="mapa">
-    <area target="" alt="do" title="do" href="" coords="186,410,1000,456" shape="rect">
-    <area target="" alt="re" title="re" href="" coords="188,363,1000,409" shape="rect">
-    <area target="" alt="mi" title="mi" href="" coords="189,336,1000,362" shape="rect">
-    <area target="" alt="fa" title="fa" href="" coords="189,312,999,336" shape="rect">
-    <area target="" alt="sol" title="sol" href="" coords="189,287,999,311,642,292" shape="rect">
-    <area target="" alt="la" title="la" href="" coords="190,262,999,286" shape="rect">
-    <area target="" alt="si" title="si" href="" coords="191,239,998,261" shape="rect">
-    <area target="" alt="do" title="do" href="" coords="191,90,999,238" shape="rect">
+    <area id="do" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="do" title="do" href="" coords="186,410,1000,456" shape="rect">
+    <area id="re" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="re" title="re" href="" coords="188,363,1000,409" shape="rect">
+    <area id="mi" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="mi" title="mi" href="" coords="189,336,1000,362" shape="rect">
+    <area id="fa" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="fa" title="fa" href="" coords="189,312,999,336" shape="rect">
+    <area id="sol" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="sol" title="sol" href="" coords="189,287,999,311,642,292" shape="rect">
+    <area id="la" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="la" title="la" href="" coords="190,262,999,286" shape="rect">
+    <area id="si" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="si" title="si" href="" coords="191,239,998,261" shape="rect">
+    <area id="do-alto" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="do" title="do" href="" coords="191,90,999,238" shape="rect">
 </map>
 <input type="button" id="play" value="Play">
 <input type="button" id="stop" value="Stop">
