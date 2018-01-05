@@ -42,12 +42,14 @@ function arribaTecla (id) {
   }
 }
 
-function mouseDown (event) {
-  abajoTecla(event.target.id);
+function mouseDown (event)  {
+    let tipoSostenido = findTipoAndSostenido(event.target.id);
+    abajoTecla(event.target.id,tipoSostenido[0],tipoSostenido[1]);
 }
 
 function mouseUp (event) {
-  arribaTecla(event.target.id);
+    let tipoSostenido = findTipoAndSostenido(event.target.id);
+    arribaTecla(event.target.id,tipoSostenido[0],tipoSostenido[1]);
 }
 
 function switchKey (key) {
@@ -221,4 +223,23 @@ function findTecla(tipo,sostenido) {
       }
       default: return null;
   }
+}
+
+function findTipoAndSostenido(teclaId) {
+    switch (teclaId){
+        case 't-0': return ['do',false];
+        case 't-1': return ['do',true];
+        case 't-2': return ['re',false];
+        case 't-3': return ['re',true];
+        case 't-4': return ['mi',false];
+        case 't-5': return ['fa',false];
+        case 't-6': return ['fa',true];
+        case 't-7': return ['sol',false];
+        case 't-8': return ['sol',true];
+        case 't-9': return ['la',false];
+        case 't-10': return ['la',true];
+        case 't-11': return ['si',false];
+        case 't-12': return ['do-alto',false];
+        default: return null;
+    }
 }
