@@ -1,7 +1,43 @@
 const sonidos = document.querySelectorAll('audio');
 let notas = new Notas();
 let timeOuts = [];
+let video = document.getElementById('video');
+let records;
 
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true,audio: true}).then(function(stream) {
+        video.src = window.URL.createObjectURL(stream);
+        video.volume = 0;
+        video.play();
+
+
+        let mediaRecorder = new MediaRecorder(stream);
+
+        document.querySelector('#record').onclick = ()=>{
+            mediaRecorder.ondataavailable = (event)=>{
+                if(event.data.size > 0)records = [event.data];
+            };
+
+            mediaRecorder.start();
+            setTimeout(()=>{
+                mediaRecorder.stop();
+                let blob = new Blob(records);
+                sentMedia(blob);
+            },1000);
+        }
+    });
+}
+
+async function sentMedia(blob) {
+    let fetchData = await fetch('http://35.194.72.13/scoremaker/backend.php',{
+       method: 'post',
+       body:{
+           arxiu:blob
+       }
+    });
+
+    console.log(await fetchData.json());
+}
 
 function pasusaTodo () {
   sonidos.forEach((sonido)=> {
@@ -48,8 +84,7 @@ function mouseDown (event)  {
 }
 
 function mouseUp (event) {
-    let tipoSostenido = findTipoAndSostenido(event.target.id);
-    arribaTecla(event.target.id,tipoSostenido[0],tipoSostenido[1]);
+    arribaTecla(event.target.id);
 }
 
 function switchKey (key) {
