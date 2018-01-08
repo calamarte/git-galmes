@@ -2,7 +2,7 @@ const sonidos = document.querySelectorAll('audio');
 let notas = new Notas();
 let timeOuts = [];
 let video = document.getElementById('video');
-let records;
+
 
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     navigator.mediaDevices.getUserMedia({ video: true,audio: true}).then(function(stream) {
@@ -12,18 +12,24 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 
         let mediaRecorder = new MediaRecorder(stream);
+        let records = [];
+
+
+        mediaRecorder.ondataavailable = (event)=>{
+            records.push(event.data);
+        };
 
         document.querySelector('#record').onclick = ()=>{
-            mediaRecorder.ondataavailable = (event)=>{
-                if(event.data.size > 0)records = [event.data];
-            };
-
             mediaRecorder.start();
-            setTimeout(()=>{
-                mediaRecorder.stop();
-                let blob = new Blob(records);
-                sentMedia(blob);
-            },5000);
+        };
+        mediaRecorder.onstop = (e) => {
+            let blob = new Blob(records);
+            records.pop();
+            sentMedia(blob);
+        };
+
+        document.querySelector('#pausa').onclick = ()=>{
+            mediaRecorder.stop();
         }
     });
 }
@@ -116,7 +122,7 @@ function Notas () {
 
       this.pentagrama[this.index] = nota;
 
-      if(this.index === 3)this.index = 0;
+      if(this.index >= 3)this.index = 0;
       else this.index++;
 
     }
@@ -195,6 +201,8 @@ document.querySelector('#play').addEventListener('click',()=>{
 document.querySelector('#stop').addEventListener('click',()=>{
   stopSound();
 });
+
+
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -281,3 +289,4 @@ function findTipoAndSostenido(teclaId) {
         default: return null;
     }
 }
+
