@@ -23,17 +23,17 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 mediaRecorder.stop();
                 let blob = new Blob(records);
                 sentMedia(blob);
-            },1000);
+            },5000);
         }
     });
 }
 
 async function sentMedia(blob) {
+    let formData = new FormData();
+    formData.append('arxiu',blob);
     let fetchData = await fetch('http://35.194.72.13/scoremaker/backend.php',{
        method: 'post',
-       body:{
-           arxiu:blob
-       }
+       body:formData
     });
 
     console.log(await fetchData.json());
@@ -108,13 +108,16 @@ function switchKey (key) {
 
 function Notas () {
   this.pentagrama = [];
+  this.index = 0;
 
   this.setNota = (nota)=> {
 
     if(this.pentagrama.length >= 4){
 
-      this.pentagrama.unshift(nota);
-      this.pentagrama.pop();
+      this.pentagrama[this.index] = nota;
+
+      if(this.index === 3)this.index = 0;
+      else this.index++;
 
     }
     else this.pentagrama.push(nota);
