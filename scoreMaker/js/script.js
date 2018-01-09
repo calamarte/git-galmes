@@ -1,3 +1,55 @@
+class Notas {
+
+    constructor() {
+        this.pentagrama = [];
+        this.index = 0;
+    }
+
+    setNota (nota) {
+
+        if(this.pentagrama.length >= 4){
+
+            this.pentagrama[this.index] = nota;
+
+            if(this.index >= 3)this.index = 0;
+            else this.index++;
+
+        }
+        else this.pentagrama.push(nota);
+    };
+
+    reset (){
+        this.pentagrama = [];
+    };
+
+
+    print (){
+
+        //Elimina todas las notas del pentagrama
+        let notasDom = document.querySelectorAll('.nota');
+        notasDom.forEach((notaDom)=>{
+            notaDom.parentNode.removeChild(notaDom);
+        });
+
+        for(let i = 0; i < this.pentagrama.length; i++){
+            let img = document.createElement('img');
+
+            let nota = this.pentagrama[i];
+            img.className = 'nota '+nota.tipo;
+            img.id = 'nota-'+(i+1);
+            if(nota.tipo === 'do'){
+                if(nota.sostenido)img.src = 'assets/nota2sust.png';
+                else img.src = 'assets/nota2.png';
+
+            }else if(nota.sostenido)img.src = 'assets/nota1sust.png';
+            else img.src = 'assets/nota1.png';
+
+            document.querySelector('#pentagramaContainer').appendChild(img);
+        }
+
+    }
+}
+
 const sonidos = document.querySelectorAll('audio');
 let notas = new Notas();
 let timeOuts = [];
@@ -5,15 +57,13 @@ let video = document.getElementById('video');
 
 
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices.getUserMedia({ video: true,audio: true}).then(function(stream) {
+    navigator.mediaDevices.getUserMedia({ video: true,audio: true}).then((stream)=> {
         video.src = window.URL.createObjectURL(stream);
         video.volume = 0;
         video.play();
 
-
         let mediaRecorder = new MediaRecorder(stream);
         let records = [];
-
 
         mediaRecorder.ondataavailable = (event)=>{
             records.push(event.data);
@@ -22,7 +72,8 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         document.querySelector('#record').onclick = ()=>{
             mediaRecorder.start();
         };
-        mediaRecorder.onstop = (e) => {
+
+        mediaRecorder.onstop = () => {
             let blob = new Blob(records);
             records.pop();
             sentMedia(blob);
@@ -42,7 +93,49 @@ async function sentMedia(blob) {
        body:formData
     });
 
-    console.log(await fetchData.json());
+    responseFormat(await fetchData.json());
+}
+
+function responseFormat(response) {
+    console.log(response[0].transcripcio,response[0].confianca);
+    let info = response[0].transcripcio.split(' ');
+
+    for (let i = 0;i < info.length;i++){
+        let nota = {
+            teclaId:'',
+            sonido:'',
+            tipo: '',
+            sostenido: ''
+        };
+
+        let data = info[i].toLocaleLowerCase();
+
+        switch (data){
+            case 'do':
+            case 're':
+            case 'mi':
+            case 'fa':
+            case 'sol':
+            case 'la':
+            case 'si': {
+                nota.tipo = data;
+
+                if (i !== info.length-1){
+                    if(info[i+1].toLocaleLowerCase() === 'sostenido'){
+                        nota.sostenido = true;
+                        i++;
+                    }else nota.sostenido = false;
+                }else nota.sostenido = false;
+
+                nota.teclaId = findTecla(nota.tipo,nota.sostenido);
+                nota.sonido = sonidos[parseInt(nota.teclaId.split('-')[1])];
+                notas.setNota(nota);
+                break;
+            }
+        }
+    }
+
+    notas.print();
 }
 
 function pasusaTodo () {
@@ -109,55 +202,6 @@ function switchKey (key) {
     case 'j': return ['t-11','si',false];
     case 'k': return ['t-12','do-alto',false];
     default: return null;
-  }
-}
-
-function Notas () {
-  this.pentagrama = [];
-  this.index = 0;
-
-  this.setNota = (nota)=> {
-
-    if(this.pentagrama.length >= 4){
-
-      this.pentagrama[this.index] = nota;
-
-      if(this.index >= 3)this.index = 0;
-      else this.index++;
-
-    }
-    else this.pentagrama.push(nota);
-  };
-
-  this.reset = ()=>{
-    this.pentagrama = [];
-  };
-
-
-  this.print = ()=>{
-
-    //Elimina todas las notas del pentagrama
-    let notasDom = document.querySelectorAll('.nota');
-    notasDom.forEach((notaDom)=>{
-      notaDom.parentNode.removeChild(notaDom);
-    });
-
-    for(let i = 0; i < this.pentagrama.length; i++){
-      let img = document.createElement('img');
-
-      let nota = this.pentagrama[i];
-      img.className = 'nota '+nota.tipo;
-      img.id = 'nota-'+(i+1);
-      if(nota.tipo === 'do'){
-        if(nota.sostenido)img.src = 'assets/nota2sust.png';
-        else img.src = 'assets/nota2.png';
-
-      }else if(nota.sostenido)img.src = 'assets/nota1sust.png';
-      else img.src = 'assets/nota1.png';
-
-      document.querySelector('#pentagramaContainer').appendChild(img);
-    }
-
   }
 }
 

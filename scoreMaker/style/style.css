@@ -68,3 +68,13 @@
 .do-alto{
     margin-top: 50px;
 }
+
+#video{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+#play,#stop{
+
+}
