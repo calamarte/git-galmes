@@ -62,19 +62,17 @@
 }
 
 .si{
-    margin-top: 70px;
+    margin-top: 220px;
+    transform: scaleY(-1);
 }
 
 .do-alto{
-    margin-top: 50px;
+    margin-top: 200px;
+    transform: scaleY(-1);
 }
 
 #video{
     float: right;
     width: 200px;
     height: 200px;
-}
-
-#play,#stop{
-
 }

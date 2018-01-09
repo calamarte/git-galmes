@@ -49,11 +49,21 @@ class Notas {
 
     }
 }
+class Nota{
 
+    constructor(teclaId,sonido,tipo,sostenido){
+        this.teclaId = teclaId;
+        this.sonido = sonido;
+        this.tipo = tipo;
+        this.sostenido = sostenido;
+    }
+}
 const sonidos = document.querySelectorAll('audio');
 let notas = new Notas();
 let timeOuts = [];
 let video = document.getElementById('video');
+
+let press = false;
 
 
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -69,19 +79,16 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             records.push(event.data);
         };
 
-        document.querySelector('#record').onclick = ()=>{
-            mediaRecorder.start();
-        };
-
         mediaRecorder.onstop = () => {
             let blob = new Blob(records);
             records.pop();
             sentMedia(blob);
         };
 
-        document.querySelector('#pausa').onclick = ()=>{
-            mediaRecorder.stop();
-        }
+        document.querySelector('#record').onclick = ()=>{
+            if(mediaRecorder.state !== 'recording')mediaRecorder.start();
+            else mediaRecorder.stop();
+        };
     });
 }
 
@@ -98,47 +105,47 @@ async function sentMedia(blob) {
 
 function responseFormat(response) {
     console.log(response[0].transcripcio,response[0].confianca);
-    let info = response[0].transcripcio.split(' ');
+    if(response[0].confianca > 0.8) {
+        let info = response[0].transcripcio.split(' ');
 
-    for (let i = 0;i < info.length;i++){
-        let nota = {
-            teclaId:'',
-            sonido:'',
-            tipo: '',
-            sostenido: ''
-        };
+        for (let i = 0; i < info.length; i++) {
+            let nota = new Nota();
 
-        let data = info[i].toLocaleLowerCase();
+            let data = info[i].toLocaleLowerCase();
 
-        switch (data){
-            case 'do':
-            case 're':
-            case 'mi':
-            case 'fa':
-            case 'sol':
-            case 'la':
-            case 'si': {
-                nota.tipo = data;
+            switch (data) {
+                case 'do':
+                    if(i !== info.length -1 && info[i + 1].toLocaleLowerCase() === 'agudo'){
+                        data = 'do-alto';
+                    }
+                case 're':
+                case 'mi':
+                case 'fa':
+                case 'sol':
+                case 'la':
+                case 'si': {
+                    nota.tipo = data;
 
-                if (i !== info.length-1){
-                    if(info[i+1].toLocaleLowerCase() === 'sostenido'){
-                        nota.sostenido = true;
-                        i++;
-                    }else nota.sostenido = false;
-                }else nota.sostenido = false;
+                    if (i !== info.length - 1) {
+                        if (info[i + 1].toLocaleLowerCase() === 'sostenido') {
+                            nota.sostenido = true;
+                            i++;
+                        } else nota.sostenido = false;
+                    } else nota.sostenido = false;
 
-                nota.teclaId = findTecla(nota.tipo,nota.sostenido);
-                nota.sonido = sonidos[parseInt(nota.teclaId.split('-')[1])];
-                notas.setNota(nota);
-                break;
+                    nota.teclaId = findTecla(nota.tipo, nota.sostenido);
+                    nota.sonido = sonidos[parseInt(nota.teclaId.split('-')[1])];
+                    notas.setNota(nota);
+                    break;
+                }
             }
         }
-    }
 
-    notas.print();
+        notas.print();
+    }
 }
 
-function pasusaTodo () {
+function pausaTodo () {
   sonidos.forEach((sonido)=> {
     sonido.pause();
     sonido.currentTime = 0;
@@ -146,29 +153,29 @@ function pasusaTodo () {
 }
 
 function abajoTecla (teclaId,tipo,sostenido) {
-  let sonido = sonidos[parseInt(teclaId.split('-')[1])];
-  let nota = {
-    teclaId: teclaId,
-    sonido: sonido,
-    tipo: tipo,
-    sostenido: sostenido
-  };
-  notas.setNota(nota);
-  notas.print();
-  console.log(notas.pentagrama);
+    if(!press) {
+        let sonido = sonidos[parseInt(teclaId.split('-')[1])];
+        let nota = new Nota (teclaId,sonido,tipo,sostenido);
 
-  pasusaTodo();
-  sonido.play();
+        notas.setNota(nota);
+        notas.print();
+        console.log(notas.pentagrama);
 
-  let tecla = document.getElementById(teclaId);
-  if(tecla.className.includes('tecla')){
-    tecla.style.backgroundColor = '#17a2b8';
-  }else {
-    tecla.style.backgroundColor = '#868e96';
-  }
+        pausaTodo();
+        sonido.play();
+        press = true;
+
+        let tecla = document.getElementById(teclaId);
+        if (tecla.className.includes('tecla')) {
+            tecla.style.backgroundColor = '#17a2b8';
+        } else {
+            tecla.style.backgroundColor = '#868e96';
+        }
+    }
 }
 
 function arribaTecla (id) {
+    press = false;
   let tecla = document.getElementById(id);
   if(tecla.className.includes('tecla')){
     tecla.style.backgroundColor = '#ffffff';
@@ -234,7 +241,7 @@ document.querySelector('#play').addEventListener('click',()=>{
   notas.pentagrama.forEach((nota)=>{
 
    timeOuts.push(setTimeout(()=>{
-      pasusaTodo();
+      pausaTodo();
       nota.sonido.play();
      },time));
 
@@ -245,8 +252,6 @@ document.querySelector('#play').addEventListener('click',()=>{
 document.querySelector('#stop').addEventListener('click',()=>{
   stopSound();
 });
-
-
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -265,12 +270,9 @@ function drop(ev) {
       teclaId = findTecla(ev.target.id,sostenido);
     }
 
-    let nota = {
-        teclaId: teclaId,
-        sonido: sonidos[parseInt(teclaId.split('-')[1])],
-        tipo: ev.target.id,
-        sostenido: sostenido
-    };
+    let nota = new Nota(
+        teclaId,sonidos[parseInt(teclaId.split('-')[1])],
+        ev.target.id,sostenido);
 
     notas.setNota(nota);
     notas.print();
