@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-<video id="video" autoplay></video>
-<input type="button" id="record" value="grabar">
-
-<div id="pentagramaContainer">
-    <img src="assets/pentagrama.png" id="pentagrama" usemap="#mapa">
-
+<div class="container">
+    <div class="row">
+        <video id="video" autoplay></video>
+        <input type="button" id="record" value="grabar">
+        <div id="pentagramaContainer">
+            <img src="assets/pentagrama.png" id="pentagrama" usemap="#mapa">
+        </div>
+    </div>
+    <div class="row">
+        <img id="no-sostenido" src="assets/nota1.png" draggable="true" ondragstart="drag(event)" alt="">
+        <img id="sostenido" src="assets/nota1sust.png" draggable="true" ondragstart="drag(event)" alt="">
+    </div>
 </div>
-
-
-<img id="no-sostenido" src="assets/nota1.png" draggable="true" ondragstart="drag(event)" alt="">
-<img id="sostenido" src="assets/nota1sust.png" draggable="true" ondragstart="drag(event)" alt="">
-
-
 <map name="mapa">
     <area id="do" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="do" title="do" href="" coords="186,410,1000,456" shape="rect">
     <area id="re" ondrop="drop(event)" ondragover="allowDrop(event)" target="" alt="re" title="re" href="" coords="188,363,1000,409" shape="rect">
@@ -82,6 +81,7 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/clases.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

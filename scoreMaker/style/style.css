@@ -1,6 +1,22 @@
+
+/*#sostenido,#no-sostenido{*/
+    /*transform: scale(.5);*/
+/*}*/
+/*#pentagramaContainer{*/
+    /*float: left;*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+/*}*/
+
+/*#pentagrama{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
 .tecla{
     height: 300px;
 }
+
 .sostenido{
     height: 180px;
     background-color: #343a40;
@@ -71,8 +87,19 @@
     transform: scaleY(-1);
 }
 
-#video{
-    float: right;
-    width: 200px;
-    height: 200px;
-}
+/*#videoContainer{*/
+    /*float: right;*/
+    /*width: 300px;*/
+    /*height: 200px;*/
+    /*z-index: 23;*/
+/*}*/
+
+/*#video{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
+
+
+
+
